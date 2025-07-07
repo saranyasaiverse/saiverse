@@ -1,25 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SaiVerse Solutions</title>
-  <meta charset='UTF-8'>
-  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f9f9f9; }
-    header { background: #222; color: white; padding: 1rem; text-align: center; }
-    main { padding: 2rem; }
-    footer { background: #222; color: white; text-align: center; padding: 1rem; position: fixed; bottom: 0; width: 100%; }
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; }
+    header { background: #0074D9; color: white; padding: 2rem; text-align: center; }
+    section { padding: 2rem; max-width: 900px; margin: auto; }
+    h2 { color: #333; }
+    footer { background: #111; color: #fff; text-align: center; padding: 1rem; }
+    .services { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .card { background: #fff; padding: 1rem; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    @media (max-width: 600px) {
+      .services { grid-template-columns: 1fr; }
+    }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Welcome to SaiVerse Solutions</h1>
-  </header>
-  <main>
     <p>Your trusted partner in global freelancing, payment recovery & client coordination.</p>
-  </main>
+  </header>
+
+  <section>
+    <h2>About Us</h2>
+    <p>SaiVerse Solutions is committed to empowering businesses and freelancers globally. We specialize in client coordination, payment follow-up, and support services that help reduce stress and increase revenue.</p>
+  </section>
+
+  <section>
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="card">
+        <h3>Freelancing Support</h3>
+        <p>End-to-end coordination for freelancers and clients globally.</p>
+      </div>
+      <div class="card">
+        <h3>Payment Recovery</h3>
+        <p>Professional follow-up and client communication to recover pending payments.</p>
+      </div>
+      <div class="card">
+        <h3>Virtual Assistance</h3>
+        <p>We handle emails, updates, client calls and more, saving you time.</p>
+      </div>
+      <div class="card">
+        <h3>Custom Coordination</h3>
+        <p>Tailored services based on your project and personal needs.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Why Choose Us?</h2>
+    <ul>
+      <li>🌐 Global service coverage</li>
+      <li>📞 Strong communication & follow-up</li>
+      <li>⏰ Timely updates and support</li>
+      <li>🤝 Transparent and reliable</li>
+    </ul>
+  </section>
+
   <footer>
-    &copy; 2025 SaiVerse Solutions. All rights reserved.
+    <p>Contact us: <a href="mailto:contact@saiverse.org" style="color:#00d4ff;">contact@saiverse.org</a></p>
+    <p>&copy; 2025 SaiVerse Solutions. All rights reserved.</p>
   </footer>
+
 </body>
 </html>
