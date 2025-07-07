@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SaiVerse Solutions</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 100px;
+        background-color: #f0f4f8;
+      }
+      h1 {
+        color: #0b3d91;
+      }
+      p {
+        color: #333;
+        font-size: 1.2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to SaiVerse Solutions</h1>
+    <p>Your trusted partner in global freelancing, payment recovery & client coordination.</p>
+  </body>
+</html>
