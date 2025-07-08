@@ -4,35 +4,37 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SaiVerse Solutions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      background: #f4f4f4;
-      color: #333;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f4faff;
+      color: #222;
+      line-height: 1.6;
     }
 
     header {
-      background: #0074D9;
+      background: linear-gradient(to right, #0074D9, #00B5E2);
       color: white;
       padding: 2rem;
       text-align: center;
     }
 
     header img {
-      max-width: 160px;
+      max-width: 150px;
       margin-bottom: 15px;
     }
 
     section {
-      padding: 2rem;
-      max-width: 900px;
+      padding: 3rem 1rem;
+      max-width: 1100px;
       margin: auto;
-      background: #fff;
-      margin-top: 1rem;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     }
 
     h2 {
@@ -42,20 +44,61 @@
 
     .services {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
     }
 
     .card {
-      background: #f9f9f9;
-      padding: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+      padding: 1.5rem;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
     }
 
     ul {
-      padding-left: 1.2rem;
-      line-height: 1.6;
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      padding: 0.5rem 0;
+      font-size: 1rem;
+    }
+
+    form {
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    button {
+      background: #0074D9;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #005ea7;
     }
 
     footer {
@@ -66,47 +109,23 @@
       margin-top: 2rem;
     }
 
-    /* Contact Form */
-    form {
-      display: flex;
-      flex-direction: column;
-    }
-
-    input, textarea {
-      padding: 10px;
-      margin-bottom: 15px;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      font-size: 1rem;
-    }
-
-    button {
-      background-color: #0074D9;
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
       color: white;
-      padding: 12px;
-      border: none;
-      border-radius: 6px;
-      font-size: 1rem;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-
-    button:hover {
-      background-color: #005fa3;
-    }
-
-    a {
-      color: #00d4ff;
+      border-radius: 50px;
+      padding: 12px 16px;
+      font-weight: bold;
       text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+      z-index: 999;
     }
 
     @media (max-width: 600px) {
-      .services {
-        grid-template-columns: 1fr;
+      header img {
+        max-width: 120px;
       }
     }
   </style>
@@ -161,36 +180,20 @@
     <form action="mailto:contact@saiverse.org" method="POST" enctype="text/plain">
       <label>Name:</label>
       <input type="text" name="name" required>
-
       <label>Email:</label>
       <input type="email" name="email" required>
-
       <label>Message:</label>
       <textarea name="message" rows="5" required></textarea>
-
       <button type="submit">Send Message</button>
     </form>
   </section>
 
   <footer>
-    <p>Contact us: <a href="mailto:contact@saiverse.org">contact@saiverse.org</a></p>
+    <p>Contact us: <a href="mailto:contact@saiverse.org" style="color:#00d4ff;">contact@saiverse.org</a></p>
     <p>&copy; 2025 SaiVerse Solutions. All rights reserved.</p>
   </footer>
 
-  <!-- WhatsApp Chat Button -->
-  <a href="https://wa.me/918939701718" target="_blank" style="
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #25D366;
-    color: white;
-    border-radius: 50px;
-    padding: 12px 16px;
-    font-weight: bold;
-    text-decoration: none;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
-    z-index: 999;
-  ">
+  <a href="https://wa.me/918939701718" target="_blank" class="whatsapp-btn">
     💬 Chat with us
   </a>
 
