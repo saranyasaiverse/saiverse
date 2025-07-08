@@ -2,164 +2,159 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SaiVerse Solutions</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      margin: 0;
       font-family: 'Poppins', sans-serif;
-      background: #f0f4f8;
+      background: linear-gradient(to right, #005aa7, #fffde4);
       color: #333;
+      line-height: 1.6;
     }
-
     header {
-      background: linear-gradient(to right, #0074D9, #00b3e6);
+      background: linear-gradient(90deg, #3a7bd5, #00d2ff);
+      color: white;
       padding: 2rem;
       text-align: center;
-      color: white;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     }
-
     header img {
-      max-width: 120px;
-      margin-bottom: 10px;
+      max-width: 150px;
+      margin-bottom: 1rem;
     }
-
     section {
-      max-width: 900px;
+      padding: 3rem 2rem;
+      max-width: 1000px;
       margin: auto;
-      padding: 2rem;
     }
-
     h2 {
-      border-left: 4px solid #0074D9;
-      padding-left: 10px;
-      color: #0074D9;
+      color: #222;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      border-left: 6px solid #0074D9;
+      padding-left: 1rem;
     }
-
     .services {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 1.5rem;
     }
-
     .card {
       background: white;
-      border-radius: 8px;
-      padding: 1rem;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 1.5rem;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
     }
-
+    .card:hover {
+      transform: translateY(-5px);
+    }
     footer {
-      background: #001f3f;
-      color: white;
+      background: #111;
+      color: #fff;
       text-align: center;
-      padding: 1rem;
+      padding: 1.5rem 1rem;
       margin-top: 2rem;
     }
-
-    ul li {
-      margin-bottom: 10px;
-    }
-
     form input, form textarea, form button {
       width: 100%;
-      padding: 10px;
+      padding: 0.8rem;
       margin-bottom: 1rem;
+      border-radius: 8px;
       border: 1px solid #ccc;
-      border-radius: 6px;
     }
-
     form button {
       background: #0074D9;
       color: white;
-      border: none;
       font-weight: bold;
+      border: none;
       cursor: pointer;
+      transition: background 0.3s ease;
     }
-
-    @media (max-width: 600px) {
-      .services {
-        grid-template-columns: 1fr;
-      }
+    form button:hover {
+      background: #005fa3;
+    }
+    ul li {
+      margin-bottom: 0.5rem;
+    }
+    a.whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 50px;
+      padding: 12px 16px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+      z-index: 999;
     }
   </style>
 </head>
 <body>
+  <header>
+    <img src="logo.png" alt="SaiVerse Logo" />
+    <h1>Welcome to SaiVerse Solutions</h1>
+    <p>Your trusted partner in global freelancing, payment recovery & client coordination.</p>
+  </header>
 
-<header>
-  <img src="logo.png" alt="SaiVerse Logo" />
-  <h1>Welcome to SaiVerse Solutions</h1>
-  <p>Your trusted partner in global freelancing, payment recovery & client coordination.</p>
-</header>
+  <section>
+    <h2>About Us</h2>
+    <p>SaiVerse Solutions is committed to empowering businesses and freelancers globally. We specialize in client coordination, payment follow-up, and support services that help reduce stress and increase revenue.</p>
+  </section>
 
-<section>
-  <h2>About Us</h2>
-  <p>SaiVerse Solutions empowers businesses and freelancers worldwide with top-tier support services. We handle client coordination, payment tracking, and backend support — making your life easier and your business faster.</p>
-</section>
-
-<section>
-  <h2>Our Services</h2>
-  <div class="services">
-    <div class="card">
-      <h3>Freelancing Support</h3>
-      <p>From onboarding to delivery, we handle global client-freelancer coordination.</p>
+  <section>
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="card">
+        <h3>Freelancing Support</h3>
+        <p>End-to-end coordination for freelancers and clients globally.</p>
+      </div>
+      <div class="card">
+        <h3>Payment Recovery</h3>
+        <p>Professional follow-up and client communication to recover pending payments.</p>
+      </div>
+      <div class="card">
+        <h3>Virtual Assistance</h3>
+        <p>We handle emails, updates, client calls and more, saving you time.</p>
+      </div>
+      <div class="card">
+        <h3>Custom Coordination</h3>
+        <p>Tailored services based on your project and personal needs.</p>
+      </div>
     </div>
-    <div class="card">
-      <h3>Payment Recovery</h3>
-      <p>Polite but firm follow-ups to recover your pending international payments.</p>
-    </div>
-    <div class="card">
-      <h3>Virtual Assistance</h3>
-      <p>Managing emails, calls, client communication, and calendar tasks.</p>
-    </div>
-    <div class="card">
-      <h3>Custom Coordination</h3>
-      <p>Every project is different. We adapt our strategy to match your needs.</p>
-    </div>
-  </div>
-</section>
+  </section>
 
-<section>
-  <h2>Why Choose Us?</h2>
-  <ul>
-    <li>🌍 Global presence with local understanding</li>
-    <li>💼 Experienced in B2B & freelancing platforms</li>
-    <li>🕐 Fast, responsive, and highly dependable</li>
-    <li>📞 Smooth communication with full transparency</li>
-  </ul>
-</section>
+  <section>
+    <h2>Why Choose Us?</h2>
+    <ul>
+      <li>🌐 Global service coverage</li>
+      <li>📞 Strong communication & follow-up</li>
+      <li>⏰ Timely updates and support</li>
+      <li>🤝 Transparent and reliable</li>
+    </ul>
+  </section>
 
-<section>
-  <h2>Contact Us</h2>
-  <form action="mailto:contact@saiverse.org" method="POST" enctype="text/plain">
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="email" name="email" placeholder="Your Email" required>
-    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-    <button type="submit">Send Message</button>
-  </form>
-</section>
+  <section>
+    <h2>Contact Us</h2>
+    <form action="mailto:contact@saiverse.org" method="POST" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
 
-<footer>
-  <p>Contact us: <a href="mailto:contact@saiverse.org" style="color:#00d4ff;">contact@saiverse.org</a></p>
-  <p>&copy; 2025 SaiVerse Solutions. All rights reserved.</p>
-</footer>
+  <footer>
+    <p>Contact us: <a href="mailto:contact@saiverse.org" style="color:#00d4ff;">contact@saiverse.org</a></p>
+    <p>&copy; 2025 SaiVerse Solutions. All rights reserved.</p>
+  </footer>
 
-<!-- WhatsApp Button -->
-<a href="https://wa.me/918939701718" target="_blank" style="
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #25D366;
-  color: white;
-  border-radius: 50px;
-  padding: 12px 16px;
-  font-weight: bold;
-  text-decoration: none;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
-  z-index: 999;">
-  💬 Chat with us
-</a>
-
+  <a href="https://wa.me/918939701718" target="_blank" class="whatsapp">
+    💬 Chat with us
+  </a>
 </body>
 </html>
