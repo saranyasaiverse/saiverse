@@ -1,114 +1,93 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SaiVerse Solutions</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       font-family: 'Poppins', sans-serif;
-      background: #f4faff;
-      color: #222;
-      line-height: 1.6;
+      background: linear-gradient(180deg, #ffffff 0%, #eaf4ff 100%);
+      color: #333;
+      scroll-behavior: smooth;
     }
-
     header {
-      background: linear-gradient(to right, #0074D9, #00B5E2);
+      background-color: #0074D9;
       color: white;
-      padding: 2rem;
+      padding: 2rem 1rem;
       text-align: center;
     }
-
     header img {
-      max-width: 150px;
-      margin-bottom: 15px;
+      max-width: 120px;
+      margin-bottom: 10px;
     }
-
+    nav {
+      background: #005fa3;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 600;
+    }
     section {
       padding: 3rem 1rem;
       max-width: 1100px;
       margin: auto;
     }
-
     h2 {
       color: #0074D9;
       margin-bottom: 1rem;
     }
-
     .services {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 1.5rem;
-      margin-top: 2rem;
     }
-
     .card {
       background: white;
       border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
       padding: 1.5rem;
-      transition: transform 0.3s;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
     }
-
     .card:hover {
       transform: translateY(-5px);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.15);
     }
-
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-
     ul li {
-      padding: 0.5rem 0;
-      font-size: 1rem;
+      margin: 0.5rem 0;
     }
-
-    form {
-      background: white;
-      padding: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-    }
-
-    input, textarea {
+    form input, form textarea, form button {
       width: 100%;
-      padding: 10px;
-      margin-top: 10px;
-      margin-bottom: 20px;
+      margin-bottom: 1rem;
+      padding: 0.75rem;
+      font-size: 1rem;
+      border-radius: 8px;
       border: 1px solid #ccc;
-      border-radius: 6px;
     }
-
-    button {
+    form button {
       background: #0074D9;
       color: white;
       border: none;
-      padding: 10px 20px;
-      font-size: 1rem;
-      border-radius: 6px;
       cursor: pointer;
+      transition: background 0.3s;
     }
-
-    button:hover {
-      background: #005ea7;
+    form button:hover {
+      background: #005fa3;
     }
-
     footer {
       background: #111;
       color: white;
       text-align: center;
-      padding: 1rem;
+      padding: 1.5rem 1rem;
       margin-top: 2rem;
     }
-
     .whatsapp-btn {
       position: fixed;
       bottom: 20px;
@@ -122,12 +101,6 @@
       box-shadow: 0 2px 8px rgba(0,0,0,0.3);
       z-index: 999;
     }
-
-    @media (max-width: 600px) {
-      header img {
-        max-width: 120px;
-      }
-    }
   </style>
 </head>
 <body>
@@ -138,12 +111,19 @@
     <p>Your trusted partner in global freelancing, payment recovery & client coordination.</p>
   </header>
 
-  <section>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#why">Why Us</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
     <h2>About Us</h2>
     <p>SaiVerse Solutions is committed to empowering businesses and freelancers globally. We specialize in client coordination, payment follow-up, and support services that help reduce stress and increase revenue.</p>
   </section>
 
-  <section>
+  <section id="services">
     <h2>Our Services</h2>
     <div class="services">
       <div class="card">
@@ -165,7 +145,7 @@
     </div>
   </section>
 
-  <section>
+  <section id="why">
     <h2>Why Choose Us?</h2>
     <ul>
       <li>🌐 Global service coverage</li>
@@ -175,15 +155,12 @@
     </ul>
   </section>
 
-  <section>
+  <section id="contact">
     <h2>Contact Us</h2>
     <form action="mailto:contact@saiverse.org" method="POST" enctype="text/plain">
-      <label>Name:</label>
-      <input type="text" name="name" required>
-      <label>Email:</label>
-      <input type="email" name="email" required>
-      <label>Message:</label>
-      <textarea name="message" rows="5" required></textarea>
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
       <button type="submit">Send Message</button>
     </form>
   </section>
@@ -193,9 +170,7 @@
     <p>&copy; 2025 SaiVerse Solutions. All rights reserved.</p>
   </footer>
 
-  <a href="https://wa.me/918939701718" target="_blank" class="whatsapp-btn">
-    💬 Chat with us
-  </a>
+  <a href="https://wa.me/918939701718" target="_blank" class="whatsapp-btn">💬 Chat with us</a>
 
 </body>
 </html>
