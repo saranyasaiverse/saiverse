@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SaiVerse Solutions</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #001f3f;
+      color: white;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #001f3f;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+    header img {
+      width: 150px;
+      margin-bottom: 1rem;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      color: #00d4ff;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+    nav {
+      background: #003366;
+      display: flex;
+      justify-content: center;
+      padding: 0.5rem;
+    }
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 2rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #FFD700;
+      text-align: center;
+    }
+    .services, .reviews {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+    .card {
+      background: #002244;
+      border-radius: 10px;
+      padding: 1rem;
+      box-shadow: 0 0 15px rgba(255, 215, 0, 0.2);
+    }
+    .booking-form {
+      background: #002244;
+      border-radius: 10px;
+      padding: 2rem;
+      box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+      max-width: 600px;
+      margin: auto;
+    }
+    label, input, select, textarea, button {
+      display: block;
+      width: 100%;
+      margin: 0.5rem 0;
+    }
+    input, select, textarea {
+      padding: 0.7rem;
+      border-radius: 5px;
+      border: none;
+    }
+    button {
+      background: #FFD700;
+      color: #001f3f;
+      padding: 0.8rem;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    footer {
+      background: #000;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      margin-top: 3rem;
+    }
+    footer a {
+      color: #00d4ff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="SaiVerse Logo">
+    <h1>Welcome to SaiVerse Solutions</h1>
+    <p>Let Us Handle the Chase, While You Focus on Growth.</p>
+  </header>
+
+  <section>
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="card"><h3>Freelancing Support</h3><p>Helping freelancers manage clients & timelines smoothly.</p></div>
+      <div class="card"><h3>Payment Recovery</h3><p>Following up on delayed payments professionally.</p></div>
+      <div class="card"><h3>Client Coordination</h3><p>Effective communication and timely updates.</p></div>
+      <div class="card"><h3>Virtual Assistance</h3><p>Day-to-day support with admin, email & updates.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Meet Our Founder</h2>
+    <div class="card" style="text-align:center;">
+      <img src="founder.jpg" alt="Founder Saranya" style="width:120px; border-radius:50%; border: 3px solid #FFD700;">
+      <h3>Saranya</h3>
+      <p>Saranya, the visionary behind SaiVerse Solutions, is deeply rooted in purpose, precision, and professionalism. With her intuitive power and global client handling experience, she leads a dynamic team focused on client coordination, payment recovery, and empowering freelancers across borders.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Book a Consultation</h2>
+    <form class="booking-form">
+      <label for="service">Choose Service:</label>
+      <select id="service" name="service">
+        <option>Freelancing Support</option>
+        <option>Payment Recovery</option>
+        <option>Client Coordination</option>
+        <option>Virtual Assistance</option>
+      </select>
+      <label for="date">Select Date:</label>
+      <input type="date" id="date" name="date">
+      <label for="time">Select Time:</label>
+      <input type="time" id="time" name="time">
+      <button type="submit">✨ Book Now</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>Client Reviews</h2>
+    <div class="reviews">
+      <div class="card"><strong>John D.</strong><p>Excellent service and very responsive!</p></div>
+      <div class="card"><strong>Priya K.</strong><p>Professional and trustworthy, highly recommended.</p></div>
+      <div class="card"><strong>Ahmed M.</strong><p>Handled my clients wonderfully. Loved the follow-up process.</p></div>
+      <div class="card"><strong>Rachel L.</strong><p>Great communication and support throughout the project.</p></div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Contact us: <a href="mailto:info@saiverse.org">info@saiverse.org</a></p>
+    <p>LinkedIn | Upwork | WhatsApp</p>
+    <p>&copy; 2025 SaiVerse Solutions. All rights reserved.</p>
+  </footer>
+</body>
+</html>
