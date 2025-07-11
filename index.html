@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SaiVerse Solutions</title>
   <style>
     body {
@@ -11,62 +11,150 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      text-align: center;
     }
-    header img {
-      margin-top: 30px;
-      width: 120px;
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
     }
     h1 {
+      color: gold;
       font-size: 2.5rem;
-      margin-top: 0.5rem;
+      text-shadow: 0 0 10px gold;
     }
     h3 {
-      color: gold;
-      margin-bottom: 2rem;
+      font-style: italic;
+      color: #f9d423;
     }
-    section img {
+    section {
+      padding: 2rem;
+      text-align: center;
+    }
+    .buttons a {
+      margin: 0.5rem;
+      padding: 0.75rem 1.2rem;
+      background-color: #00d4ff;
+      border-radius: 10px;
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      box-shadow: 0 0 10px #00d4ff;
+      transition: 0.3s ease;
+    }
+    .buttons a:hover {
+      background-color: gold;
+      color: black;
+      box-shadow: 0 0 15px gold;
+    }
+    .founder img {
       width: 150px;
+      height: 150px;
       border-radius: 50%;
       border: 4px solid gold;
       margin-bottom: 1rem;
     }
-    section p {
+    .carousel {
+      margin: 2rem auto;
       max-width: 600px;
-      margin: auto;
+      overflow: hidden;
+      background-color: #00264d;
+      padding: 1rem;
+      border-radius: 20px;
+      box-shadow: 0 0 12px gold;
+    }
+    .carousel p {
       font-size: 1.1rem;
-      line-height: 1.6;
+      margin-bottom: 0.5rem;
+    }
+    .stars {
+      color: gold;
+    }
+    .book-section {
+      background-color: #011a30;
+      padding: 2rem;
+      margin: 2rem;
+      border-radius: 20px;
+      box-shadow: 0 0 15px #00d4ff;
+    }
+    input, select {
+      padding: 10px;
+      margin: 0.5rem;
+      border-radius: 5px;
+      border: none;
+      width: 200px;
+    }
+    button {
+      padding: 10px 20px;
+      border: none;
+      background-color: gold;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+    button:hover {
+      background-color: #f9d423;
+      box-shadow: 0 0 10px #f9d423;
     }
     footer {
-      margin-top: 3rem;
+      text-align: center;
+      padding: 2rem;
+      background-color: #000814;
       font-size: 0.9rem;
     }
-    a {
+    .footer a {
       color: #00d4ff;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
-  <header>
-    <img src="logo.png" alt="SaiVerse Logo"/>
-    <h1>Welcome to SaiVerse Solutions</h1>
-    <h3>“Let Us Handle the Chase, While You Focus on Growth.”</h3>
-  </header>
 
-  <section>
-    <img src="founder.jpg" alt="Founder Saranya" />
-    <h2>Founder Saranya</h2>
-    <p>
-      Saranya, the visionary behind SaiVerse Solutions, is deeply rooted in purpose, precision, and professionalism.
-      With her intuitive power and global client handling experience, she leads a dynamic team focused on client coordination,
-      payment recovery, and empowering freelancers across borders.
-    </p>
-  </section>
+<header>
+  <img src="logo.png" alt="SaiVerse Logo" width="120" />
+  <h1>SaiVerse Solutions</h1>
+  <h3>“Let Us Handle the Chase, While You Focus on Growth.”</h3>
+</header>
 
-  <footer>
-    <p>Contact us: <a href="mailto:info@saiverse.org">info@saiverse.org</a></p>
-    <p>© 2025 SaiVerse Solutions. All rights reserved.</p>
-  </footer>
+<section class="buttons">
+  <a href="mailto:info@saiverse.org">📧 Email</a>
+  <a href="https://wa.me/919999999999">💬 WhatsApp</a>
+  <a href="https://www.linkedin.com/in/saranya-s-78014b371/">🔗 LinkedIn</a>
+  <a href="https://www.upwork.com/freelancers/~014031dd72651c3436?mp_source=share">💼 Upwork</a>
+</section>
+
+<section class="founder">
+  <img src="founder.jpg" alt="Founder Saranya" />
+  <h2>Founder Saranya</h2>
+  <p>Saranya, the visionary behind SaiVerse Solutions, is deeply rooted in purpose, precision, and professionalism. With her intuitive power and global client handling experience, she leads a dynamic team focused on client coordination, payment recovery, and empowering freelancers across borders.</p>
+</section>
+
+<section class="carousel">
+  <p>⭐️⭐️⭐️⭐️⭐️ <strong>David M., UK</strong> – “SaiVerse helped me recover $5,000 from a stuck payment!”</p>
+  <p>⭐️⭐️⭐️⭐️ <strong>Linda T., USA</strong> – “Very prompt and professional. Highly recommend.”</p>
+  <p>⭐️⭐️⭐️⭐️⭐️ <strong>Rajeev N., Singapore</strong> – “Flawless backend support and clarity!”</p>
+</section>
+
+<section class="book-section">
+  <h2>📅 Book a Consultation</h2>
+  <p>Choose your service, select your time (with timezone info), and we’ll take care of the rest.</p>
+  <form>
+    <select>
+      <option>Freelancing Support</option>
+      <option>Payment Recovery</option>
+      <option>Client Handling Strategy</option>
+    </select><br/>
+    <input type="date" /><br/>
+    <input type="time" /><br/>
+    <button type="submit">✨ Book Now</button>
+  </form>
+  <p style="margin-top: 1rem; font-size: 0.9rem;">🌍 Please confirm AM/PM & time zone</p>
+</section>
+
+<footer class="footer">
+  <p>Contact us: <a href="mailto:info@saiverse.org">info@saiverse.org</a></p>
+  <p>© 2025 SaiVerse Solutions. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
-
