@@ -32,6 +32,7 @@
     .intro {
       text-align: center;
       padding: 40px 20px;
+      border: 2px solid #c2a800;
     }
     .intro img {
       width: 180px;
@@ -49,6 +50,8 @@
       background-color: #002244;
       padding: 40px 20px;
       text-align: center;
+      border-top: 2px solid #c2a800;
+      border-bottom: 2px solid #c2a800;
     }
     .services h2 {
       color: #c2a800;
@@ -75,6 +78,7 @@
       padding: 40px;
       text-align: center;
       background-color: #001a2d;
+      border: 2px solid #c2a800;
     }
     .booking h2 {
       color: #c2a800;
@@ -83,6 +87,7 @@
       background-color: #001a2d;
       padding: 20px;
       text-align: center;
+      border-top: 2px solid #c2a800;
     }
     .payment h2 {
       color: #c2a800;
@@ -95,18 +100,14 @@
       background-color: #002244;
       padding: 40px 20px;
       text-align: center;
+      border-top: 2px solid #c2a800;
     }
     .reviews h2 {
       color: #c2a800;
       margin-bottom: 20px;
     }
-    .review-box {
-      background-color: #001a2d;
-      border: 2px solid #c2a800;
-      border-radius: 10px;
-      padding: 20px;
-      margin: 10px auto;
-      max-width: 600px;
+    .reviews p {
+      margin: 10px 0;
     }
     .reviews form textarea, .reviews form input[type="text"] {
       width: 80%;
@@ -129,10 +130,16 @@
       text-align: center;
       padding: 10px;
     }
+    .logo {
+      width: 100px;
+      display: block;
+      margin: 0 auto 10px;
+    }
   </style>
 </head>
 <body>
   <header>
+    <img src="logo.png" alt="SaiVerse Logo" class="logo">
     <h1>SaiVerse Solutions</h1>
     <p>“Let Us Handle the Chase, While You Focus on Growth.”</p>
     <div class="action-buttons">
@@ -170,10 +177,10 @@
 
   <section class="booking">
     <h2>Book Your Consultation</h2>
-    <p style="margin-bottom: 15px; color: #fff;">🔔 Slot will be confirmed via email only after payment is received.</p>
     <div style="margin-top:20px;">
-      <iframe src="" width="100%" height="600" frameborder="0" style="border: 2px dashed #c2a800; background-color: #001a2d; color: #fff;">Booking temporarily disabled</iframe>
+      <iframe src="https://calendly.com/saiverse-info/30-minute-meeting" width="100%" height="600" frameborder="0"></iframe>
     </div>
+    <p style="margin-top:10px; font-size:14px; color: #fff;">📌 Session timing will be confirmed only after payment via email.</p>
   </section>
 
   <section class="payment">
@@ -183,23 +190,16 @@
       <p><strong>Account Name:</strong> Saranya S</p>
       <p><strong>Account Number:</strong> 163501000000881</p>
       <p><strong>IFSC:</strong> IOBA0001635</p>
-      <p><strong>UPI:</strong> saranyas@okaxis</p>
-      <p><img src="upi-qr.png" alt="UPI QR Code" width="200"></p>
+      <p><strong>UPI:</strong> <img src="qr.png" alt="UPI QR" width="150"></p>
     </div>
-    <p>💳 Payment must be completed before confirming your time slot.</p>
   </section>
 
   <section class="reviews">
     <h2>Client Reviews</h2>
-    <div class="review-box">
-      <p><strong>John D.</strong> – “Very professional and helped me recover a long-pending international payment.”</p>
-    </div>
-    <div class="review-box">
-      <p><strong>Amanda R.</strong> – “Excellent consultation. Gave me clear direction on Upwork issues.”</p>
-    </div>
-    <div class="review-box">
-      <p><strong>Michael L.</strong> – “She’s quick, smart and understands client needs well.”</p>
-    </div>
+    <p>★★★★★ John D. – “Very professional and helped me recover a long-pending international payment.”</p>
+    <p>★★★★★ Amanda R. – “Excellent consultation. Gave me clear direction on Upwork issues.”</p>
+    <p>★★★★★ Michael L. – “She’s quick, smart and understands client needs well.”</p>
+
     <form action="https://formspree.io/f/mnqwyxyz" method="POST">
       <input type="text" name="name" placeholder="Your Name" required><br>
       <textarea name="review" placeholder="Write your review..." rows="4" required></textarea><br>
