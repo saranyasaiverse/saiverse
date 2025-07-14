@@ -100,6 +100,14 @@
       color: #c2a800;
       margin-bottom: 20px;
     }
+    .review-box {
+      background-color: #001a2d;
+      border: 2px solid #c2a800;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 10px auto;
+      max-width: 600px;
+    }
     .reviews form textarea, .reviews form input[type="text"] {
       width: 80%;
       padding: 10px;
@@ -114,16 +122,6 @@
       border: none;
       border-radius: 5px;
       cursor: pointer;
-    }
-    .review-entry {
-      background-color: #001a2d;
-      border: 1px solid #c2a800;
-      margin: 10px auto;
-      padding: 15px;
-      border-radius: 10px;
-      width: 80%;
-      color: #fff;
-      text-align: left;
     }
     footer {
       background-color: #003366;
@@ -172,7 +170,10 @@
 
   <section class="booking">
     <h2>Book Your Consultation</h2>
-    <p style="margin-top:10px; font-size:14px; color: #fff;">🔔 Your consultation timing will be confirmed via email only after payment is received.</p>
+    <p style="margin-bottom: 15px; color: #fff;">🔔 Slot will be confirmed via email only after payment is received.</p>
+    <div style="margin-top:20px;">
+      <iframe src="" width="100%" height="600" frameborder="0" style="border: 2px dashed #c2a800; background-color: #001a2d; color: #fff;">Booking temporarily disabled</iframe>
+    </div>
   </section>
 
   <section class="payment">
@@ -183,19 +184,20 @@
       <p><strong>Account Number:</strong> 163501000000881</p>
       <p><strong>IFSC:</strong> IOBA0001635</p>
       <p><strong>UPI:</strong> saranyas@okaxis</p>
-      <p><img src="upi-qr.png" alt="UPI Scanner" style="width:150px;margin-top:10px;" /></p>
+      <p><img src="upi-qr.png" alt="UPI QR Code" width="200"></p>
     </div>
+    <p>💳 Payment must be completed before confirming your time slot.</p>
   </section>
 
   <section class="reviews">
     <h2>Client Reviews</h2>
-    <div class="review-entry">
+    <div class="review-box">
       <p><strong>John D.</strong> – “Very professional and helped me recover a long-pending international payment.”</p>
     </div>
-    <div class="review-entry">
+    <div class="review-box">
       <p><strong>Amanda R.</strong> – “Excellent consultation. Gave me clear direction on Upwork issues.”</p>
     </div>
-    <div class="review-entry">
+    <div class="review-box">
       <p><strong>Michael L.</strong> – “She’s quick, smart and understands client needs well.”</p>
     </div>
     <form action="https://formspree.io/f/mnqwyxyz" method="POST">
