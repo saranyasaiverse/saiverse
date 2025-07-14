@@ -10,7 +10,7 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #002b4d;
+      background-color: #002b4d; /* consistent deep blue */
       color: #ffffff;
     }
     header {
@@ -26,13 +26,13 @@
     }
     .action-buttons {
       text-align: center;
-      margin-top: 10px;
+      margin-top: 15px;
     }
     .action-buttons a {
-      margin: 15px;
+      margin: 10px;
       text-decoration: none;
-      font-size: 30px;
-      color: #ffcc00;
+      font-size: 28px;
+      color: #ffffff;
     }
     .intro {
       text-align: center;
@@ -61,15 +61,16 @@
     }
     .service-item {
       display: inline-block;
+      vertical-align: top;
       margin: 20px;
       padding: 20px;
       border: 2px solid #c2a800;
       border-radius: 10px;
-      background-color: #001f33;
-      width: 250px;
+      background-color: #003359;
+      width: 270px;
     }
     .service-item i {
-      font-size: 50px;
+      font-size: 70px;
       color: #c2a800;
     }
     .service-item h3 {
@@ -78,19 +79,20 @@
     }
     .service-item p {
       font-size: 14px;
-      color: #ddd;
+      color: #dddddd;
+      margin-top: 10px;
     }
     .booking {
-      padding: 20px;
+      padding: 30px;
       text-align: center;
-      background-color: #002b4d;
+      background-color: #001f33;
       border: 2px solid #c2a800;
     }
     .booking h2 {
       color: #c2a800;
     }
     .payment {
-      background-color: #002b4d;
+      background-color: #001a2d;
       padding: 20px;
       text-align: center;
       border-top: 2px solid #c2a800;
@@ -113,20 +115,13 @@
       margin-bottom: 20px;
     }
     .review-box {
-      background-color: #001f33;
-      border: 1px solid #c2a800;
+      background-color: #003359;
       padding: 15px;
       margin: 10px auto;
-      width: 80%;
+      width: 90%;
       border-radius: 8px;
-      text-align: left;
-    }
-    .review-box .stars {
-      color: gold;
-      font-size: 18px;
-    }
-    .review-box p {
-      margin: 5px 0;
+      color: #ffcc00;
+      font-weight: bold;
     }
     .reviews form textarea, .reviews form input[type="text"] {
       width: 80%;
@@ -178,24 +173,24 @@
     <div class="service-item">
       <i class="fas fa-comments"></i>
       <h3>Consultation</h3>
-      <p>Personalised strategic guidance tailored for freelancers, entrepreneurs, and businesses.</p>
+      <p>Expert insights to guide your international freelancing and recovery plans.</p>
     </div>
     <div class="service-item">
       <i class="fas fa-wallet"></i>
       <h3>Payment Recovery</h3>
-      <p>We help you professionally recover payments with proven communication strategies.</p>
+      <p>Helping you reclaim overdue payments and handle client delays effectively.</p>
     </div>
     <div class="service-item">
       <i class="fas fa-headset"></i>
       <h3>Virtual Assistance</h3>
-      <p>Dedicated support to manage client interactions, emails, schedules and more.</p>
+      <p>Professional support for email follow-ups, invoicing, and client communication.</p>
     </div>
   </section>
 
   <section class="booking">
     <h2>Book Your Consultation</h2>
-    <div style="margin-top:20px; max-width:700px; margin:auto;">
-      <iframe src="https://calendly.com/saiverse-info/30-minute-meeting" width="100%" height="380" frameborder="0"></iframe>
+    <div style="margin-top:20px;">
+      <iframe src="https://calendly.com/saiverse-info/30-minute-meeting" width="100%" height="400" frameborder="0"></iframe>
     </div>
     <p style="margin-top:10px; font-size:14px; color: #fff;">📌 Session timing will be confirmed only after payment via email.</p>
   </section>
@@ -207,24 +202,16 @@
       <p><strong>Account Name:</strong> Saranya S</p>
       <p><strong>Account Number:</strong> 163501000000881</p>
       <p><strong>IFSC:</strong> IOBA0001635</p>
-      <p><strong>UPI:</strong><br><img src="qr.jpg" alt="UPI QR" width="160" /></p>
+      <p><strong>UPI:</strong><br><img src="qr.png" alt="UPI QR" width="150"></p>
     </div>
   </section>
 
   <section class="reviews">
     <h2>Client Reviews</h2>
-    <div class="review-box">
-      <div class="stars">★★★★★</div>
-      <p><strong>John D.:</strong> Very professional and helped me recover a long-pending international payment of $45,000.</p>
-    </div>
-    <div class="review-box">
-      <div class="stars">★★★★★</div>
-      <p><strong>Amanda R.:</strong> Excellent consultation. Gave me clear direction on key client communication.</p>
-    </div>
-    <div class="review-box">
-      <div class="stars">★★★★★</div>
-      <p><strong>Michael L.:</strong> She’s quick, smart and understands client needs well.</p>
-    </div>
+    <div class="review-box">★★★★★ John D. – “Very professional and helped me recover a long-pending international payment of $45,000.”</div>
+    <div class="review-box">★★★★★ Amanda R. – “Excellent consultation. Gave me clear direction on key client communication.”</div>
+    <div class="review-box">★★★★★ Michael L. – “She’s quick, smart and understands client needs well.”</div>
+
     <form action="https://formspree.io/f/mnqwyxyz" method="POST">
       <input type="text" name="name" placeholder="Your Name" required><br>
       <textarea name="review" placeholder="Write your review..." rows="4" required></textarea><br>
