@@ -106,8 +106,18 @@
       color: #c2a800;
       margin-bottom: 20px;
     }
-    .reviews p {
-      margin: 10px 0;
+    .review-item {
+      background-color: #001a2d;
+      border: 1px solid #c2a800;
+      padding: 15px;
+      margin: 10px auto;
+      width: 80%;
+      border-radius: 8px;
+      color: #ffffff;
+    }
+    .stars {
+      color: gold;
+      font-size: 18px;
     }
     .reviews form textarea, .reviews form input[type="text"] {
       width: 80%;
@@ -196,9 +206,18 @@
 
   <section class="reviews">
     <h2>Client Reviews</h2>
-    <p>★★★★★ John D. – “Very professional and helped me recover a long-pending international payment.”</p>
-    <p>★★★★★ Amanda R. – “Excellent consultation. Gave me clear direction on Upwork issues.”</p>
-    <p>★★★★★ Michael L. – “She’s quick, smart and understands client needs well.”</p>
+    <div class="review-item">
+      <div class="stars">★★★★★</div>
+      <p><strong>John D.:</strong> “Very professional and helped me recover a long-pending international payment. ($45,000)”</p>
+    </div>
+    <div class="review-item">
+      <div class="stars">★★★★★</div>
+      <p><strong>Amanda R.:</strong> “Excellent consultation. Gave me clear direction and confidence.”</p>
+    </div>
+    <div class="review-item">
+      <div class="stars">★★★★★</div>
+      <p><strong>Michael L.:</strong> “She’s quick, smart and understands client needs well.”</p>
+    </div>
 
     <form action="https://formspree.io/f/mnqwyxyz" method="POST">
       <input type="text" name="name" placeholder="Your Name" required><br>
