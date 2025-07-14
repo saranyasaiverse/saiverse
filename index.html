@@ -10,11 +10,11 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #001f33;
+      background-color: #002b4d;
       color: #ffffff;
     }
     header {
-      background-color: #001f33;
+      background-color: #002b4d;
       color: white;
       padding: 20px;
       text-align: center;
@@ -24,16 +24,16 @@
       margin-top: 10px;
     }
     .action-buttons a {
-      margin: 10px;
+      margin: 8px;
       text-decoration: none;
-      font-size: 28px;
+      font-size: 26px;
       color: #c2a800;
     }
     .intro {
       text-align: center;
       padding: 40px 20px;
       border: 2px solid #c2a800;
-      background-color: #001f33;
+      background-color: #002b4d;
     }
     .intro img {
       width: 180px;
@@ -44,11 +44,8 @@
     .intro h2 {
       color: #c2a800;
     }
-    .intro p {
-      color: #ffffff;
-    }
     .services {
-      background-color: #001f33;
+      background-color: #002b4d;
       padding: 40px 20px;
       text-align: center;
       border-top: 2px solid #c2a800;
@@ -76,13 +73,14 @@
       color: #ffffff;
     }
     .service-item p {
+      color: #cccccc;
+      font-size: 14px;
       margin-top: 10px;
-      color: #ffffff;
     }
     .booking {
       padding: 20px;
       text-align: center;
-      background-color: #001f33;
+      background-color: #002b4d;
       border: 2px solid #c2a800;
     }
     .booking h2 {
@@ -102,7 +100,7 @@
       line-height: 1.6;
     }
     .reviews {
-      background-color: #001f33;
+      background-color: #002b4d;
       padding: 40px 20px;
       text-align: center;
       border-top: 2px solid #c2a800;
@@ -111,12 +109,21 @@
       color: #c2a800;
       margin-bottom: 20px;
     }
-    .reviews p {
-      margin: 10px 0;
-      color: #ffcc00;
-      font-weight: bold;
+    .review-box {
+      background-color: #001f33;
+      border: 1px solid #c2a800;
+      border-radius: 8px;
+      padding: 15px;
+      margin: 15px auto;
+      width: 80%;
+      color: #fff;
     }
-    .reviews form textarea, .reviews form input[type="text"] {
+    .review-box p {
+      margin: 5px 0;
+      color: #ffcc00;
+    }
+    .reviews form textarea,
+    .reviews form input[type="text"] {
       width: 80%;
       padding: 10px;
       margin: 10px 0;
@@ -132,7 +139,7 @@
       cursor: pointer;
     }
     footer {
-      background-color: #001f33;
+      background-color: #002b4d;
       color: white;
       text-align: center;
       padding: 10px;
@@ -171,24 +178,24 @@
     <div class="service-item">
       <i class="fas fa-comments"></i>
       <h3>Consultation</h3>
-      <p>Personal sessions to guide your business growth with clarity.</p>
+      <p>Business clarity, personal guidance, and strategic insights for global success.</p>
     </div>
     <div class="service-item">
       <i class="fas fa-wallet"></i>
       <h3>Payment Recovery</h3>
-      <p>Recover pending payments smoothly with professional support.</p>
+      <p>Helping freelancers and businesses recover delayed international payments confidently.</p>
     </div>
     <div class="service-item">
       <i class="fas fa-headset"></i>
       <h3>Virtual Assistance</h3>
-      <p>Reliable support for client calls, emails, and operations.</p>
+      <p>Reliable online help for documentation, communication, and client coordination.</p>
     </div>
   </section>
 
   <section class="booking">
     <h2>Book Your Consultation</h2>
     <div style="margin-top:20px;">
-      <iframe src="https://calendly.com/saiverse-info/30-minute-meeting" width="100%" height="350" frameborder="0"></iframe>
+      <iframe src="https://calendly.com/saiverse-info/30-minute-meeting" width="100%" height="400" frameborder="0"></iframe>
     </div>
     <p style="margin-top:10px; font-size:14px; color: #fff;">📌 Session timing will be confirmed only after payment via email.</p>
   </section>
@@ -206,9 +213,18 @@
 
   <section class="reviews">
     <h2>Client Reviews</h2>
-    <p>★★★★★ John D. – “Very professional and helped me recover a long-pending international payment of $45,000.”</p>
-    <p>★★★★★ Amanda R. – “Excellent consultation. Gave me clear direction on key client communication.”</p>
-    <p>★★★★★ Michael L. – “She’s quick, smart and understands client needs well.”</p>
+    <div class="review-box">
+      <p>★★★★★ John D.</p>
+      <p>“Very professional and helped me recover a long-pending international payment of $45,000.”</p>
+    </div>
+    <div class="review-box">
+      <p>★★★★★ Amanda R.</p>
+      <p>“Excellent consultation. Gave me clear direction on key client communication.”</p>
+    </div>
+    <div class="review-box">
+      <p>★★★★★ Michael L.</p>
+      <p>“She’s quick, smart and understands client needs well.”</p>
+    </div>
 
     <form action="https://formspree.io/f/mnqwyxyz" method="POST">
       <input type="text" name="name" placeholder="Your Name" required><br>
