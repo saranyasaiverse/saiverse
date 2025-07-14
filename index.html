@@ -32,6 +32,12 @@
       text-align: center;
       padding: 30px;
     }
+    .intro img {
+      width: 180px;
+      border-radius: 50%;
+      border: 3px solid #c2a800;
+      margin: 20px auto;
+    }
     .intro h2 {
       color: #003366;
     }
@@ -61,17 +67,49 @@
       margin-top: 10px;
       color: #003366;
     }
-    .booking, .payment {
+    .booking {
+      padding: 40px;
+      text-align: center;
+      background-color: #fff;
+    }
+    .booking h2 {
+      color: #003366;
+    }
+    .payment {
       background-color: #eeeeee;
-      padding: 40px 20px;
+      padding: 20px;
       text-align: center;
     }
-    .booking h2, .payment h2 {
+    .payment h2 {
       color: #003366;
     }
     .payment-details {
       margin-top: 15px;
       line-height: 1.6;
+    }
+    .reviews {
+      background-color: #fdf2d0;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .reviews h2 {
+      color: #003366;
+      margin-bottom: 20px;
+    }
+    .reviews form textarea, .reviews form input[type="text"] {
+      width: 80%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    .reviews form button {
+      background-color: #c2a800;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
     }
     footer {
       background-color: #003366;
@@ -87,15 +125,15 @@
     <p>“Let Us Handle the Chase, While You Focus on Growth.”</p>
     <div class="action-buttons">
       <a href="mailto:info@saiverse.org" title="Email"><i class="fas fa-envelope"></i></a>
-      <a href="https://wa.me/" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-      <a href="https://linkedin.com/in/" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-      <a href="https://www.upwork.com/freelancers/~" title="Upwork"><i class="fas fa-briefcase"></i></a>
+      <a href="https://wa.me/1234567890" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://linkedin.com/in/YOUR-LINKEDIN" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.upwork.com/freelancers/~YOURID" title="Upwork"><i class="fas fa-briefcase"></i></a>
     </div>
   </header>
 
   <section class="intro">
+    <img src="your-image.jpg" alt="Founder Saranya" />
     <h2>Meet Founder Saranya</h2>
-    <img src="your-image.jpg" alt="Founder Saranya" style="width:180px; border-radius:50%; border:3px solid #c2a800; margin: 20px auto;">
     <p>
       Saranya, the visionary behind SaiVerse Solutions, leads with spiritual intuition, client clarity,
       and an international focus on consultations, payment recovery, and freelancer empowerment.
@@ -105,7 +143,7 @@
   <section class="services">
     <h2>Our Core Services</h2>
     <div class="service-item">
-      <i class="fas fa-hands-helping"></i>
+      <i class="fas fa-comments"></i>
       <h3>Consultation</h3>
     </div>
     <div class="service-item">
@@ -133,8 +171,18 @@
       <p><strong>Account Name:</strong> Saranya S</p>
       <p><strong>Account Number:</strong> 163501000000881</p>
       <p><strong>IFSC:</strong> IOBA0001635</p>
+      <p><strong>UPI:</strong> (Scanner image can be added here)</p>
     </div>
     <p>💳 Please pay before your session begins.</p>
+  </section>
+
+  <section class="reviews">
+    <h2>Client Reviews</h2>
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required><br>
+      <textarea name="review" placeholder="Write your review..." rows="4" required></textarea><br>
+      <button type="submit">Submit Review</button>
+    </form>
   </section>
 
   <footer>
