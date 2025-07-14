@@ -10,11 +10,11 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #001f33;
+      background-color: #003366;
       color: #ffffff;
     }
     header {
-      background-color: #001f33;
+      background-color: #003366;
       color: white;
       padding: 20px;
       text-align: center;
@@ -29,12 +29,10 @@
       font-size: 20px;
       color: #ffffff;
     }
-    .intro, .services, .booking, .reviews {
+    .intro {
+      text-align: center;
+      padding: 40px 20px;
       border: 2px solid #c2a800;
-      margin: 20px;
-      border-radius: 10px;
-      padding: 20px;
-      background-color: #001f33;
     }
     .intro img {
       width: 180px;
@@ -48,7 +46,14 @@
     .intro p {
       color: #ffffff;
     }
-    .services h2, .booking h2, .reviews h2, .payment h2 {
+    .services {
+      background-color: #003366;
+      padding: 40px 20px;
+      text-align: center;
+      border-top: 2px solid #c2a800;
+      border-bottom: 2px solid #c2a800;
+    }
+    .services h2 {
       color: #c2a800;
       margin-bottom: 20px;
     }
@@ -58,29 +63,32 @@
       padding: 20px;
       border: 2px solid #c2a800;
       border-radius: 10px;
-      background-color: #001f33;
-      width: 250px;
+      background-color: #002244;
+      width: 280px;
     }
     .service-item i {
-      font-size: 80px;
+      font-size: 60px;
       color: #c2a800;
     }
     .service-item h3 {
       margin-top: 10px;
       color: #ffffff;
     }
-    .booking iframe {
-      width: 100%;
-      height: 350px;
-      border: 2px solid #c2a800;
-      border-radius: 8px;
-    }
-    .booking p {
-      font-size: 14px;
+    .service-item p {
       color: #ffffff;
+      font-size: 14px;
+    }
+    .booking {
+      padding: 20px;
+      text-align: center;
+      background-color: #003366;
+      border: 2px solid #c2a800;
+    }
+    .booking h2 {
+      color: #c2a800;
     }
     .payment {
-      background-color: #001a2d;
+      background-color: #002244;
       padding: 20px;
       text-align: center;
       border-top: 2px solid #c2a800;
@@ -91,11 +99,20 @@
     .payment-details {
       margin-top: 15px;
       line-height: 1.6;
-      color: #fff;
+    }
+    .reviews {
+      background-color: #003366;
+      padding: 40px 20px;
+      text-align: center;
+      border-top: 2px solid #c2a800;
+    }
+    .reviews h2 {
+      color: #c2a800;
+      margin-bottom: 20px;
     }
     .reviews p {
       margin: 10px 0;
-      color: #ffc107;
+      color: #ffcc00;
       font-weight: bold;
     }
     .reviews form textarea, .reviews form input[type="text"] {
@@ -114,7 +131,7 @@
       cursor: pointer;
     }
     footer {
-      background-color: #001f33;
+      background-color: #003366;
       color: white;
       text-align: center;
       padding: 10px;
@@ -142,7 +159,10 @@
   <section class="intro">
     <img src="founder.jpg" alt="Founder Saranya" />
     <h2>Meet Founder Saranya</h2>
-    <p>Saranya leads SaiVerse Solutions with spiritual intuition and a global client approach in consultations, payment recovery, and freelance empowerment.</p>
+    <p>
+      Saranya leads SaiVerse Solutions with spiritual intuition and a global client approach in consultations,
+      payment recovery, and freelance empowerment.
+    </p>
   </section>
 
   <section class="services">
@@ -150,21 +170,26 @@
     <div class="service-item">
       <i class="fas fa-comments"></i>
       <h3>Consultation</h3>
+      <p>One-on-one clarity sessions tailored for professionals and freelancers worldwide.</p>
     </div>
     <div class="service-item">
       <i class="fas fa-wallet"></i>
       <h3>Payment Recovery</h3>
+      <p>Specialized support to recover delayed or stuck payments across global platforms.</p>
     </div>
     <div class="service-item">
       <i class="fas fa-headset"></i>
       <h3>Virtual Assistance</h3>
+      <p>Reliable VA services for follow-ups, communication, task management, and client support.</p>
     </div>
   </section>
 
   <section class="booking">
     <h2>Book Your Consultation</h2>
-    <iframe src="https://calendly.com/saiverse-info/30-minute-meeting"></iframe>
-    <p>📌 Session timing will be confirmed only after payment via email.</p>
+    <div style="margin-top:20px; max-width: 600px; margin-left:auto; margin-right:auto;">
+      <iframe src="https://calendly.com/saiverse-info/30-minute-meeting" width="100%" height="400" frameborder="0"></iframe>
+    </div>
+    <p style="margin-top:10px; font-size:14px; color: #fff;">📌 Session timing will be confirmed only after payment via email.</p>
   </section>
 
   <section class="payment">
@@ -192,7 +217,6 @@
   </section>
 
   <footer>
-    <p><i class="fas fa-envelope"></i> info@saiverse.org</p>
     <p>&copy; 2026 SaiVerse Solutions. All rights reserved.</p>
   </footer>
 </body>
