@@ -10,28 +10,23 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #002b4d; /* consistent deep blue */
+      background-color: #011b30;
       color: #ffffff;
     }
     header {
-      background-color: #002b4d;
+      background-color: #011b30;
       color: white;
       padding: 20px;
       text-align: center;
     }
-    .logo {
-      width: 100px;
-      display: block;
-      margin: 0 auto 10px;
-    }
     .action-buttons {
       text-align: center;
-      margin-top: 15px;
+      margin-top: 10px;
     }
     .action-buttons a {
       margin: 10px;
       text-decoration: none;
-      font-size: 28px;
+      font-size: 26px;
       color: #ffffff;
     }
     .intro {
@@ -48,8 +43,11 @@
     .intro h2 {
       color: #c2a800;
     }
+    .intro p {
+      color: #ffffff;
+    }
     .services {
-      background-color: #002b4d;
+      background-color: #011b30;
       padding: 40px 20px;
       text-align: center;
       border-top: 2px solid #c2a800;
@@ -61,12 +59,11 @@
     }
     .service-item {
       display: inline-block;
-      vertical-align: top;
       margin: 20px;
       padding: 20px;
       border: 2px solid #c2a800;
       border-radius: 10px;
-      background-color: #003359;
+      background-color: #012a44;
       width: 270px;
     }
     .service-item i {
@@ -80,19 +77,49 @@
     .service-item p {
       font-size: 14px;
       color: #dddddd;
-      margin-top: 10px;
+    }
+    .plans {
+      background-color: #011b30;
+      padding: 40px 20px;
+      text-align: center;
+      border-top: 2px solid #c2a800;
+      border-bottom: 2px solid #c2a800;
+    }
+    .plans h2 {
+      color: #c2a800;
+      margin-bottom: 20px;
+    }
+    .plan-box {
+      display: inline-block;
+      background-color: #012a44;
+      border: 2px solid #c2a800;
+      padding: 20px;
+      margin: 20px;
+      border-radius: 10px;
+      width: 300px;
+      vertical-align: top;
+    }
+    .plan-box h3 {
+      color: #ffffff;
+    }
+    .plan-box ul {
+      text-align: left;
+      padding: 0 20px;
+    }
+    .plan-box ul li {
+      margin-bottom: 10px;
     }
     .booking {
-      padding: 30px;
+      padding: 20px;
       text-align: center;
-      background-color: #001f33;
+      background-color: #011b30;
       border: 2px solid #c2a800;
     }
     .booking h2 {
       color: #c2a800;
     }
     .payment {
-      background-color: #001a2d;
+      background-color: #012a44;
       padding: 20px;
       text-align: center;
       border-top: 2px solid #c2a800;
@@ -105,7 +132,7 @@
       line-height: 1.6;
     }
     .reviews {
-      background-color: #002b4d;
+      background-color: #011b30;
       padding: 40px 20px;
       text-align: center;
       border-top: 2px solid #c2a800;
@@ -114,12 +141,8 @@
       color: #c2a800;
       margin-bottom: 20px;
     }
-    .review-box {
-      background-color: #003359;
-      padding: 15px;
-      margin: 10px auto;
-      width: 90%;
-      border-radius: 8px;
+    .reviews p {
+      margin: 10px 0;
       color: #ffcc00;
       font-weight: bold;
     }
@@ -139,10 +162,15 @@
       cursor: pointer;
     }
     footer {
-      background-color: #002b4d;
+      background-color: #011b30;
       color: white;
       text-align: center;
       padding: 10px;
+    }
+    .logo {
+      width: 100px;
+      display: block;
+      margin: 0 auto 10px;
     }
   </style>
 </head>
@@ -173,17 +201,42 @@
     <div class="service-item">
       <i class="fas fa-comments"></i>
       <h3>Consultation</h3>
-      <p>Expert insights to guide your international freelancing and recovery plans.</p>
+      <p>One-on-one guidance on strategy, client handling, and growth planning.</p>
     </div>
     <div class="service-item">
       <i class="fas fa-wallet"></i>
       <h3>Payment Recovery</h3>
-      <p>Helping you reclaim overdue payments and handle client delays effectively.</p>
+      <p>Support for freelancers to recover overdue payments from global clients.</p>
     </div>
     <div class="service-item">
       <i class="fas fa-headset"></i>
       <h3>Virtual Assistance</h3>
-      <p>Professional support for email follow-ups, invoicing, and client communication.</p>
+      <p>Help with coordination, emails, follow-ups and admin support tasks.</p>
+    </div>
+  </section>
+
+  <section class="plans">
+    <h2>Our Service Plans</h2>
+    <div class="plan-box">
+      <h3>💼 Premium Plan – $149/month</h3>
+      <ul>
+        <li>✅ End-to-end client communication</li>
+        <li>✅ Payment recovery support globally</li>
+        <li>✅ Monthly Zoom consultation</li>
+        <li>✅ WhatsApp & Email support</li>
+        <li>✅ 24-48 hr Turnaround</li>
+        <li>✅ Monthly report summary</li>
+      </ul>
+    </div>
+    <div class="plan-box">
+      <h3>🛠 Basic Plan – $59/month</h3>
+      <ul>
+        <li>✅ Basic client communication follow-up</li>
+        <li>✅ One recovery case monthly</li>
+        <li>✅ Email summary only</li>
+        <li>❌ No Zoom support</li>
+        <li>❌ No WhatsApp priority</li>
+      </ul>
     </div>
   </section>
 
@@ -208,9 +261,9 @@
 
   <section class="reviews">
     <h2>Client Reviews</h2>
-    <div class="review-box">★★★★★ John D. – “Very professional and helped me recover a long-pending international payment of $45,000.”</div>
-    <div class="review-box">★★★★★ Amanda R. – “Excellent consultation. Gave me clear direction on key client communication.”</div>
-    <div class="review-box">★★★★★ Michael L. – “She’s quick, smart and understands client needs well.”</div>
+    <p>★★★★★ John D. – “Very professional and helped me recover a long-pending international payment of $45,000.”</p>
+    <p>★★★★★ Amanda R. – “Excellent consultation. Gave me clear direction on key client communication.”</p>
+    <p>★★★★★ Michael L. – “She’s quick, smart and understands client needs well.”</p>
 
     <form action="https://formspree.io/f/mnqwyxyz" method="POST">
       <input type="text" name="name" placeholder="Your Name" required><br>
