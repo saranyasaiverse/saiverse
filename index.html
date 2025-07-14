@@ -46,7 +46,7 @@
       color: #ffffff;
     }
     .services {
-      background: linear-gradient(to bottom right, #001a2d, #002244);
+      background-color: #002244;
       padding: 40px 20px;
       text-align: center;
     }
@@ -91,10 +91,6 @@
       margin-top: 15px;
       line-height: 1.6;
     }
-    .payment-details img {
-      margin-top: 10px;
-      width: 180px;
-    }
     .reviews {
       background-color: #002244;
       padding: 40px 20px;
@@ -103,17 +99,6 @@
     .reviews h2 {
       color: #c2a800;
       margin-bottom: 20px;
-    }
-    .review-item {
-      background-color: #001f33;
-      border: 1px solid #c2a800;
-      border-radius: 8px;
-      padding: 15px;
-      margin: 10px auto;
-      max-width: 600px;
-    }
-    .review-item p {
-      margin: 5px 0;
     }
     .reviews form textarea, .reviews form input[type="text"] {
       width: 80%;
@@ -129,6 +114,16 @@
       border: none;
       border-radius: 5px;
       cursor: pointer;
+    }
+    .review-entry {
+      background-color: #001a2d;
+      border: 1px solid #c2a800;
+      margin: 10px auto;
+      padding: 15px;
+      border-radius: 10px;
+      width: 80%;
+      color: #fff;
+      text-align: left;
     }
     footer {
       background-color: #003366;
@@ -177,9 +172,7 @@
 
   <section class="booking">
     <h2>Book Your Consultation</h2>
-    <p style="margin-top:10px; font-size:14px; color: #fff;">
-      🔔 Your consultation timing will be confirmed via email only after payment is received.
-    </p>
+    <p style="margin-top:10px; font-size:14px; color: #fff;">🔔 Your consultation timing will be confirmed via email only after payment is received.</p>
   </section>
 
   <section class="payment">
@@ -190,23 +183,21 @@
       <p><strong>Account Number:</strong> 163501000000881</p>
       <p><strong>IFSC:</strong> IOBA0001635</p>
       <p><strong>UPI:</strong> saranyas@okaxis</p>
-      <img src="upi-qr.png" alt="UPI QR Scanner" />
+      <p><img src="upi-qr.png" alt="UPI Scanner" style="width:150px;margin-top:10px;" /></p>
     </div>
   </section>
 
   <section class="reviews">
     <h2>Client Reviews</h2>
-
-    <div class="review-item">
-      <p><strong>Priya R.:</strong> “Truly blessed to have found SaiVerse! Saranya is a powerhouse of knowledge.”</p>
+    <div class="review-entry">
+      <p><strong>John D.</strong> – “Very professional and helped me recover a long-pending international payment.”</p>
     </div>
-    <div class="review-item">
-      <p><strong>John M.:</strong> “Excellent consultation. Payment collection became smooth after her advice.”</p>
+    <div class="review-entry">
+      <p><strong>Amanda R.</strong> – “Excellent consultation. Gave me clear direction on Upwork issues.”</p>
     </div>
-    <div class="review-item">
-      <p><strong>Sneha K.:</strong> “Professional, on time, and truly intuitive. Highly recommended!”</p>
+    <div class="review-entry">
+      <p><strong>Michael L.</strong> – “She’s quick, smart and understands client needs well.”</p>
     </div>
-
     <form action="https://formspree.io/f/mnqwyxyz" method="POST">
       <input type="text" name="name" placeholder="Your Name" required><br>
       <textarea name="review" placeholder="Write your review..." rows="4" required></textarea><br>
