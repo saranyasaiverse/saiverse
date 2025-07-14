@@ -10,103 +10,103 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #000d1a;
-      color: #ffffff;
+      background-color: #000d1a; /* Dark Blue */
+      color: white;
     }
     header {
-      background-color: #000d1a;
+      background-color: #001f33;
+      color: white;
       padding: 20px;
       text-align: center;
     }
-    header h1 {
-      font-size: 2.5em;
-    }
-    header p {
-      color: #f2c400;
-      font-size: 1.2em;
-    }
     .action-buttons {
-      margin-top: 15px;
+      text-align: center;
+      margin-top: 10px;
     }
     .action-buttons a {
-      margin: 0 10px;
-      color: white;
-      font-size: 24px;
+      margin: 5px;
+      text-decoration: none;
+      font-size: 22px;
+      color: #f2d500; /* mustard */
     }
     .intro {
       text-align: center;
-      padding: 40px 20px;
+      padding: 30px;
     }
     .intro img {
-      width: 180px;
+      width: 200px;
       border-radius: 50%;
-      border: 3px solid #f2c400;
+      border: 4px solid #f2d500;
+      margin: 20px auto;
     }
     .intro h2 {
-      color: #f2c400;
-      margin-top: 20px;
+      color: #f2d500;
     }
-    .services, .reviews, .booking, .payment {
-      background-color: #001b33;
+    .services {
+      background-color: #111111;
       padding: 40px 20px;
       text-align: center;
     }
-    .services h2, .reviews h2, .booking h2, .payment h2 {
-      color: #f2c400;
-      margin-bottom: 30px;
+    .services h2 {
+      color: #f2d500;
+      margin-bottom: 20px;
     }
     .service-item {
       display: inline-block;
-      width: 250px;
-      margin: 15px;
+      margin: 20px;
       padding: 20px;
-      border: 2px solid #f2c400;
+      border: 2px solid #f2d500;
       border-radius: 10px;
-      background-color: #00264d;
+      background-color: #1c1c1c;
+      width: 250px;
+      color: white;
     }
     .service-item i {
       font-size: 40px;
-      color: #f2c400;
+      color: #f2d500;
     }
     .service-item h3 {
-      color: #ffffff;
       margin-top: 10px;
+      color: #f2d500;
     }
-    .booking form, .reviews form {
-      max-width: 400px;
-      margin: auto;
+    .booking, .payment, .reviews {
+      padding: 40px 20px;
+      text-align: center;
     }
-    input, textarea {
-      width: 100%;
+    .booking h2, .payment h2, .reviews h2 {
+      color: #f2d500;
+    }
+    .payment-details {
+      margin-top: 15px;
+      line-height: 1.8;
+    }
+    .reviews textarea, .reviews input[type="text"] {
+      width: 80%;
       padding: 10px;
-      margin-bottom: 15px;
-      border: none;
+      margin: 10px 0;
       border-radius: 5px;
+      border: 1px solid #ccc;
     }
-    button {
-      background-color: #f2c400;
-      color: #000d1a;
+    .reviews button {
+      background-color: #f2d500;
+      color: black;
       padding: 10px 20px;
       border: none;
       border-radius: 5px;
       cursor: pointer;
-      font-weight: bold;
-    }
-    .payment-details {
-      line-height: 1.6;
     }
     footer {
-      background-color: #000d1a;
+      background-color: #001f33;
+      color: white;
       text-align: center;
-      padding: 20px;
-      font-size: 14px;
+      padding: 10px;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>SaiVerse Solutions</h1>
-    <p>Let Us Handle the Chase, While You Focus on Growth.</p>
+    <p>“Let Us Handle the Chase, While You Focus on Growth.”</p>
     <div class="action-buttons">
       <a href="mailto:info@saiverse.org" title="Email"><i class="fas fa-envelope"></i></a>
       <a href="https://wa.me/8939701718" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
@@ -116,9 +116,11 @@
   </header>
 
   <section class="intro">
-    <img src="founder.jpg" alt="Founder Saranya">
+    <img src="founder.jpg" alt="Founder Saranya"/>
     <h2>Meet Founder Saranya</h2>
-    <p>Saranya leads SaiVerse Solutions with spiritual intuition and a global client approach in consultations, payment recovery, and freelance empowerment.</p>
+    <p>
+      Saranya leads SaiVerse Solutions with spiritual intuition and a global client approach in consultations, payment recovery, and freelance empowerment.
+    </p>
   </section>
 
   <section class="services">
@@ -140,7 +142,7 @@
   <section class="booking">
     <h2>Book Your Consultation</h2>
     <iframe src="https://calendly.com/saranyas/30min" width="100%" height="600" frameborder="0"></iframe>
-    <p style="margin-top:10px; font-size:14px; color:#ccc;">🔔 Please confirm your time zone before booking.</p>
+    <p style="margin-top:10px; font-size:14px;">🔔 Please confirm your time zone before booking.</p>
   </section>
 
   <section class="payment">
@@ -150,7 +152,7 @@
       <p><strong>Account Name:</strong> Saranya S</p>
       <p><strong>Account Number:</strong> 163501000000881</p>
       <p><strong>IFSC:</strong> IOBA0001635</p>
-      <p><strong>UPI:</strong> (Scanner image can be added here)</p>
+      <p><strong>UPI:</strong> Add scanner image if needed</p>
     </div>
     <p>💳 Please pay before your session begins.</p>
   </section>
@@ -158,8 +160,8 @@
   <section class="reviews">
     <h2>Client Reviews</h2>
     <form action="https://formspree.io/f/mnqwyxyz" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <textarea name="review" placeholder="Write your review..." rows="4" required></textarea>
+      <input type="text" name="name" placeholder="Your Name" required><br>
+      <textarea name="review" placeholder="Write your review..." rows="4" required></textarea><br>
       <button type="submit">Submit Review</button>
     </form>
   </section>
