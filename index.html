@@ -5,168 +5,181 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SaiVerse Solutions</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Roboto', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #001f33;
+      background-color: #002244;
       color: #ffffff;
     }
     header {
-      background-color: #001f33;
+      background-color: #002244;
       color: white;
-      padding: 20px;
       text-align: center;
+      padding: 20px 10px;
     }
     .logo {
       width: 100px;
-      display: block;
-      margin: 0 auto 10px;
+      margin-bottom: 10px;
     }
     .action-buttons {
-      text-align: center;
       margin-top: 10px;
     }
     .action-buttons a {
-      margin: 10px;
-      text-decoration: none;
-      font-size: 26px;
-      display: inline-block;
+      margin: 0 10px;
+      font-size: 28px;
     }
-    .action-buttons a[href*="mailto"] i { color: #ff4d4d; }
-    .action-buttons a[href*="wa.me"] i { color: #25D366; }
-    .action-buttons a[href*="linkedin"] i { color: #0077b5; }
-    .action-buttons a[href*="upwork"] i { color: #14a800; }
-
+    .action-buttons a:hover {
+      transform: scale(1.2);
+    }
     .intro {
-      text-align: center;
       padding: 40px 20px;
+      text-align: center;
       border: 2px solid #c2a800;
     }
     .intro img {
       width: 180px;
       border-radius: 50%;
       border: 3px solid #c2a800;
-      margin: 20px auto;
     }
     .intro h2 {
       color: #c2a800;
+      margin-top: 20px;
     }
-    .services, .booking, .payment, .reviews, .about, .why {
-      background-color: #001f33;
+    .services, .why-us, .about {
+      background-color: #002244;
       padding: 40px 20px;
       text-align: center;
       border-top: 2px solid #c2a800;
     }
-    .services h2, .booking h2, .payment h2, .reviews h2, .about h2, .why h2 {
+    .services h2, .why-us h2, .about h2 {
       color: #c2a800;
-      margin-bottom: 20px;
     }
     .service-item {
       display: inline-block;
+      width: 280px;
       margin: 20px;
       padding: 20px;
       border: 2px solid #c2a800;
+      background-color: #001a33;
       border-radius: 10px;
-      background-color: #00264d;
-      width: 250px;
-      animation: fadeIn 1.5s;
     }
     .service-item i {
       font-size: 60px;
-      color: #c2a800;
+      color: #f9c400;
     }
     .service-item h3 {
-      margin-top: 10px;
-      color: #ffffff;
+      margin-top: 15px;
+      color: #fff;
     }
     .service-item p {
       font-size: 14px;
-      color: #f5f5f5;
+      color: #ddd;
     }
     .booking iframe {
       width: 100%;
-      height: 400px;
-      border: 2px solid #c2a800;
-      border-radius: 8px;
+      height: 450px;
+      border: none;
     }
-    .payment-details img {
-      width: 150px;
+    .booking {
+      background-color: #002244;
+      padding: 40px 20px;
+      text-align: center;
+      border-top: 2px solid #c2a800;
+      border-bottom: 2px solid #c2a800;
+    }
+    .payment {
+      background-color: #001a33;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .payment img {
       margin-top: 10px;
     }
-    .reviews .review-card {
-      background-color: #00264d;
-      padding: 20px;
-      margin: 15px auto;
-      width: 90%;
-      border-radius: 10px;
-      color: #f0f0f0;
-      animation: fadeInUp 1s ease-in-out;
+    .reviews {
+      background-color: #002244;
+      padding: 40px 20px;
+      text-align: center;
     }
-    .reviews .review-card span {
-      color: gold;
+    .review-box {
+      background: #001a33;
+      margin: 20px auto;
+      padding: 20px;
+      border-left: 5px solid #f9c400;
+      width: 80%;
+      text-align: left;
+    }
+    .review-box span {
+      color: #f9c400;
       font-size: 20px;
     }
     .reviews form {
       margin-top: 30px;
     }
-    .reviews form textarea, .reviews form input[type="text"] {
+    .reviews input, .reviews textarea {
       width: 80%;
       padding: 10px;
       margin: 10px 0;
+      border: none;
       border-radius: 5px;
-      border: 1px solid #ccc;
     }
-    .reviews form button {
-      background-color: #c2a800;
-      color: white;
+    .reviews button {
       padding: 10px 20px;
+      background-color: #f9c400;
+      color: #002244;
+      font-weight: bold;
       border: none;
       border-radius: 5px;
       cursor: pointer;
     }
-    .why ul {
-      list-style: none;
-      padding: 0;
-    }
-    .why ul li {
-      margin: 10px 0;
-      font-size: 16px;
-    }
-    footer {
-      background-color: #001f33;
+    .footer {
+      background-color: #001a33;
       color: white;
       text-align: center;
       padding: 10px;
     }
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
+    .about p, .why-us p {
+      color: #ccc;
+      margin-top: 10px;
     }
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
+    .why-card {
+      display: inline-block;
+      width: 250px;
+      margin: 10px;
+      padding: 20px;
+      background-color: #001a33;
+      border-radius: 10px;
+      border: 2px solid #c2a800;
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="logo.png" alt="SaiVerse Logo" class="logo">
+    <img src="logo.png" alt="Logo" class="logo">
     <h1>SaiVerse Solutions</h1>
-    <p>“Let Us Handle the Chase, While You Focus on Growth.”</p>
+    <p>Let Us Handle the Chase, While You Focus on Growth.</p>
     <div class="action-buttons">
-      <a href="mailto:info@saiverse.org" title="Email"><i class="fas fa-envelope"></i></a>
-      <a href="https://wa.me/8939701718" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-      <a href="https://linkedin.com/in/saranya-s-78014b371" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-      <a href="https://www.upwork.com/freelancers/~014031dd72651c3436" title="Upwork"><i class="fas fa-briefcase"></i></a>
+      <a href="mailto:info@saiverse.org" title="Email"><i class="fas fa-envelope" style="color:#EA4335;"></i></a>
+      <a href="https://wa.me/8939701718" title="WhatsApp"><i class="fab fa-whatsapp" style="color:#25D366;"></i></a>
+      <a href="https://linkedin.com/in/saranya-s-78014b371" title="LinkedIn"><i class="fab fa-linkedin" style="color:#0077B5;"></i></a>
+      <a href="https://www.upwork.com/freelancers/~014031dd72651c3436" title="Upwork"><i class="fas fa-briefcase" style="color:#6fda44;"></i></a>
     </div>
   </header>
 
   <section class="intro">
-    <img src="founder.jpg" alt="Founder Saranya" />
+    <img src="founder.jpg" alt="Founder Saranya">
     <h2>Meet Founder Saranya</h2>
-    <p>Saranya leads SaiVerse Solutions with clarity and a global client approach in consultations, payment recovery, and freelance empowerment.</p>
+    <p>Saranya leads SaiVerse Solutions with clarity, trust, and commitment to client success in consultations, payment recovery, and freelance empowerment.</p>
+  </section>
+
+  <section class="about">
+    <h2>Who We Are</h2>
+    <p>SaiVerse Solutions is founded by Saranya, a results-driven professional with a strong global client base. We solve payment and consultation challenges with expertise and confidentiality.</p>
   </section>
 
   <section class="services">
@@ -174,71 +187,71 @@
     <div class="service-item">
       <i class="fas fa-comments"></i>
       <h3>Consultation</h3>
-      <p>Professional guidance tailored to your freelance or business goals.</p>
+      <p>Personal or business clarity sessions to guide you with confidence.</p>
     </div>
     <div class="service-item">
       <i class="fas fa-wallet"></i>
       <h3>Payment Recovery</h3>
-      <p>Recover unpaid international dues effectively and ethically.</p>
+      <p>Expert assistance in recovering due payments across platforms or clients.</p>
     </div>
     <div class="service-item">
       <i class="fas fa-headset"></i>
       <h3>Virtual Assistance</h3>
-      <p>Reliable help with tasks, communication, and client follow-up.</p>
+      <p>Professional remote support tailored for busy entrepreneurs.</p>
     </div>
   </section>
 
   <section class="booking">
     <h2>Book Your Consultation</h2>
-    <iframe src="https://calendly.com/saiverse-info/30-minute-meeting" frameborder="0"></iframe>
-    <p style="margin-top:10px; font-size:14px; color: #fff;">📌 Session timing will be confirmed only after payment via email.</p>
+    <iframe src="https://calendly.com/saiverse-info/30-minute-meeting"></iframe>
+    <p>📌 Session timing will be confirmed only after payment via email.</p>
   </section>
 
   <section class="payment">
     <h2>Payment Details</h2>
-    <div class="payment-details">
-      <p><strong>Bank Name:</strong> Indian Overseas Bank</p>
-      <p><strong>Account Name:</strong> Saranya S</p>
-      <p><strong>Account Number:</strong> 163501000000881</p>
-      <p><strong>IFSC:</strong> IOBA0001635</p>
-      <p><strong>UPI:</strong><br><img src="qr.jpg" alt="UPI QR"></p>
-    </div>
-  </section>
-
-  <section class="about">
-    <h2>Who We Are</h2>
-    <p>Founded by Saranya, SaiVerse Solutions is trusted globally for consultation, payment recovery, and client growth services. We believe in confidentiality, clarity, and committed service.</p>
-  </section>
-
-  <section class="why">
-    <h2>Why Choose Us</h2>
-    <ul>
-      <li>✔️ Global Client Handling</li>
-      <li>✔️ Proven Track Record</li>
-      <li>✔️ Personalized Attention</li>
-      <li>✔️ Confidential & Secure</li>
-    </ul>
+    <p><strong>Bank Name:</strong> Indian Overseas Bank</p>
+    <p><strong>Account Name:</strong> Saranya S</p>
+    <p><strong>Account Number:</strong> 163501000000881</p>
+    <p><strong>IFSC:</strong> IOBA0001635</p>
+    <p><strong>UPI QR:</strong></p>
+    <img src="qr.jpg" alt="UPI QR Code" width="150">
   </section>
 
   <section class="reviews">
     <h2>Client Reviews</h2>
-    <div class="review-card">
+    <div class="review-box">
       <span>★★★★★</span> John D. – “Very professional and helped me recover a long-pending international payment of $45,000.”
     </div>
-    <div class="review-card">
-      <span>★★★★★</span> Amanda R. – “Excellent consultation. Gave me clear direction on client communication.”
+    <div class="review-box">
+      <span>★★★★★</span> Amanda R. – “Excellent consultation. Gave me clear direction on key client communication.”
     </div>
-    <div class="review-card">
+    <div class="review-box">
       <span>★★★★★</span> Michael L. – “She’s quick, smart and understands client needs well.”
     </div>
     <form action="https://formspree.io/f/mnqwyxyz" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required><br>
+      <input type="text" name="name" placeholder="Your Name" required>
       <textarea name="review" placeholder="Write your review..." rows="4" required></textarea><br>
       <button type="submit">Submit Review</button>
     </form>
   </section>
 
-  <footer>
+  <section class="why-us">
+    <h2>Why Choose Us?</h2>
+    <div class="why-card">
+      <h4>✅ Proven Success</h4>
+      <p>Handled high-value cases with professionalism.</p>
+    </div>
+    <div class="why-card">
+      <h4>🌍 Global Clients</h4>
+      <p>Experience with international platforms and remote needs.</p>
+    </div>
+    <div class="why-card">
+      <h4>🤝 Confidential & Clear</h4>
+      <p>We maintain strict client trust and communication clarity.</p>
+    </div>
+  </section>
+
+  <footer class="footer">
     <p>&copy; 2026 SaiVerse Solutions. All rights reserved.</p>
   </footer>
 </body>
