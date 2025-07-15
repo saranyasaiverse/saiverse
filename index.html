@@ -26,11 +26,12 @@
     }
     .action-buttons {
       text-align: center;
-      margin-top: 15px;
+      margin-top: 10px;
     }
     .action-buttons a {
       margin: 10px;
-      font-size: 26px;
+      text-decoration: none;
+      font-size: 28px;
       color: #c2a800;
     }
     .intro {
@@ -48,13 +49,14 @@
     .intro h2 {
       color: #c2a800;
     }
-    .services, .reviews, .payment, .booking {
+    .services {
       background-color: #002244;
       padding: 40px 20px;
       text-align: center;
       border-top: 2px solid #c2a800;
+      border-bottom: 2px solid #c2a800;
     }
-    .services h2, .booking h2, .payment h2, .reviews h2 {
+    .services h2 {
       color: #c2a800;
       margin-bottom: 20px;
     }
@@ -64,11 +66,11 @@
       padding: 20px;
       border: 2px solid #c2a800;
       border-radius: 10px;
-      background-color: #001f33;
-      width: 280px;
+      background-color: #001a2d;
+      width: 250px;
     }
     .service-item i {
-      font-size: 60px;
+      font-size: 50px;
       color: #c2a800;
     }
     .service-item h3 {
@@ -77,31 +79,47 @@
     }
     .service-item p {
       font-size: 14px;
-      color: #dddddd;
+      color: #cccccc;
     }
-    .booking iframe {
-      width: 80%;
-      height: 400px;
-      border: none;
+    .booking {
+      padding: 20px;
+      text-align: center;
+      background-color: #001a2d;
+      border: 2px solid #c2a800;
+    }
+    .booking h2 {
+      color: #c2a800;
+    }
+    .payment {
+      background-color: #002244;
+      padding: 20px;
+      text-align: center;
+      border-top: 2px solid #c2a800;
+    }
+    .payment h2 {
+      color: #c2a800;
     }
     .payment-details {
       margin-top: 15px;
       line-height: 1.6;
     }
-    .payment img {
-      margin-top: 10px;
+    .reviews {
+      background-color: #002244;
+      padding: 40px 20px;
+      text-align: center;
+      border-top: 2px solid #c2a800;
     }
-    .reviews .card {
-      background-color: #001f33;
+    .review-card {
+      background-color: #001a2d;
       border: 1px solid #c2a800;
-      padding: 20px;
-      margin: 10px auto;
-      width: 80%;
       border-radius: 10px;
+      padding: 20px;
+      margin: 15px auto;
+      max-width: 500px;
     }
-    .reviews .card p {
-      color: #ffcc00;
-      font-weight: bold;
+    .reviews h2 {
+      color: #c2a800;
+      margin-bottom: 20px;
     }
     .reviews form textarea, .reviews form input[type="text"] {
       width: 80%;
@@ -118,27 +136,26 @@
       border-radius: 5px;
       cursor: pointer;
     }
-    .about-section, .why-choose-us {
-      background-color: #002244;
-      color: white;
+    .about-section, .why-choose {
+      background-color: #001a2d;
       padding: 40px 20px;
       text-align: center;
       border-top: 2px solid #c2a800;
     }
-    .about-section h2, .why-choose-us h2 {
+    .about-section h2, .why-choose h2 {
       color: #c2a800;
-      margin-bottom: 10px;
     }
-    .why-choose-us ul {
+    .why-choose ul {
       list-style: none;
       padding: 0;
     }
-    .why-choose-us li {
-      margin: 10px 0;
-      color: #ffffff;
+    .why-choose li::before {
+      content: '✅';
+      color: #c2a800;
+      margin-right: 8px;
     }
     footer {
-      background-color: #001f33;
+      background-color: #002244;
       color: white;
       text-align: center;
       padding: 10px;
@@ -161,8 +178,7 @@
   <section class="intro">
     <img src="founder.jpg" alt="Founder Saranya" />
     <h2>Meet Founder Saranya</h2>
-    <p>Saranya leads SaiVerse Solutions with spiritual intuition and a global client approach in consultations,
-      payment recovery, and freelance empowerment.</p>
+    <p>Saranya leads SaiVerse Solutions with spiritual intuition and a global client approach in consultations, payment recovery, and freelance empowerment.</p>
   </section>
 
   <section class="services">
@@ -170,39 +186,24 @@
     <div class="service-item">
       <i class="fas fa-comments"></i>
       <h3>Consultation</h3>
-      <p>Strategic, intuitive guidance for your personal and business growth.</p>
+      <p>1-on-1 personalized sessions tailored to your unique business or freelance situation.</p>
     </div>
     <div class="service-item">
       <i class="fas fa-wallet"></i>
       <h3>Payment Recovery</h3>
-      <p>End-to-end support to recover payments from local & international clients.</p>
+      <p>Professional help in recovering stuck or overdue international payments.</p>
     </div>
     <div class="service-item">
       <i class="fas fa-headset"></i>
       <h3>Virtual Assistance</h3>
-      <p>Administrative and business help tailored to international clients.</p>
+      <p>Reliable remote support for business communication, task management, and more.</p>
     </div>
-  </section>
-
-  <section class="about-section">
-    <h2>About Us</h2>
-    <p>We blend spiritual insight with business strategy, offering personalized services to clients across the globe.</p>
-  </section>
-
-  <section class="why-choose-us">
-    <h2>Why Choose SaiVerse</h2>
-    <ul>
-      <li>✅ Trusted by international clients</li>
-      <li>✅ Proven track record in payment recovery</li>
-      <li>✅ Clear, client-focused communication</li>
-      <li>✅ High spiritual alignment and intuition</li>
-    </ul>
   </section>
 
   <section class="booking">
     <h2>Book Your Consultation</h2>
-    <iframe src="https://calendly.com/saiverse-info/30-minute-meeting"></iframe>
-    <p>📌 Session timing will be confirmed only after payment via email.</p>
+    <iframe src="https://calendly.com/saiverse-info/30-minute-meeting" width="80%" height="400" frameborder="0"></iframe>
+    <p style="margin-top:10px; font-size:14px; color: #fff;">📌 Session timing will be confirmed only after payment via email.</p>
   </section>
 
   <section class="payment">
@@ -212,27 +213,42 @@
       <p><strong>Account Name:</strong> Saranya S</p>
       <p><strong>Account Number:</strong> 163501000000881</p>
       <p><strong>IFSC:</strong> IOBA0001635</p>
-      <p><strong>UPI:</strong> <img src="qr.jpg" alt="UPI QR" width="150"></p>
+      <p><strong>UPI:</strong><br><img src="qr.jpg" alt="UPI QR" width="150"></p>
     </div>
   </section>
 
   <section class="reviews">
     <h2>Client Reviews</h2>
-    <div class="card">
+    <div class="review-card">
       <p>★★★★★ John D. – “Very professional and helped me recover a long-pending international payment of $45,000.”</p>
     </div>
-    <div class="card">
+    <div class="review-card">
       <p>★★★★★ Amanda R. – “Excellent consultation. Gave me clear direction on key client communication.”</p>
     </div>
-    <div class="card">
+    <div class="review-card">
       <p>★★★★★ Michael L. – “She’s quick, smart and understands client needs well.”</p>
     </div>
-
     <form action="https://formspree.io/f/mnqwyxyz" method="POST">
       <input type="text" name="name" placeholder="Your Name" required><br>
       <textarea name="review" placeholder="Write your review..." rows="4" required></textarea><br>
       <button type="submit">Submit Review</button>
     </form>
+  </section>
+
+  <section class="about-section">
+    <h2>About Us</h2>
+    <p>Empowering international clients with clarity, confidence, and results.</p>
+    <p>We specialize in consultations, cross-border payment recovery, and virtual support services tailored for freelancers and entrepreneurs worldwide.</p>
+  </section>
+
+  <section class="why-choose">
+    <h2>Why Choose SaiVerse Solutions?</h2>
+    <ul>
+      <li>Trusted by international professionals</li>
+      <li>Quick resolution with personalized guidance</li>
+      <li>Spiritual clarity blended with business sense</li>
+      <li>Supportive, ethical and result-driven service</li>
+    </ul>
   </section>
 
   <footer>
