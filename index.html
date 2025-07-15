@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SaiVerse Solutions</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -19,11 +19,6 @@
       color: white;
       padding: 20px;
       text-align: center;
-    }
-    .logo {
-      width: 100px;
-      display: block;
-      margin: 0 auto 10px;
     }
     .action-buttons {
       text-align: center;
@@ -49,15 +44,15 @@
     .intro h2 {
       color: #c2a800;
     }
-    .services, .booking, .payment, .reviews, .why-choose, .about-us {
+    .services {
       background-color: #012b45;
       padding: 40px 20px;
       text-align: center;
       border-top: 2px solid #c2a800;
+      border-bottom: 2px solid #c2a800;
     }
-    .services h2, .booking h2, .payment h2, .reviews h2, .why-choose h2, .about-us h2 {
+    .services h2 {
       color: #c2a800;
-      margin-bottom: 20px;
     }
     .service-item {
       display: inline-block;
@@ -65,44 +60,57 @@
       padding: 20px;
       border: 2px solid #c2a800;
       border-radius: 10px;
-      background-color: #013954;
+      background-color: #014265;
       width: 250px;
     }
     .service-item i {
-      font-size: 70px;
+      font-size: 60px;
       color: #ffcc00;
     }
     .service-item h3 {
       margin-top: 10px;
       color: #ffffff;
     }
-    .service-item p {
-      color: #ffffff;
-      font-size: 14px;
+    .booking {
+      padding: 20px;
+      text-align: center;
+      background-color: #012b45;
+      border: 2px solid #c2a800;
     }
-    .booking iframe {
-      max-width: 600px;
-      width: 100%;
-      height: 400px;
-      border: none;
-      margin: auto;
+    .booking h2 {
+      color: #c2a800;
     }
-    .payment-details img {
-      width: 150px;
-      margin-top: 10px;
+    .payment {
+      background-color: #014265;
+      padding: 20px;
+      text-align: center;
+      border-top: 2px solid #c2a800;
     }
-    .reviews p.review {
-      background-color: #013954;
-      padding: 15px;
-      border-radius: 10px;
+    .payment h2 {
+      color: #c2a800;
+    }
+    .payment-details {
+      margin-top: 15px;
+      line-height: 1.6;
+    }
+    .reviews {
+      background-color: #012b45;
+      padding: 40px 20px;
+      text-align: center;
+      border-top: 2px solid #c2a800;
+    }
+    .reviews h2 {
+      color: #c2a800;
+      margin-bottom: 20px;
+    }
+    .review-block {
+      background-color: #014265;
+      padding: 20px;
+      border-radius: 8px;
+      margin: 15px auto;
+      width: 80%;
       color: #ffcc00;
       font-weight: bold;
-      margin-bottom: 15px;
-      animation: fadeIn 1s ease-in-out;
-    }
-    @keyframes fadeIn {
-      from {opacity: 0;}
-      to {opacity: 1;}
     }
     .reviews form textarea, .reviews form input[type="text"] {
       width: 80%;
@@ -124,6 +132,11 @@
       color: white;
       text-align: center;
       padding: 10px;
+    }
+    .logo {
+      width: 100px;
+      display: block;
+      margin: 0 auto 10px;
     }
   </style>
 </head>
@@ -149,29 +162,26 @@
     </p>
   </section>
 
-  <section class="services" data-aos="fade-up">
+  <section class="services">
     <h2>Our Core Services</h2>
-    <div class="service-item" data-aos="zoom-in">
+    <div class="service-item">
       <i class="fas fa-comments"></i>
       <h3>Consultation</h3>
-      <p>Strategic sessions tailored for business clarity and growth.</p>
     </div>
-    <div class="service-item" data-aos="zoom-in" data-aos-delay="100">
+    <div class="service-item">
       <i class="fas fa-wallet"></i>
       <h3>Payment Recovery</h3>
-      <p>Specialized in handling international payment recovery issues.</p>
     </div>
-    <div class="service-item" data-aos="zoom-in" data-aos-delay="200">
+    <div class="service-item">
       <i class="fas fa-headset"></i>
       <h3>Virtual Assistance</h3>
-      <p>Supporting your tasks with precision and confidentiality.</p>
     </div>
   </section>
 
   <section class="booking">
     <h2>Book Your Consultation</h2>
     <div style="margin-top:20px;">
-      <iframe src="https://calendly.com/saiverse-info/30-minute-meeting"></iframe>
+      <iframe src="https://calendly.com/saiverse-info/30-minute-meeting" width="100%" height="400" frameborder="0"></iframe>
     </div>
     <p style="margin-top:10px; font-size:14px; color: #fff;">📌 Session timing will be confirmed only after payment via email.</p>
   </section>
@@ -183,15 +193,16 @@
       <p><strong>Account Name:</strong> Saranya S</p>
       <p><strong>Account Number:</strong> 163501000000881</p>
       <p><strong>IFSC:</strong> IOBA0001635</p>
-      <p><strong>UPI:</strong> <img src="qr.jpg" alt="UPI QR"></p>
+      <p><strong>UPI:</strong> <img src="qr.jpg" alt="UPI QR" width="150"></p>
     </div>
   </section>
 
   <section class="reviews">
     <h2>Client Reviews</h2>
-    <p class="review">★★★★★ John D. – “Very professional and helped me recover a long-pending international payment of $45,000.”</p>
-    <p class="review">★★★★★ Amanda R. – “Excellent consultation. Gave me clear direction on key client communication.”</p>
-    <p class="review">★★★★★ Michael L. – “She’s quick, smart and understands client needs well.”</p>
+    <div class="review-block">★★★★★ John D. – “Very professional and helped me recover a long-pending international payment of $45,000.”</div>
+    <div class="review-block">★★★★★ Amanda R. – “Excellent consultation. Gave me clear direction on key client communication.”</div>
+    <div class="review-block">★★★★★ Michael L. – “She’s quick, smart and understands client needs well.”</div>
+
     <form action="https://formspree.io/f/mnqwyxyz" method="POST">
       <input type="text" name="name" placeholder="Your Name" required><br>
       <textarea name="review" placeholder="Write your review..." rows="4" required></textarea><br>
@@ -199,21 +210,11 @@
     </form>
   </section>
 
-  <section class="about-us">
-    <h2>About Us</h2>
-    <p>Empowering clients globally with actionable insights and intuitive guidance. Our mission is to simplify the complex and help you succeed with clarity and confidence.</p>
-  </section>
-
-  <section class="why-choose">
-    <h2>Why Choose SaiVerse?</h2>
-    <p>✔️ International Payment Recovery Expertise<br>✔️ Personalized Spiritual Business Guidance<br>✔️ Trusted by Clients from US, UK, UAE & More<br>✔️ Over $1,00,000 Recovered Successfully</p>
-  </section>
-
   <footer>
     <p>&copy; 2026 SaiVerse Solutions. All rights reserved.</p>
   </footer>
 
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
   </script>
