@@ -10,11 +10,11 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #002244;
+      background-color: #001f33;
       color: #ffffff;
     }
     header {
-      background-color: #002244;
+      background-color: #001f33;
       color: white;
       padding: 20px;
       text-align: center;
@@ -24,15 +24,16 @@
       margin-top: 10px;
     }
     .action-buttons a {
-      margin: 10px;
+      margin: 8px;
       text-decoration: none;
-      font-size: 28px;
+      font-size: 26px;
+      color: #c2a800;
     }
-    .action-buttons a[href*="whatsapp"] i { color: #25D366; }
-    .action-buttons a[href*="linkedin"] i { color: #0077b5; }
-    .action-buttons a[href*="upwork"] i { color: #6fda44; }
-    .action-buttons a[href*="mailto"] i { color: #c71610; }
-
+    .logo {
+      width: 100px;
+      display: block;
+      margin: 0 auto 10px;
+    }
     .intro {
       text-align: center;
       padding: 40px 20px;
@@ -47,9 +48,8 @@
     .intro h2 {
       color: #c2a800;
     }
-
     .services {
-      background-color: #002244;
+      background-color: #001f33;
       padding: 40px 20px;
       text-align: center;
       border-top: 2px solid #c2a800;
@@ -65,34 +65,28 @@
       padding: 20px;
       border: 2px solid #c2a800;
       border-radius: 10px;
-      background-color: #001933;
+      background-color: #001f33;
       width: 250px;
-      vertical-align: top;
     }
     .service-item i {
       font-size: 60px;
-      color: #c2a800;
+      color: #ffc107;
     }
     .service-item h3 {
+      margin-top: 10px;
       color: #ffffff;
     }
-    .service-item p {
-      font-size: 14px;
-      color: #f5f5f5;
-    }
-
     .booking {
-      padding: 40px 20px;
+      padding: 20px;
       text-align: center;
-      background-color: #001933;
-      border: 2px solid #c2a800;
+      background-color: #001f33;
+      border-top: 2px solid #c2a800;
     }
     .booking h2 {
       color: #c2a800;
     }
-
     .payment {
-      background-color: #002244;
+      background-color: #001f33;
       padding: 20px;
       text-align: center;
       border-top: 2px solid #c2a800;
@@ -100,65 +94,50 @@
     .payment h2 {
       color: #c2a800;
     }
-    .payment-details img {
-      margin-top: 10px;
-      width: 150px;
+    .payment-details {
+      margin-top: 15px;
+      line-height: 1.6;
     }
-
     .reviews {
-      background-color: #001933;
+      background-color: #001f33;
       padding: 40px 20px;
       text-align: center;
       border-top: 2px solid #c2a800;
-    }
-    .reviews h2 {
-      color: #c2a800;
     }
     .review-card {
-      background-color: #002244;
+      background-color: #001a33;
+      margin: 20px auto;
       padding: 20px;
-      margin: 15px auto;
       border-radius: 10px;
       width: 80%;
-      color: #ffcc00;
+      max-width: 500px;
+      animation: fadeIn 1s ease-in-out;
     }
-
-    form input, form textarea {
-      width: 80%;
-      margin: 10px 0;
-      padding: 10px;
-      border-radius: 5px;
-      border: 1px solid #ccc;
+    .review-stars {
+      color: #ffc107;
+      font-size: 20px;
+      margin-bottom: 5px;
     }
-    form button {
-      background-color: #c2a800;
-      color: #ffffff;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    .about, .why-choose {
-      padding: 40px 20px;
-      background-color: #002244;
-      text-align: center;
-      border-top: 2px solid #c2a800;
-    }
-    .about h2, .why-choose h2 {
+    .review-name {
       color: #c2a800;
+      font-weight: bold;
+      font-size: 16px;
+      margin-bottom: 8px;
     }
-
+    .review-text {
+      color: #ffffff;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
     footer {
       background-color: #001f33;
       color: white;
       text-align: center;
       padding: 10px;
-    }
-    .logo {
-      width: 100px;
-      display: block;
-      margin: 0 auto 10px;
     }
   </style>
 </head>
@@ -168,18 +147,18 @@
     <h1>SaiVerse Solutions</h1>
     <p>“Let Us Handle the Chase, While You Focus on Growth.”</p>
     <div class="action-buttons">
-      <a href="mailto:info@saiverse.org"><i class="fas fa-envelope"></i></a>
-      <a href="https://wa.me/8939701718"><i class="fab fa-whatsapp"></i></a>
-      <a href="https://linkedin.com/in/saranya-s-78014b371"><i class="fab fa-linkedin"></i></a>
-      <a href="https://www.upwork.com/freelancers/~014031dd72651c3436"><i class="fab fa-upwork"></i></a>
+      <a href="mailto:info@saiverse.org" title="Email"><i class="fas fa-envelope"></i></a>
+      <a href="https://wa.me/8939701718" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://linkedin.com/in/saranya-s-78014b371" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.upwork.com/freelancers/~014031dd72651c3436" title="Upwork"><i class="fas fa-briefcase"></i></a>
     </div>
   </header>
 
   <section class="intro">
-    <img src="founder.jpg" alt="Founder Saranya">
+    <img src="founder.jpg" alt="Founder Saranya" />
     <h2>Meet Founder Saranya</h2>
     <p>
-      Saranya leads SaiVerse Solutions with spiritual intuition and a global client approach in consultations,
+      Saranya leads SaiVerse Solutions with a client-first global approach in consultations,
       payment recovery, and freelance empowerment.
     </p>
   </section>
@@ -189,23 +168,25 @@
     <div class="service-item">
       <i class="fas fa-comments"></i>
       <h3>Consultation</h3>
-      <p>Clear advice for your business, career and freelance concerns.</p>
+      <p>1-on-1 business clarity, problem-solving and strategic advice.</p>
     </div>
     <div class="service-item">
       <i class="fas fa-wallet"></i>
       <h3>Payment Recovery</h3>
-      <p>Recover your pending payments from clients confidently.</p>
+      <p>Expert follow-up and client communication to recover dues.</p>
     </div>
     <div class="service-item">
       <i class="fas fa-headset"></i>
       <h3>Virtual Assistance</h3>
-      <p>Professional support for global tasks and coordination.</p>
+      <p>Professional support to help your operations run smooth and smart.</p>
     </div>
   </section>
 
   <section class="booking">
     <h2>Book Your Consultation</h2>
-    <iframe src="https://calendly.com/saiverse-info/30-minute-meeting" width="90%" height="400" frameborder="0"></iframe>
+    <div style="margin-top:20px;">
+      <iframe src="https://calendly.com/saiverse-info/30-minute-meeting" width="100%" height="400" frameborder="0"></iframe>
+    </div>
     <p style="margin-top:10px; font-size:14px; color: #fff;">📌 Session timing will be confirmed only after payment via email.</p>
   </section>
 
@@ -216,37 +197,32 @@
       <p><strong>Account Name:</strong> Saranya S</p>
       <p><strong>Account Number:</strong> 163501000000881</p>
       <p><strong>IFSC:</strong> IOBA0001635</p>
-      <p><strong>UPI:</strong></p>
-      <img src="qr.jpg" alt="UPI QR">
+      <p><strong>UPI:</strong><br><img src="qr.jpg" alt="UPI QR" width="150"></p>
     </div>
   </section>
 
   <section class="reviews">
     <h2>Client Reviews</h2>
-    <div class="review-card">★★★★★ John D. – “Very professional and helped me recover a long-pending international payment of $45,000.”</div>
-    <div class="review-card">★★★★★ Amanda R. – “Excellent consultation. Gave me clear direction on client communication.”</div>
-    <div class="review-card">★★★★★ Michael L. – “She’s quick, smart and understands client needs well.”</div>
-
+    <div class="review-card">
+      <p class="review-stars">★★★★★</p>
+      <p class="review-name">John D.</p>
+      <p class="review-text">Recovered a long-pending international payment of $45,000. Extremely professional!</p>
+    </div>
+    <div class="review-card">
+      <p class="review-stars">★★★★★</p>
+      <p class="review-name">Amanda R.</p>
+      <p class="review-text">Clear consultation and timely support on global client issues.</p>
+    </div>
+    <div class="review-card">
+      <p class="review-stars">★★★★★</p>
+      <p class="review-name">Michael L.</p>
+      <p class="review-text">Quick, smart, and understands client needs perfectly.</p>
+    </div>
     <form action="https://formspree.io/f/mnqwyxyz" method="POST">
       <input type="text" name="name" placeholder="Your Name" required><br>
       <textarea name="review" placeholder="Write your review..." rows="4" required></textarea><br>
       <button type="submit">Submit Review</button>
     </form>
-  </section>
-
-  <section class="about">
-    <h2>About Us</h2>
-    <p>At SaiVerse Solutions, we specialize in recovering payments, offering smart virtual assistance, and empowering freelancers. We're trusted by global clients and guided by founder Saranya’s powerful spiritual leadership.</p>
-  </section>
-
-  <section class="why-choose">
-    <h2>Why Choose Us</h2>
-    <ul style="list-style: none; padding: 0;">
-      <li>✔️ Global Client Experience</li>
-      <li>✔️ 100% Confidentiality</li>
-      <li>✔️ Result-Oriented Strategies</li>
-      <li>✔️ Personalized Approach</li>
-    </ul>
   </section>
 
   <footer>
