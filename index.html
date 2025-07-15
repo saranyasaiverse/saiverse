@@ -10,11 +10,11 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #002b4d;
+      background-color: #001f33;
       color: #ffffff;
     }
     header {
-      background-color: #002b4d;
+      background-color: #001f33;
       color: white;
       padding: 20px;
       text-align: center;
@@ -27,17 +27,12 @@
       margin: 10px;
       text-decoration: none;
       font-size: 28px;
+      color: #ffcc00;
     }
-    .action-buttons .fa-envelope { color: #ffcc00; }
-    .action-buttons .fa-whatsapp { color: #25d366; }
-    .action-buttons .fa-linkedin { color: #0077b5; }
-    .action-buttons .fa-briefcase { color: #c2a800; }
-
     .intro {
       text-align: center;
       padding: 40px 20px;
       border: 2px solid #c2a800;
-      animation: fadeIn 1.5s ease-in;
     }
     .intro img {
       width: 180px;
@@ -48,9 +43,11 @@
     .intro h2 {
       color: #c2a800;
     }
-
+    .intro p {
+      color: #ffffff;
+    }
     .services {
-      background-color: #002b4d;
+      background-color: #001f33;
       padding: 40px 20px;
       text-align: center;
       border-top: 2px solid #c2a800;
@@ -66,36 +63,28 @@
       padding: 20px;
       border: 2px solid #c2a800;
       border-radius: 10px;
-      background-color: #00385d;
+      background-color: #002244;
       width: 250px;
-      animation: zoomIn 1.5s ease-in;
     }
     .service-item i {
       font-size: 60px;
-      color: #c2a800;
+      color: #ffcc00;
     }
     .service-item h3 {
       margin-top: 10px;
       color: #ffffff;
     }
-    .service-item p {
-      color: #ffeb99;
-      font-size: 14px;
-    }
-
     .booking {
       padding: 20px;
       text-align: center;
-      background-color: #002b4d;
+      background-color: #001f33;
       border: 2px solid #c2a800;
-      animation: fadeIn 1.5s ease-in;
     }
     .booking h2 {
       color: #c2a800;
     }
-
     .payment {
-      background-color: #00385d;
+      background-color: #001a2d;
       padding: 20px;
       text-align: center;
       border-top: 2px solid #c2a800;
@@ -107,9 +96,8 @@
       margin-top: 15px;
       line-height: 1.6;
     }
-
     .reviews {
-      background-color: #002b4d;
+      background-color: #001f33;
       padding: 40px 20px;
       text-align: center;
       border-top: 2px solid #c2a800;
@@ -118,18 +106,32 @@
       color: #c2a800;
       margin-bottom: 20px;
     }
-    .reviews .card {
-      background-color: #00385d;
-      border-radius: 8px;
-      padding: 15px;
-      margin: 10px auto;
-      width: 80%;
+    .reviews p {
+      margin: 10px 0;
       color: #ffcc00;
-      box-shadow: 0 0 10px rgba(0,0,0,0.4);
+      font-weight: bold;
+      font-style: italic;
     }
-
+    .reviews form textarea, .reviews form input[type="text"] {
+      width: 80%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    .reviews form button {
+      background-color: #c2a800;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .why-choose-us i {
+      margin-bottom: 10px;
+    }
     footer {
-      background-color: #002b4d;
+      background-color: #001f33;
       color: white;
       text-align: center;
       padding: 10px;
@@ -138,15 +140,6 @@
       width: 100px;
       display: block;
       margin: 0 auto 10px;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-    @keyframes zoomIn {
-      from { transform: scale(0.8); }
-      to { transform: scale(1); }
     }
   </style>
 </head>
@@ -177,17 +170,17 @@
     <div class="service-item">
       <i class="fas fa-comments"></i>
       <h3>Consultation</h3>
-      <p>1-on-1 clarity sessions for direction and decisions.</p>
+      <p>Get intuitive clarity and practical direction for your business or freelance journey.</p>
     </div>
     <div class="service-item">
       <i class="fas fa-wallet"></i>
       <h3>Payment Recovery</h3>
-      <p>Helping international clients recover stuck payments.</p>
+      <p>Recover stuck client payments with professional follow-ups and legal know-how.</p>
     </div>
     <div class="service-item">
       <i class="fas fa-headset"></i>
       <h3>Virtual Assistance</h3>
-      <p>Support for emails, follow-ups, and coordination.</p>
+      <p>Let us handle your administrative and operational needs with care and confidentiality.</p>
     </div>
   </section>
 
@@ -212,9 +205,47 @@
 
   <section class="reviews">
     <h2>Client Reviews</h2>
-    <div class="card">★★★★★ John D. – “Very professional and helped me recover a long-pending international payment of $45,000.”</div>
-    <div class="card">★★★★★ Amanda R. – “Excellent consultation. Gave me clear direction on key client communication.”</div>
-    <div class="card">★★★★★ Michael L. – “She’s quick, smart and understands client needs well.”</div>
+    <p>★★★★★ John D. – “Very professional and helped me recover a long-pending international payment of $45,000.”</p>
+    <p>★★★★★ Amanda R. – “Excellent consultation. Gave me clear direction on key client communication.”</p>
+    <p>★★★★★ Michael L. – “She’s quick, smart and understands client needs well.”</p>
+
+    <form action="https://formspree.io/f/mnqwyxyz" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required><br>
+      <textarea name="review" placeholder="Write your review..." rows="4" required></textarea><br>
+      <button type="submit">Submit Review</button>
+    </form>
+  </section>
+
+  <section class="about" style="background-color: #001f33; padding: 40px 20px; text-align: center; border-top: 2px solid #c2a800;">
+    <h2 style="color: #c2a800;">Know Us Better</h2>
+    <p style="color: #ffcc00; font-size: 18px;">Driven by Intuition. Focused on Results.</p>
+    <p style="color: #ffffff; max-width: 800px; margin: 0 auto;">
+      At SaiVerse Solutions, we empower global clients with clarity, confidence, and direction.
+      Whether it’s consultation, virtual assistance, or high-stake payment recovery, we bring professionalism,
+      spiritual balance, and results to your business goals.
+    </p>
+  </section>
+
+  <section class="why-choose-us" style="background-color: #001a2d; padding: 40px 20px; text-align: center; border-top: 2px solid #c2a800;">
+    <h2 style="color: #c2a800;">Why Choose Us</h2>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-top: 20px;">
+      <div style="width: 220px; padding: 20px; border: 2px solid #c2a800; border-radius: 10px; background-color: #002244;">
+        <i class="fas fa-globe" style="font-size: 40px; color: #ffcc00;"></i>
+        <p style="color: #ffffff; margin-top: 10px;">Global Client Reach</p>
+      </div>
+      <div style="width: 220px; padding: 20px; border: 2px solid #c2a800; border-radius: 10px; background-color: #002244;">
+        <i class="fas fa-bolt" style="font-size: 40px; color: #ffcc00;"></i>
+        <p style="color: #ffffff; margin-top: 10px;">Fast Turnaround Time</p>
+      </div>
+      <div style="width: 220px; padding: 20px; border: 2px solid #c2a800; border-radius: 10px; background-color: #002244;">
+        <i class="fas fa-shield-alt" style="font-size: 40px; color: #ffcc00;"></i>
+        <p style="color: #ffffff; margin-top: 10px;">Trusted & Secure</p>
+      </div>
+      <div style="width: 220px; padding: 20px; border: 2px solid #c2a800; border-radius: 10px; background-color: #002244;">
+        <i class="fas fa-user-check" style="font-size: 40px; color: #ffcc00;"></i>
+        <p style="color: #ffffff; margin-top: 10px;">Personalized Guidance</p>
+      </div>
+    </div>
   </section>
 
   <footer>
