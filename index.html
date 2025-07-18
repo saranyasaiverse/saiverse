@@ -6,108 +6,93 @@
   <title>SaiVerse Solutions</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f9f9f9;
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      background: #f5f5f5;
       color: #333;
+    }
+    header, footer {
+      background-color: #000;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+    }
+    .logo {
+      font-size: 32px;
+      font-weight: bold;
+    }
+    .tagline {
+      font-size: 16px;
+      margin-top: 5px;
+    }
+    .section {
+      padding: 40px 20px;
       text-align: center;
     }
-    header {
-      background-color: #4b0082;
-      color: white;
-      padding: 20px 10px;
-    }
-    h1 {
-      margin: 0;
-      font-size: 2.2em;
-    }
-    p.tagline {
-      font-size: 1.1em;
-      margin-top: 8px;
-    }
-    section.pricing {
-      padding: 40px 20px;
-    }
-    .plan {
+    .pricing-card {
       background: white;
-      border-radius: 12px;
-      padding: 20px;
       margin: 20px auto;
       max-width: 400px;
-      box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 12px;
     }
-    .plan h2 {
-      font-size: 1.4em;
-      color: #4b0082;
+    .pricing-card h3 {
+      margin-top: 0;
     }
-    .plan ul {
-      list-style: none;
-      padding: 0;
-      margin: 15px 0;
+    .whatsapp, .calendly {
+      margin: 20px auto;
+      text-align: center;
     }
-    .plan ul li {
-      margin: 8px 0;
-    }
-    .plan .price {
-      font-size: 1.8em;
-      color: #333;
-      margin-top: 10px;
-    }
-    footer {
-      background: #eee;
-      padding: 20px 10px;
-      margin-top: 40px;
-      font-size: 0.9em;
-    }
-    .contact-links {
-      margin-top: 20px;
-    }
-    .contact-links a {
+    a.button {
       display: inline-block;
-      margin: 5px 10px;
+      padding: 12px 24px;
+      background: green;
+      color: white;
       text-decoration: none;
-      color: #4b0082;
-      font-weight: 500;
+      border-radius: 6px;
+      margin-top: 10px;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>SaiVerse Solutions</h1>
-    <p class="tagline">Let Us Handle the Chase, While You Focus on Growth.</p>
-  </header>
 
-  <section class="pricing">
-    <div class="plan">
-      <h2>Basic Plan</h2>
-      <ul>
-        <li>✔️ 30-min consultation</li>
-        <li>✔️ Payment recovery strategy tips</li>
-      </ul>
-      <div class="price">$99</div>
-    </div>
+<header>
+  <div class="logo">SaiVerse Solutions</div>
+  <div class="tagline">Let Us Handle the Chase, While You Focus on Growth.</div>
+</header>
 
-    <div class="plan">
-      <h2>Pro Plan</h2>
-      <ul>
-        <li>✔️ 60-min consultation</li>
-        <li>✔️ Full recovery consultation</li>
-        <li>✔️ Direct follow-up message samples</li>
-        <li>✔️ Live client call guidance</li>
-      </ul>
-      <div class="price">$149</div>
-    </div>
+<section class="section">
+  <h2>Our Pricing Plans</h2>
+  <div class="pricing-card">
+    <h3>Basic Plan</h3>
+    <p>Includes 30-min consultation + payment strategy tips.</p>
+    <strong>₹999 / $99</strong>
+  </div>
+  <div class="pricing-card">
+    <h3>Pro Plan</h3>
+    <p>Includes full consultation + direct follow-up guide + client call tips.</p>
+    <strong>₹1999 / $149</strong>
+  </div>
+</section>
 
-    <div class="contact-links">
-      <a href="https://wa.me/918939701718" target="_blank">📞 WhatsApp: +91 8939701718</a><br/>
-      <a href="mailto:info@saiverse.org">📧 Email: info@saiverse.org</a><br/>
-      <a href="https://calendly.com/saiverse/clarity-session" target="_blank">📅 Book a Session</a>
-    </div>
-  </section>
+<section class="section whatsapp">
+  <h2>Message Us</h2>
+  <a class="button" href="https://wa.me/918939701718?text=Hi%20SaiVerse%20Team%2C%20I%27m%20interested%20in%20your%20services!" target="_blank">
+    WhatsApp Chat
+  </a>
+</section>
 
-  <footer>
-    © 2025 SaiVerse Solutions. All rights reserved.
-  </footer>
+<section class="section calendly">
+  <h2>Book a Consultation</h2>
+  <a class="button" href="https://calendly.com/saiverse/clarity-session" target="_blank">
+    Book Now
+  </a>
+</section>
+
+<footer>
+  © 2025 SaiVerse Solutions. All rights reserved.
+</footer>
+
 </body>
 </html>
