@@ -7,167 +7,190 @@
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to right, #f7f9fc, #e0eafc);
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #f0f4f8, #ffffff);
       color: #333;
     }
     header {
-      background: #131921;
-      color: white;
-      padding: 30px 20px;
+      background-color: #121212;
+      color: #fff;
+      padding: 1rem;
       text-align: center;
     }
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
+    header img {
+      height: 50px;
     }
-    header p {
-      font-size: 1.2em;
-      margin-top: 8px;
+    h1, h2, h3 {
+      margin: 0.5em 0;
     }
-    section {
-      padding: 40px 20px;
-      max-width: 900px;
+    .section {
+      padding: 2rem;
+      max-width: 1000px;
       margin: auto;
     }
-    h2 {
-      font-size: 2em;
-      border-bottom: 2px solid #333;
-      padding-bottom: 10px;
-    }
-    .plans, .reviews, .bank-details {
-      margin-top: 30px;
+    .pricing {
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
     }
     .plan {
-      border: 2px solid #444;
-      border-radius: 12px;
-      padding: 20px;
-      margin-bottom: 20px;
-      background-color: #fff;
-    }
-    .plan h3 {
-      margin-top: 0;
-    }
-    .review-card {
       background: #fff;
-      padding: 15px;
       border-radius: 10px;
-      margin-bottom: 15px;
-      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      padding: 1.5rem;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s ease;
     }
-    form input, form select, form textarea {
-      width: 100%;
-      padding: 10px;
-      margin: 8px 0 15px;
-      border-radius: 6px;
-      border: 1px solid #ccc;
-    }
-    form button {
-      padding: 12px 24px;
-      background: #131921;
-      color: white;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      font-size: 1em;
+    .plan:hover {
+      transform: translateY(-5px);
     }
     footer {
-      background: #131921;
+      background-color: #1e1e1e;
       color: white;
+      padding: 2rem;
       text-align: center;
-      padding: 20px;
-      margin-top: 40px;
     }
-    a {
-      color: #0074d9;
+    .contact-icons a {
+      margin: 0 10px;
+      font-size: 20px;
+      color: #fff;
       text-decoration: none;
+    }
+    .reviews {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    .review {
+      background: #f7f7f7;
+      padding: 1rem;
+      border-left: 5px solid #4caf50;
+    }
+    .stars {
+      color: gold;
+    }
+    .qr-section img, .founder-section img {
+      width: 200px;
+      border-radius: 10px;
+    }
+    .bank-details {
+      background: #fff3cd;
+      padding: 1rem;
+      margin-top: 2rem;
+      border-radius: 8px;
+    }
+    .booking iframe {
+      border: none;
+      width: 100%;
+      height: 600px;
+    }
+    .review-form {
+      margin-top: 2rem;
+      padding: 1rem;
+      background: #f1f1f1;
+      border-radius: 10px;
+    }
+    .review-form input, .review-form textarea {
+      width: 100%;
+      margin-top: 10px;
+      padding: 0.5rem;
+    }
+    .review-form button {
+      margin-top: 10px;
+      padding: 0.5rem 1rem;
+      background: #4caf50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>SaiVerse Solutions</h1>
-    <p>Let Us Handle the Chase, While You Focus on Growth</p>
-  </header>
+<header>
+  <img src="logo.png" alt="SaiVerse Logo" />
+  <h1>SaiVerse Solutions</h1>
+  <p>Let Us Handle the Chase, While You Focus on Growth.</p>
+</header>
 
-  <section>
-    <h2>About Us</h2>
-    <p>We are a globally trusted Virtual Assistant and Collections Partner. Our goal is to handle follow-ups, payments, and strategy so you can focus on scaling your business. From startups to agencies, we empower your cash flow and clarity with expert support.</p>
-  </section>
+<div class="section founder-section">
+  <h2>Meet the Founder</h2>
+  <img src="founder.jpg" alt="Founder Photo" />
+  <p><strong>Saranya S</strong><br>Client Success Specialist</p>
+</div>
 
-  <section class="plans">
-    <h2>Our Plans</h2>
-    <div class="plan">
-      <h3>💡 Basic Plan – $99</h3>
-      <ul>
-        <li>30-min consultation</li>
-        <li>Payment follow-up strategy</li>
-        <li>Initial guide to collections process</li>
-      </ul>
-    </div>
-    <div class="plan">
-      <h3>🚀 Pro Plan – $149</h3>
-      <ul>
-        <li>1-hour consultation</li>
-        <li>Full guide to handle follow-ups</li>
-        <li>Client call tips & objection handling</li>
-        <li>Personalized email/WhatsApp sample copy</li>
-      </ul>
-    </div>
-  </section>
+<div class="section pricing">
+  <div class="plan">
+    <h3>Basic Plan</h3>
+    <p>30-minute Consultation + Payment Strategy Tips</p>
+    <h2>$99</h2>
+  </div>
+  <div class="plan">
+    <h3>Pro Plan</h3>
+    <p>1 Hour Full Consultation + Follow-up Guide + Client Call Tips</p>
+    <h2>$149</h2>
+  </div>
+</div>
 
-  <section class="reviews">
-    <h2>Client Testimonials</h2>
-    <div class="review-card">
-      <p>"SaiVerse helped us recover over $45,000 in pending dues within 2 months. Professional and highly efficient!"</p>
-      <span>– Amanda R., New York, USA ⭐⭐⭐⭐⭐</span>
-    </div>
-    <div class="review-card">
-      <p>"The follow-up system and weekly strategy calls have boosted our cashflow by 30%. Highly recommend SaiVerse."</p>
-      <span>– Daniel L., Toronto, Canada ⭐⭐⭐⭐⭐</span>
-    </div>
-    <div class="review-card">
-      <p>"I had no idea collections could be handled this gracefully. I’m now free to grow my agency."</p>
-      <span>– Mia H., London, UK ⭐⭐⭐⭐⭐</span>
-    </div>
-  </section>
+<div class="section qr-section">
+  <h2>Scan to Pay</h2>
+  <img src="qr.jpg" alt="QR Code" />
+</div>
 
-  <section>
-    <h2>Book a Session</h2>
-    <form action="mailto:info@saiverse.org" method="POST" enctype="text/plain">
-      <input type="text" name="Name" placeholder="Your Full Name" required>
-      <input type="email" name="Email" placeholder="Your Email Address" required>
-      <select name="Plan" required>
-        <option value="">Select Plan</option>
-        <option value="Basic Plan – $99">Basic Plan – $99</option>
-        <option value="Pro Plan – $149">Pro Plan – $149</option>
-      </select>
-      <input type="text" name="Preferred Time" placeholder="Preferred Date & Time">
-      <textarea name="Message" rows="4" placeholder="Any message or questions?"></textarea>
-      <button type="submit">Book Now</button>
-    </form>
-  </section>
+<div class="section bank-details">
+  <h2>Bank Details</h2>
+  <p><strong>Bank:</strong> Indian Overseas Bank</p>
+  <p><strong>Account No:</strong> 163501000000881</p>
+  <p><strong>IFSC:</strong> IOBA0001635</p>
+  <p><strong>Account Name:</strong> Saranya S</p>
+  <p><strong>Contact:</strong> +91 8939701718</p>
+</div>
 
-  <section class="bank-details">
-    <h2>Bank Details for Direct Payment</h2>
-    <p><strong>Bank Name:</strong> Indian Overseas Bank</p>
-    <p><strong>Account Number:</strong> 163501000000881</p>
-    <p><strong>IFSC Code:</strong> IOBA0001635</p>
-    <p><strong>Account Holder:</strong> Saranya S</p>
-    <p><strong>Contact:</strong> +91 8939701718</p>
-  </section>
+<div class="section reviews">
+  <h2>Client Reviews</h2>
+  <div class="review">
+    <p class="stars">★★★★★</p>
+    <p>“SaiVerse helped us recover over $45,000 from long-pending clients! Efficient, professional and fast.”</p>
+    <p><strong>- Jessica M., USA</strong></p>
+  </div>
+  <div class="review">
+    <p class="stars">★★★★★</p>
+    <p>“Highly recommend SaiVerse Solutions. They know how to handle tough clients with ease.”</p>
+    <p><strong>- David L., Canada</strong></p>
+  </div>
+  <div class="review">
+    <p class="stars">★★★★☆</p>
+    <p>“Supportive team and fast response time. Our international payments improved within weeks.”</p>
+    <p><strong>- Emily R., UK</strong></p>
+  </div>
+</div>
 
-  <section>
-    <h2>Connect With Me</h2>
-    <p>📩 <strong>Email:</strong> <a href="mailto:info@saiverse.org">info@saiverse.org</a></p>
-    <p>🔗 <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/saranya-s-78014b371/" target="_blank">Saranya S</a></p>
-    <p>🌍 <strong>Upwork:</strong> <a href="https://www.upwork.com/freelancers/~014031dd72651c3436?mp_source=share" target="_blank">Freelancer Profile</a></p>
-  </section>
+<div class="section review-form">
+  <h3>Leave a Review</h3>
+  <form>
+    <input type="text" placeholder="Your Name" required />
+    <input type="text" placeholder="Your Country" required />
+    <textarea rows="4" placeholder="Your Review" required></textarea>
+    <button type="submit">Submit</button>
+  </form>
+</div>
 
-  <footer>
-    <p>© 2025 SaiVerse Solutions. All rights reserved.</p>
-  </footer>
+<div class="section booking">
+  <h2>Book a Call</h2>
+  <iframe src="https://calendly.com/saiverse/30min" title="Book with Calendly"></iframe>
+</div>
+
+<footer>
+  <h3>Connect with Us</h3>
+  <div class="contact-icons">
+    <a href="mailto:info@saiverse.org">📧 Email</a>
+    <a href="https://wa.me/918939701718" target="_blank">💬 WhatsApp</a>
+    <a href="https://www.linkedin.com/in/saranya-s-78014b371/" target="_blank">🔗 LinkedIn</a>
+    <a href="https://www.upwork.com/freelancers/~014031dd72651c3436?mp_source=share" target="_blank">💼 Upwork</a>
+  </div>
+  <p>© 2025 SaiVerse Solutions. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
