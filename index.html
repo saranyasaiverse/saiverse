@@ -24,6 +24,14 @@
       background: #0077b6;
       color: white;
       border-radius: 16px;
+      position: relative;
+    }
+    header img.logo {
+      width: 120px;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      border-radius: 12px;
     }
     header h1 {
       font-size: 3rem;
@@ -56,10 +64,6 @@
     .plan {
       margin-bottom: 20px;
     }
-    .plan strong {
-      display: block;
-      margin-bottom: 5px;
-    }
     .review {
       margin-bottom: 15px;
     }
@@ -83,10 +87,33 @@
       border: none;
       border-radius: 16px;
     }
+    #founder img {
+      max-width: 150px;
+      border-radius: 16px;
+      margin-top: 15px;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+    form button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #0077b6;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
   </style>
 </head>
 <body>
+
   <header>
+    <img src="/images/logo.png" alt="SaiVerse Logo" class="logo" />
     <h1>SaiVerse Solutions</h1>
     <p>Let Us Handle the Chase, While You Focus on Growth</p>
   </header>
@@ -139,6 +166,14 @@
     <div class="review">
       <p><strong>Linda Wong (Singapore)</strong><br />“Amazing support with excellent communication. Will continue working long-term!” ⭐⭐⭐⭐⭐</p>
     </div>
+
+    <h3>Submit a Review</h3>
+    <form action="mailto:info@saiverse.org" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="text" name="country" placeholder="Your Country" required />
+      <textarea name="message" placeholder="Your Feedback" rows="4" required></textarea>
+      <button type="submit">Submit Review</button>
+    </form>
   </section>
 
   <section id="booking">
@@ -162,17 +197,19 @@
     <strong>IFSC:</strong> IOBA0001635<br />
     <strong>Name:</strong> Saranya S<br />
     <strong>Contact:</strong> +91 8939701718</p>
-    <img src="/images/saiverse-qr.png" alt="SaiVerse QR Code" width="200" />
+    <img src="/images/qr.jpg" alt="SaiVerse QR Code" width="200" />
     <p><strong>Review Submission:</strong> Want to share your feedback? Just email or WhatsApp us your review with your country and name.</p>
   </section>
 
   <section id="founder">
     <h2>Meet the Founder</h2>
     <p><strong>Saranya S</strong>, the heart behind SaiVerse, is a passionate professional with deep industry experience, offering strong international-level support to clients globally. Her vision: to help you succeed, simplify your tasks, and provide elite virtual support services.</p>
+    <img src="/images/founder.jpg" alt="Founder Saranya S" />
   </section>
 
   <footer>
     <p>© 2025 SaiVerse.org | Powered by Saranya S | All Rights Reserved</p>
   </footer>
+
 </body>
 </html>
