@@ -1,227 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>SaiVerse Solutions</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SaiVerse Solutions – Payment Recovery Experts</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      scroll-behavior: smooth;
+      font-family: 'Inter', sans-serif;
     }
 
     body {
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(to right, #f5f7fa, #c3cfe2);
-      color: #333;
+      background: #f4f7fb;
+      color: #1f2937;
       line-height: 1.6;
-      padding-bottom: 50px;
     }
 
     header {
-      background: #1f2937;
-      color: #fff;
-      padding: 30px 20px;
+      background: #0d47a1;
+      color: white;
+      padding: 40px 20px;
       text-align: center;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    header img {
+      max-width: 120px;
     }
 
     header h1 {
-      font-size: 2.4rem;
-      margin-bottom: 10px;
+      margin-top: 20px;
+      font-size: 28px;
     }
 
-    header p {
-      font-size: 1.1rem;
-      color: #cbd5e1;
-    }
-
-    .section {
+    section {
       padding: 40px 20px;
-      max-width: 1000px;
+      max-width: 960px;
       margin: auto;
     }
 
-    .section h2 {
-      font-size: 2rem;
+    h2 {
+      font-size: 24px;
+      color: #0d47a1;
       margin-bottom: 20px;
-      color: #1f2937;
     }
 
-    .founder img, .qr img {
-      width: 160px;
-      border-radius: 15px;
-      margin-bottom: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
-
-    .founder p {
-      font-size: 1rem;
-      margin-top: 10px;
+    .founder-img {
+      max-width: 200px;
+      border-radius: 12px;
     }
 
     .pricing {
-      display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-
-    .price-box {
-      background: #ffffff;
-      border: 1px solid #ccc;
+      background: #e3f2fd;
+      border-radius: 12px;
       padding: 20px;
-      border-radius: 10px;
-      width: 240px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-      transition: transform 0.3s ease;
     }
 
-    .price-box:hover {
-      transform: scale(1.03);
-    }
-
-    .price-box h3 {
-      color: #111827;
-      margin-bottom: 10px;
-    }
-
-    .reviews {
-      background: #e0f2fe;
-      border-left: 6px solid #0284c7;
-      padding: 15px;
+    .pricing h3 {
       margin: 10px 0;
+    }
+
+    .review {
+      background: #ffffff;
+      border-left: 4px solid #0d47a1;
+      padding: 15px;
+      margin-bottom: 15px;
       border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
     }
 
-    .review-stars {
-      color: #facc15;
-    }
-
-    .buttons a {
-      margin: 8px;
-      display: inline-block;
-      background: #1d4ed8;
-      color: #fff;
-      padding: 10px 15px;
-      border-radius: 5px;
-      text-decoration: none;
-      transition: background 0.3s ease;
-    }
-
-    .buttons a:hover {
-      background: #2563eb;
-    }
-
-    footer {
-      background: #1f2937;
-      color: #cbd5e1;
-      padding: 20px;
+    .footer {
+      background: #0d47a1;
+      color: white;
       text-align: center;
-      margin-top: 40px;
+      padding: 20px;
     }
 
-    .animate {
-      animation: fadeIn 1.5s ease-in-out;
+    .btn {
+      display: inline-block;
+      background: #0d47a1;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      margin-top: 10px;
     }
 
     @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
   </style>
 </head>
-<body>
 
-  <header class="animate">
-    <img src="https://your-github-url/logo.png" alt="Logo" style="height:80px;">
-    <h1>SaiVerse Solutions</h1>
-    <p>“Let Us Handle the Chase, While You Focus on Growth”</p>
+<body>
+  <header>
+    <img src="logo.png" alt="SaiVerse Logo">
+    <h1>Let Us Handle the Chase, While You Focus on Growth.</h1>
   </header>
 
-  <section class="section founder animate">
-    <h2>Founder</h2>
-    <img src="https://your-github-url/founder.jpg" alt="Founder Image">
-    <p><strong>Saranya S</strong><br>17+ Years of Experience in Payment Recovery, Client Handling, and Corporate Collections</p>
+  <section>
+    <h2>Meet the Founder</h2>
+    <img src="founder.jpg" alt="Founder" class="founder-img">
+    <p>Saranya S, Founder of SaiVerse Solutions, brings over 17 years of expertise in payment collection, international client handling, and high-stakes recovery. Her unmatched experience has helped countless businesses secure their pending payments with dignity and success.</p>
   </section>
 
-  <section class="section animate">
-    <h2>About</h2>
-    <p>We specialize in one-on-one consultation for recovering delayed payments and tough collections. Our proven strategies and professional follow-up methods have helped businesses regain control over cash flow.</p>
-  </section>
+  <section>
+    <h2>About SaiVerse</h2>
+    <p>SaiVerse Solutions is your strategic partner in recovering delayed payments and handling financial follow-ups. Our process is built on professionalism, privacy, and precision. We deal with clients globally and act as your back-end financial arm to chase payments – respectfully and effectively.</p>
 
-  <section class="section animate">
-    <h2>Why Choose Us</h2>
+    <h2>Why Choose Us?</h2>
     <ul>
-      <li>✅ International Approach</li>
-      <li>✅ Experienced Team</li>
-      <li>✅ Strong Client Communication</li>
-      <li>✅ Live Follow-Up Support</li>
-      <li>✅ Personal Consultation Sessions</li>
+      <li>🌍 Global Experience in Payment Recovery</li>
+      <li>📞 Personalized Consultation & Strategy</li>
+      <li>✅ Transparent Process – No Hidden Fees</li>
+      <li>🕒 24x7 Support via WhatsApp and Email</li>
     </ul>
   </section>
 
-  <section class="section animate">
-    <h2>Service Plans</h2>
-    <div class="pricing">
-      <div class="price-box">
-        <h3>30 Minutes</h3>
-        <p><strong>$99 USD</strong></p>
-      </div>
-      <div class="price-box">
-        <h3>60 Minutes</h3>
-        <p><strong>$149 USD</strong></p>
-      </div>
+  <section class="pricing">
+    <h2>Consultation Plans</h2>
+    <h3>$99 – 30 Minutes</h3>
+    <p>Get clarity on where to start, how to act, and when to escalate. Great for quick advice or strategy check-in.</p>
+    <h3>$149 – 1 Hour</h3>
+    <p>Deep-dive session including profile review, payment documents, client history, and step-by-step action plan.</p>
+    <a href="https://calendly.com/saiverse/consultation" class="btn">Book via Calendly</a>
+  </section>
+
+  <section>
+    <h2>Live Reviews</h2>
+    <div class="review">
+      <strong>Michael D., New York</strong>
+      <p>“Outstanding advice. We received our payment within 2 weeks. Highly professional.”</p>
+    </div>
+    <div class="review">
+      <strong>Chloe L., Dubai</strong>
+      <p>“The approach was respectful and sharp. Perfect for international dealings.”</p>
+    </div>
+    <div class="review">
+      <strong>Ivan S., Toronto</strong>
+      <p>“Saranya knows exactly what she's doing. The consultation was worth every dollar.”</p>
     </div>
   </section>
 
-  <section class="section animate">
-    <h2>Client Reviews</h2>
-    <div class="reviews">
-      <p>"Highly professional service!" - John M. (New York, USA) <span class="review-stars">★★★★★</span></p>
-    </div>
-    <div class="reviews">
-      <p>"She helped recover $20K+ within weeks!" - Maria L. (Sydney, Australia) <span class="review-stars">★★★★★</span></p>
-    </div>
-    <div class="reviews">
-      <p>"Best follow-up strategist I’ve worked with." - Carlos V. (Toronto, Canada) <span class="review-stars">★★★★★</span></p>
-    </div>
+  <section>
+    <h2>Contact Us</h2>
+    <p>📱 WhatsApp: <a href="https://wa.me/918939701718">+91 8939701718</a></p>
+    <p>📧 Email: <a href="mailto:info@saiverse.org">info@saiverse.org</a></p>
+    <p>🔗 LinkedIn: <a href="https://linkedin.com/in/saranyas">Saranya S</a></p>
+    <p>🌐 Upwork: <a href="https://www.upwork.com/freelancers/~01abcdef">SaiVerse Solutions</a></p>
   </section>
 
-  <section class="section animate">
-    <h2>Connect With Us</h2>
-    <div class="buttons">
-      <a href="https://wa.me/918939701718">WhatsApp</a>
-      <a href="mailto:saiversesolutions@gmail.com">Email</a>
-      <a href="https://www.linkedin.com/in/saranyas-collections">LinkedIn</a>
-      <a href="https://www.upwork.com/freelancers/~your-upwork-id">Upwork</a>
-      <a href="https://calendly.com/saiverse/consultation">Book via Calendly</a>
-    </div>
+  <section>
+    <h2>Payment Methods</h2>
+    <p><strong>Bank Transfer (India)</strong></p>
+    <p>Bank: Indian Overseas Bank</p>
+    <p>Account No: 163501000000881</p>
+    <p>IFSC: IOBA0001635</p>
+    <p>Name: Saranya S</p>
+    <p>Phone: +91 8939701718</p>
+    <img src="qr.jpg" alt="QR Code" style="max-width:200px;">
   </section>
 
-  <section class="section qr animate">
-    <h2>QR Payment & Bank Details</h2>
-    <img src="https://your-github-url/qr.png" alt="QR Code">
-    <p>
-      <strong>Bank:</strong> Indian Overseas Bank<br>
-      <strong>Account No:</strong> 163501000000881<br>
-      <strong>IFSC:</strong> IOBA0001635<br>
-      <strong>Name:</strong> Saranya S<br>
-      <strong>Contact:</strong> +91 8939701718
-    </p>
+  <section>
+    <h2>How to Submit Reviews</h2>
+    <p>Please click below to share your experience live.</p>
+    <a href="https://forms.gle/YOUR-FORM-LINK" class="btn">Leave a Review</a>
   </section>
 
-  <section class="section animate">
-    <h2>Review Submission</h2>
-    <p>Please send your reviews via email or WhatsApp. Mention your name, city, and experience in short.</p>
-  </section>
-
-  <footer>
-    © 2025 All rights reserved | Designed by <strong>Saranya S</strong>
-  </footer>
-
+  <div class="footer">
+    <p>Powered by Saranya S | © 2025 SaiVerse Solutions</p>
+  </div>
 </body>
+
 </html>
