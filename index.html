@@ -4,155 +4,211 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SaiVerse Solutions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(to right, #fdfbfb, #ebedee);
+    * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background: linear-gradient(135deg, #f3f4f6, #e0f7fa);
       color: #333;
+      line-height: 1.6;
+      padding: 20px;
     }
-
     header {
-      background: #7f5af0;
-      color: white;
       text-align: center;
-      padding: 2rem 1rem;
-      animation: fadeInDown 1s ease;
+      padding: 40px 20px;
+      background: #0077b6;
+      color: white;
+      border-radius: 16px;
+      position: relative;
     }
-
-    @keyframes fadeInDown {
-      from {opacity: 0; transform: translateY(-20px);}
-      to {opacity: 1; transform: translateY(0);}
+    header img.logo {
+      width: 120px;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      border-radius: 12px;
     }
-
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2rem;
+    }
+    nav {
+      margin: 20px 0;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #0077b6;
+      font-weight: 500;
+    }
     section {
-      padding: 2rem;
-      max-width: 900px;
-      margin: auto;
+      background: white;
+      border-radius: 16px;
+      padding: 30px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
-
     h2 {
-      color: #4a00e0;
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 0.5rem;
+      margin-bottom: 15px;
+      color: #023e8a;
     }
-
-    .founder-img {
-      width: 200px;
-      border-radius: 20px;
-      margin-bottom: 1rem;
+    .plan {
+      margin-bottom: 20px;
     }
-
-    .services, .contact, .review, .booking {
-      background: #fff;
-      border-radius: 15px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-      margin-bottom: 2rem;
-      padding: 1.5rem;
-      animation: fadeIn 1s ease-in;
+    .review {
+      margin-bottom: 15px;
     }
-
-    @keyframes fadeIn {
-      from {opacity: 0;}
-      to {opacity: 1;}
-    }
-
-    .icons a {
-      margin-right: 15px;
+    .contact-icons a {
+      display: inline-block;
+      margin-right: 10px;
+      padding: 8px 12px;
+      background: #00b4d8;
+      color: white;
       text-decoration: none;
-      font-weight: bold;
+      border-radius: 8px;
     }
-
     footer {
-      background: #222;
-      color: white;
       text-align: center;
-      padding: 1rem;
+      margin-top: 40px;
+      font-size: 0.9rem;
     }
-
-    .qr {
-      width: 150px;
-    }
-
-    .btn {
-      background: #4a00e0;
-      color: white;
-      padding: 10px 20px;
+    iframe {
+      width: 100%;
+      height: 600px;
       border: none;
-      border-radius: 10px;
-      text-decoration: none;
-      font-size: 1rem;
+      border-radius: 16px;
     }
-
-    .btn:hover {
-      background: #6a0fef;
+    #founder img {
+      max-width: 150px;
+      border-radius: 16px;
+      margin-top: 15px;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+    form button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #0077b6;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
     }
   </style>
 </head>
 <body>
 
   <header>
+    <img src="https://www.saiverse.org/images/logo.png" alt="SaiVerse Logo" class="logo" />
     <h1>SaiVerse Solutions</h1>
     <p>Let Us Handle the Chase, While You Focus on Growth</p>
   </header>
 
-  <section class="about">
-    <h2>Founder</h2>
-    <img src="founder.jpg" class="founder-img" alt="Founder Saranya" />
-    <p><strong>Saranya S</strong> – A strong, spiritually aligned, and intuitive founder with over 10 years of experience in business, client handling, and growth strategy. SaiVerse is her powerful creation with the mission to support global clients virtually with trust, quality, and speed.</p>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#plans">Plans</a>
+    <a href="#why">Why Choose Us</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#contact">Contact</a>
+    <a href="#founder">Founder Saranya</a>
+  </nav>
+
+  <section id="about">
+    <h2>About SaiVerse</h2>
+    <p>We are a virtual support powerhouse offering professional services across borders. From task management to payment follow-ups, we make your backend seamless and stress-free.</p>
   </section>
 
-  <section class="services">
-    <h2>About Us</h2>
-    <p>SaiVerse offers end-to-end Virtual Support Services. From client coordination, data handling, follow-up calls, appointment booking to business backend support, we are your perfect partner for peace and productivity. We blend technology, communication, and human efficiency in the right balance to deliver top-class assistance.</p>
+  <section id="plans">
+    <h2>Our Plans</h2>
+    <div class="plan">
+      <strong>⏱ 30-Minute Support – $99</strong>
+      <p>Best for quick tasks, documentation, email handling, or light CRM work.</p>
+    </div>
+    <div class="plan">
+      <strong>⏳ 1-Hour Full Support – $149</strong>
+      <p>Ideal for deeper work, file creation, customer coordination, or process support.</p>
+    </div>
   </section>
 
-  <section class="services">
+  <section id="why">
     <h2>Why Choose Us?</h2>
     <ul>
-      <li>✅ Personalised service by an experienced founder</li>
-      <li>✅ 100% trust, timely updates, and error-free output</li>
-      <li>✅ Affordable packages and international support</li>
-      <li>✅ Client-friendly, goal-oriented, and spiritually aligned</li>
+      <li>✅ Personalized, prompt support</li>
+      <li>✅ Strict confidentiality & professionalism</li>
+      <li>✅ Available across multiple time zones</li>
+      <li>✅ Handled over $100000 worth of task value globally</li>
+      <li>✅ Flexible communication: Email, WhatsApp, Upwork, LinkedIn</li>
     </ul>
   </section>
 
-  <section class="services">
-    <h2>Our Services</h2>
-    <ul>
-      <li>📌 Client follow-up and coordination</li>
-      <li>📌 Appointment and calendar booking</li>
-      <li>📌 Lead management & CRM updates</li>
-      <li>📌 Data entry, Excel & email management</li>
-      <li>📌 Research and business documentation</li>
-    </ul>
+  <section id="reviews">
+    <h2>What Clients Say</h2>
+    <div class="review">
+      <p><strong>Emily Carter (USA)</strong><br />“SaiVerse helped me recover $45,000 in client dues. Their professionalism is unmatched!” ⭐⭐⭐⭐⭐</p>
+    </div>
+    <div class="review">
+      <p><strong>James Thompson (UK)</strong><br />“Always on time, super helpful and friendly. Highly recommend!” ⭐⭐⭐⭐⭐</p>
+    </div>
+    <div class="review">
+      <p><strong>Linda Wong (Singapore)</strong><br />“Amazing support with excellent communication. Will continue working long-term!” ⭐⭐⭐⭐⭐</p>
+    </div>
+
+    <h3>Submit a Review</h3>
+    <form action="mailto:info@saiverse.org" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="text" name="country" placeholder="Your Country" required />
+      <textarea name="message" placeholder="Your Feedback" rows="4" required></textarea>
+      <button type="submit">Submit Review</button>
+    </form>
   </section>
 
-  <section class="booking">
-    <h2>Book a Free Discovery Call</h2>
-    <p>Want to discuss your business needs with us? Click below to book a 1:1 Zoom call.</p>
-    <a href="https://calendly.com/saiverse" class="btn" target="_blank">📅 Book Now via Calendly</a>
+  <section id="booking">
+    <h2>Book a Call</h2>
+    <iframe src="https://calendly.com/saiverse/30min"></iframe>
   </section>
 
-  <section class="review" id="reviews">
-    <h2>Client Reviews</h2>
-    <p>⭐⭐⭐⭐⭐ “Extremely professional and handles tasks even better than expected.”</p>
-    <p>⭐⭐⭐⭐⭐ “Saranya is trustworthy, detail-oriented and communicates very well.”</p>
-    <p>Want to add your review? Email us or WhatsApp!</p>
+  <section id="contact">
+    <h2>Connect With Me</h2>
+    <div class="contact-icons">
+      <a href="mailto:info@saiverse.org">Email</a>
+      <a href="https://wa.me/918939701718">WhatsApp</a>
+      <a href="https://www.upwork.com/freelancers/~01a2e7c2bd1c5409b4">Upwork</a>
+      <a href="https://www.linkedin.com/in/saranya-saiverse">LinkedIn</a>
+      <a href="https://calendly.com/saiverse/30min">Book via Calendly</a>
+    </div>
+    <br />
+    <h3>Bank Details for Direct Payment</h3>
+    <p><strong>Bank:</strong> Indian Overseas Bank<br />
+    <strong>Account No:</strong> 163501000000881<br />
+    <strong>IFSC:</strong> IOBA0001635<br />
+    <strong>Name:</strong> Saranya S<br />
+    <strong>Contact:</strong> +91 8939701718</p>
+    <img src="https://www.saiverse.org/images/qr.jpg" alt="SaiVerse QR Code" width="200" />
+    <p><strong>Review Submission:</strong> Want to share your feedback? Just email or WhatsApp us your review with your country and name.</p>
   </section>
 
-  <section class="contact">
-    <h2>Contact & Connect</h2>
-    <p><strong>Email:</strong> <a href="mailto:info@saiverse.org">info@saiverse.org</a></p>
-    <p><strong>WhatsApp:</strong> <a href="https://wa.me/918939701718" target="_blank">+91 89397 01718</a></p>
-    <p><strong>Upwork:</strong> <a href="https://www.upwork.com/freelancers/~saranyasaiverse" target="_blank">Visit My Upwork Profile</a></p>
-    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/saranya-s-saiverse" target="_blank">LinkedIn Profile</a></p>
-    <img src="qr.jpg" class="qr" alt="Scan to connect" />
+  <section id="founder">
+    <h2>Meet the Founder</h2>
+    <p><strong>Saranya S</strong>, the heart behind SaiVerse, is a passionate professional with deep industry experience, offering strong international-level support to clients globally. Her vision: to help you succeed, simplify your tasks, and provide elite virtual support services.</p>
+    <img src="https://www.saiverse.org/images/founder.jpg" alt="Founder Saranya S" />
   </section>
 
   <footer>
-    <p>© 2025 SaiVerse. All rights reserved.</p>
+    <p>© 2025 SaiVerse.org | Powered by Saranya S | All Rights Reserved</p>
   </footer>
 
 </body>
