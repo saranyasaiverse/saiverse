@@ -1,186 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SaiVerse Solutions – Payment Recovery Experts</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SaiVerse Solutions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
   <style>
-    * {
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #0c1b33;
+      color: #fff;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-      font-family: 'Inter', sans-serif;
     }
-
-    body {
-      background: #f4f7fb;
-      color: #1f2937;
-      line-height: 1.6;
-    }
-
-    header {
-      background: #0d47a1;
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
-      animation: fadeIn 2s ease-in-out;
-    }
-
-    header img {
-      max-width: 120px;
-    }
-
-    header h1 {
-      margin-top: 20px;
-      font-size: 28px;
-    }
-
-    section {
-      padding: 40px 20px;
-      max-width: 960px;
+    header, footer, section {
+      padding: 2rem;
+      max-width: 1200px;
       margin: auto;
     }
-
-    h2 {
-      font-size: 24px;
-      color: #0d47a1;
-      margin-bottom: 20px;
+    h1, h2, h3 {
+      color: #fff;
     }
-
-    .founder-img {
-      max-width: 200px;
-      border-radius: 12px;
-    }
-
-    .pricing {
-      background: #e3f2fd;
-      border-radius: 12px;
-      padding: 20px;
-    }
-
-    .pricing h3 {
-      margin: 10px 0;
-    }
-
-    .review {
-      background: #ffffff;
-      border-left: 4px solid #0d47a1;
-      padding: 15px;
-      margin-bottom: 15px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-    }
-
-    .footer {
-      background: #0d47a1;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
-
-    .btn {
-      display: inline-block;
-      background: #0d47a1;
-      color: white;
-      padding: 10px 20px;
-      border-radius: 6px;
+    a {
+      color: #facc15;
       text-decoration: none;
-      margin-top: 10px;
     }
-
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(-20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+    .highlight {
+      color: #facc15;
+      font-weight: bold;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #081425;
+    }
+    nav a {
+      margin-left: 1.5rem;
+    }
+    .services, .reviews {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .card {
+      background: #15294a;
+      padding: 1rem;
+      border-radius: 10px;
+      flex: 1;
+      min-width: 250px;
+    }
+    .contact-form input, .contact-form textarea {
+      display: block;
+      width: 100%;
+      margin-bottom: 1rem;
+      padding: 0.5rem;
+      border: none;
+      border-radius: 5px;
+    }
+    .contact-form button {
+      padding: 0.5rem 1rem;
+      background-color: #facc15;
+      color: #000;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.875rem;
+      color: #aaa;
     }
   </style>
 </head>
-
 <body>
+  <nav>
+    <img src="logo.png" alt="SaiVerse Logo" height="40">
+    <div>
+      <a href="#about">About</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
   <header>
-    <img src="logo.png" alt="SaiVerse Logo">
-    <h1>Let Us Handle the Chase, While You Focus on Growth.</h1>
+    <h1>Welcome to <span class="highlight">SaiVerse Solutions</span></h1>
+    <p class="highlight">Let Us Handle the Chase, While You Focus on Growth.</p>
+    <p>Your trusted partner in global freelancing, payment recovery & client coordination.</p>
   </header>
 
-  <section>
-    <h2>Meet the Founder</h2>
-    <img src="founder.jpg" alt="Founder" class="founder-img">
-    <p>Saranya S, Founder of SaiVerse Solutions, brings over 17 years of expertise in payment collection, international client handling, and high-stakes recovery. Her unmatched experience has helped countless businesses secure their pending payments with dignity and success.</p>
+  <section id="founder">
+    <img src="founder.jpg" alt="Founder Image" width="150">
+    <h2>Saranya S</h2>
+    <p><strong>Experience:</strong> 17 Years in Collections, Payment Recovery & Customer Handling</p>
+    <p>I’m Saranya, the founder of SaiVerse Solutions. With 17 years of hands-on experience in payment collection, international client coordination, legal follow-ups, and customer service, I’ve built a strong reputation for recovering delayed payments professionally and ethically. I’ve worked with over 1000 clients, resolving high-value pending transactions with precision and trust.</p>
   </section>
 
-  <section>
-    <h2>About SaiVerse</h2>
-    <p>SaiVerse Solutions is your strategic partner in recovering delayed payments and handling financial follow-ups. Our process is built on professionalism, privacy, and precision. We deal with clients globally and act as your back-end financial arm to chase payments – respectfully and effectively.</p>
+  <section id="about">
+    <h2>About SaiVerse Solutions</h2>
+    <p>At SaiVerse, we offer international consultation for payment recovery and delayed payment strategies. Whether you're a freelancer, agency, or company owner facing non-paying clients, we provide practical, step-by-step support to get your money back.</p>
 
-    <h2>Why Choose Us?</h2>
+    <h3>Why Choose Us</h3>
     <ul>
-      <li>🌍 Global Experience in Payment Recovery</li>
-      <li>📞 Personalized Consultation & Strategy</li>
-      <li>✅ Transparent Process – No Hidden Fees</li>
-      <li>🕒 24x7 Support via WhatsApp and Email</li>
+      <li>✅ 17+ Years in Collections & Escalation Handling</li>
+      <li>✅ Legal & Emotional Intelligence in Recovery</li>
+      <li>✅ Trusted by Global Professionals</li>
+      <li>✅ Personalized Action Plans</li>
+      <li>✅ Fast Response with Clarity & Confidence</li>
     </ul>
   </section>
 
-  <section class="pricing">
-    <h2>Consultation Plans</h2>
-    <h3>$99 – 30 Minutes</h3>
-    <p>Get clarity on where to start, how to act, and when to escalate. Great for quick advice or strategy check-in.</p>
-    <h3>$149 – 1 Hour</h3>
-    <p>Deep-dive session including profile review, payment documents, client history, and step-by-step action plan.</p>
-    <a href="https://calendly.com/saiverse/consultation" class="btn">Book via Calendly</a>
+  <section id="pricing">
+    <h2>Consultation Plans (USD)</h2>
+    <div class="services">
+      <div class="card">
+        <h3>$99 – 30 Minutes</h3>
+        <p>Ideal for freelancers or agencies with 1–2 clients to recover from.</p>
+      </div>
+      <div class="card">
+        <h3>$149 – 1 Hour</h3>
+        <p>Best for handling multiple clients, legal concerns, or complex payment disputes.</p>
+      </div>
+    </div>
+    <p><a href="#">🔗 Book Now on Calendly</a></p>
   </section>
 
-  <section>
-    <h2>Live Reviews</h2>
-    <div class="review">
-      <strong>Michael D., New York</strong>
-      <p>“Outstanding advice. We received our payment within 2 weeks. Highly professional.”</p>
-    </div>
-    <div class="review">
-      <strong>Chloe L., Dubai</strong>
-      <p>“The approach was respectful and sharp. Perfect for international dealings.”</p>
-    </div>
-    <div class="review">
-      <strong>Ivan S., Toronto</strong>
-      <p>“Saranya knows exactly what she's doing. The consultation was worth every dollar.”</p>
+  <section id="reviews">
+    <h2>Live Reviews from Clients</h2>
+    <div class="reviews">
+      <div class="card">✅ “Saranya helped me recover $45,000 from a client who had gone silent. Her process is calm but sharp.”<br>— Jessica M., 🇺🇸 USA</div>
+      <div class="card">✅ “She guided me step-by-step and I got my payment within 5 days. Highly recommended.”<br>— Ahmed R., 🇦🇪 UAE</div>
+      <div class="card">✅ “As a freelancer in Germany, I was struggling. She helped me draft the perfect legal message.”<br>— Nina S., 🇩🇪 Germany</div>
     </div>
   </section>
 
-  <section>
-    <h2>Contact Us</h2>
+  <section id="submit-review">
+    <h3>🗂️ Submit Your Review</h3>
+    <form class="contact-form">
+      <input type="text" placeholder="Name" required />
+      <input type="text" placeholder="Country" required />
+      <textarea placeholder="Feedback (max 300 characters)" maxlength="300"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <section id="bank-details">
+    <h2>🏦 Indian Clients – Direct Bank Transfer Details</h2>
+    <p><strong>Bank Name:</strong> Indian Overseas Bank</p>
+    <p><strong>Account Holder:</strong> Saranya S</p>
+    <p><strong>Account Number:</strong> 163501000000881</p>
+    <p><strong>IFSC Code:</strong> IOBA0001635</p>
+    <p><strong>Phone:</strong> +91 8939701718</p>
+    <img src="qr.jpg" alt="QR Code for Payment" width="150">
+  </section>
+
+  <section id="contact">
+    <h2>📞 Contact Us</h2>
     <p>📱 WhatsApp: <a href="https://wa.me/918939701718">+91 8939701718</a></p>
     <p>📧 Email: <a href="mailto:info@saiverse.org">info@saiverse.org</a></p>
-    <p>🔗 LinkedIn: <a href="https://linkedin.com/in/saranyas">Saranya S</a></p>
-    <p>🌐 Upwork: <a href="https://www.upwork.com/freelancers/~01abcdef">SaiVerse Solutions</a></p>
+    <p>🔗 LinkedIn: <a href="https://www.linkedin.com/in/saranya-s-78014b371/">Saranya S</a></p>
+    <p>🌐 Upwork: <a href="https://www.upwork.com/freelancers/~014031dd72651c3436?mp_source=share">SaiVerse Solutions</a></p>
   </section>
 
-  <section>
-    <h2>Payment Methods</h2>
-    <p><strong>Bank Transfer (India)</strong></p>
-    <p>Bank: Indian Overseas Bank</p>
-    <p>Account No: 163501000000881</p>
-    <p>IFSC: IOBA0001635</p>
-    <p>Name: Saranya S</p>
-    <p>Phone: +91 8939701718</p>
-    <img src="qr.jpg" alt="QR Code" style="max-width:200px;">
-  </section>
-
-  <section>
-    <h2>How to Submit Reviews</h2>
-    <p>Please click below to share your experience live.</p>
-    <a href="https://forms.gle/YOUR-FORM-LINK" class="btn">Leave a Review</a>
-  </section>
-
-  <div class="footer">
-    <p>Powered by Saranya S | © 2025 SaiVerse Solutions</p>
-  </div>
+  <footer>
+    Powered by Saranya S | All Rights Reserved © 2025<br>
+    Design & Domain: <a href="https://www.saiverse.org">saiverse.org</a>
+  </footer>
 </body>
-
 </html>
