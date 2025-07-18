@@ -2,219 +2,112 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>SaiVerse Solutions</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
   <style>
-    * {
-      box-sizing: border-box;
-    }
     body {
-      font-family: 'Roboto', sans-serif;
+      font-family: 'Segoe UI', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #002244;
-      color: #ffffff;
+      background-color: #f9f9f9;
+      color: #333;
+      text-align: center;
     }
     header {
-      background-color: #002244;
+      background-color: #4b0082;
       color: white;
-      text-align: center;
       padding: 20px 10px;
     }
-    .logo {
-      width: 100px;
-      margin-bottom: 10px;
+    h1 {
+      margin: 0;
+      font-size: 2.2em;
     }
-    .action-buttons {
+    p.tagline {
+      font-size: 1.1em;
+      margin-top: 8px;
+    }
+    section.pricing {
+      padding: 40px 20px;
+    }
+    .plan {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 400px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    }
+    .plan h2 {
+      font-size: 1.4em;
+      color: #4b0082;
+    }
+    .plan ul {
+      list-style: none;
+      padding: 0;
+      margin: 15px 0;
+    }
+    .plan ul li {
+      margin: 8px 0;
+    }
+    .plan .price {
+      font-size: 1.8em;
+      color: #333;
       margin-top: 10px;
     }
-    .action-buttons a {
-      margin: 0 10px;
-      font-size: 28px;
+    footer {
+      background: #eee;
+      padding: 20px 10px;
+      margin-top: 40px;
+      font-size: 0.9em;
     }
-    .action-buttons a:hover {
-      transform: scale(1.2);
-    }
-    .intro {
-      padding: 40px 20px;
-      text-align: center;
-      border: 2px solid #c2a800;
-    }
-    .intro img {
-      width: 180px;
-      border-radius: 50%;
-      border: 3px solid #c2a800;
-    }
-    .intro h2 {
-      color: #c2a800;
+    .contact-links {
       margin-top: 20px;
     }
-    .services, .why-us, .about {
-      background-color: #002244;
-      padding: 40px 20px;
-      text-align: center;
-      border-top: 2px solid #c2a800;
-    }
-    .services h2, .why-us h2, .about h2 {
-      color: #c2a800;
-    }
-    .service-item {
+    .contact-links a {
       display: inline-block;
-      width: 280px;
-      margin: 20px;
-      padding: 20px;
-      border: 2px solid #c2a800;
-      background-color: #001a33;
-      border-radius: 10px;
-    }
-    .service-item i {
-      font-size: 60px;
-      color: #f9c400;
-    }
-    .service-item h3 {
-      margin-top: 15px;
-      color: #fff;
-    }
-    .service-item p {
-      font-size: 14px;
-      color: #ddd;
-    }
-
-    /* ✅ Booking iframe size reduced */
-    .booking iframe {
-      width: 100%;
-      max-width: 500px;
-      height: 250px;
-      border: none;
-    }
-    .booking {
-      background-color: #002244;
-      padding: 40px 20px;
-      text-align: center;
-      border-top: 2px solid #c2a800;
-      border-bottom: 2px solid #c2a800;
-    }
-
-    .payment {
-      background-color: #002244;
-      padding: 40px 20px;
-      text-align: center;
-    }
-    .payment img {
-      margin-top: 10px;
-    }
-
-    .reviews {
-      background-color: #002244;
-      padding: 40px 20px;
-      text-align: center;
-    }
-
-    /* ✅ Review box with full yellow border */
-    .review-box {
-      background: #001a33;
-      margin: 20px auto;
-      padding: 20px;
-      border: 2px solid #f9c400;
-      width: 80%;
-      text-align: left;
-    }
-    .review-box span {
-      color: #f9c400;
-      font-size: 20px;
-    }
-
-    .reviews form {
-      margin-top: 30px;
-    }
-    .reviews input, .reviews textarea {
-      width: 80%;
-      padding: 10px;
-      margin: 10px 0;
-      border: none;
-      border-radius: 5px;
-    }
-    .reviews button {
-      padding: 10px 20px;
-      background-color: #f9c400;
-      color: #002244;
-      font-weight: bold;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    .footer {
-      background-color: #001a33;
-      color: white;
-      text-align: center;
-      padding: 10px;
-    }
-
-    .about p, .why-us p {
-      color: #ccc;
-      margin-top: 10px;
-    }
-    .why-card {
-      display: inline-block;
-      width: 250px;
-      margin: 10px;
-      padding: 20px;
-      background-color: #001a33;
-      border-radius: 10px;
-      border: 2px solid #c2a800;
-    }
-
-    .plans {
-      background-color: #002244;
-      padding: 40px 20px;
-      text-align: center;
-      border-top: 2px solid #c2a800;
-    }
-    .plan-box {
-      display: inline-block;
-      background-color: #001a33;
-      border: 2px solid #f9c400;
-      margin: 15px;
-      padding: 25px;
-      border-radius: 10px;
-      width: 300px;
-      color: #fff;
+      margin: 5px 10px;
+      text-decoration: none;
+      color: #4b0082;
+      font-weight: 500;
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="logo.png" alt="Logo" class="logo">
     <h1>SaiVerse Solutions</h1>
-    <p>Let Us Handle the Chase, While You Focus on Growth.</p>
-    <div class="action-buttons">
-      <a href="mailto:info@saiverse.org" title="Email"><i class="fas fa-envelope" style="color:#EA4335;"></i></a>
-      <a href="https://wa.me/918939701718" title="WhatsApp"><i class="fab fa-whatsapp" style="color:#25D366;"></i></a>
-      <a href="https://linkedin.com/in/saranya-s-78014b371" title="LinkedIn"><i class="fab fa-linkedin" style="color:#0077B5;"></i></a>
-      <a href="https://www.upwork.com/freelancers/~014031dd72651c3436" title="Upwork"><i class="fas fa-briefcase" style="color:#6fda44;"></i></a>
-    </div>
+    <p class="tagline">Let Us Handle the Chase, While You Focus on Growth.</p>
   </header>
 
-  <!-- ✅ Now add this section above the footer -->
-  <section class="plans">
-    <h2>Our Pricing Plans</h2>
-    <div class="plan-box">
-      <h3>Basic Plan</h3>
-      <p>Includes 30-min consultation + payment strategy tips.</p>
-      <p><strong>₹999</strong></p>
+  <section class="pricing">
+    <div class="plan">
+      <h2>Basic Plan</h2>
+      <ul>
+        <li>✔️ 30-min consultation</li>
+        <li>✔️ Payment recovery strategy tips</li>
+      </ul>
+      <div class="price">$99</div>
     </div>
-    <div class="plan-box">
-      <h3>Pro Plan</h3>
-      <p>Includes full consultation + direct follow-up guide + client call tips.</p>
-      <p><strong>₹1999</strong></p>
+
+    <div class="plan">
+      <h2>Pro Plan</h2>
+      <ul>
+        <li>✔️ 60-min consultation</li>
+        <li>✔️ Full recovery consultation</li>
+        <li>✔️ Direct follow-up message samples</li>
+        <li>✔️ Live client call guidance</li>
+      </ul>
+      <div class="price">$149</div>
+    </div>
+
+    <div class="contact-links">
+      <a href="https://wa.me/918939701718" target="_blank">📞 WhatsApp: +91 8939701718</a><br/>
+      <a href="mailto:info@saiverse.org">📧 Email: info@saiverse.org</a><br/>
+      <a href="https://calendly.com/saiverse/clarity-session" target="_blank">📅 Book a Session</a>
     </div>
   </section>
 
-  <footer class="footer">
-    <p>&copy; 2025 SaiVerse Solutions. All rights reserved.</p>
+  <footer>
+    © 2025 SaiVerse Solutions. All rights reserved.
   </footer>
 </body>
 </html>
