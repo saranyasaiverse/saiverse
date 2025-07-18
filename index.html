@@ -6,93 +6,168 @@
   <title>SaiVerse Solutions</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      margin: 0; padding: 0;
-      background: #f5f5f5;
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #f7f9fc, #e0eafc);
       color: #333;
     }
-    header, footer {
-      background-color: #000;
+    header {
+      background: #131921;
       color: white;
+      padding: 30px 20px;
       text-align: center;
-      padding: 20px 10px;
     }
-    .logo {
-      font-size: 32px;
-      font-weight: bold;
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
     }
-    .tagline {
-      font-size: 16px;
-      margin-top: 5px;
+    header p {
+      font-size: 1.2em;
+      margin-top: 8px;
     }
-    .section {
+    section {
       padding: 40px 20px;
-      text-align: center;
+      max-width: 900px;
+      margin: auto;
     }
-    .pricing-card {
-      background: white;
-      margin: 20px auto;
-      max-width: 400px;
-      padding: 20px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    h2 {
+      font-size: 2em;
+      border-bottom: 2px solid #333;
+      padding-bottom: 10px;
+    }
+    .plans, .reviews, .bank-details {
+      margin-top: 30px;
+    }
+    .plan {
+      border: 2px solid #444;
       border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 20px;
+      background-color: #fff;
     }
-    .pricing-card h3 {
+    .plan h3 {
       margin-top: 0;
     }
-    .whatsapp, .calendly {
-      margin: 20px auto;
-      text-align: center;
+    .review-card {
+      background: #fff;
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
     }
-    a.button {
-      display: inline-block;
-      padding: 12px 24px;
-      background: green;
-      color: white;
-      text-decoration: none;
+    form input, form select, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0 15px;
       border-radius: 6px;
-      margin-top: 10px;
+      border: 1px solid #ccc;
+    }
+    form button {
+      padding: 12px 24px;
+      background: #131921;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1em;
+    }
+    footer {
+      background: #131921;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    a {
+      color: #0074d9;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
 
-<header>
-  <div class="logo">SaiVerse Solutions</div>
-  <div class="tagline">Let Us Handle the Chase, While You Focus on Growth.</div>
-</header>
+  <header>
+    <h1>SaiVerse Solutions</h1>
+    <p>Let Us Handle the Chase, While You Focus on Growth</p>
+  </header>
 
-<section class="section">
-  <h2>Our Pricing Plans</h2>
-  <div class="pricing-card">
-    <h3>Basic Plan</h3>
-    <p>Includes 30-min consultation + payment strategy tips.</p>
-    <strong>₹999 / $99</strong>
-  </div>
-  <div class="pricing-card">
-    <h3>Pro Plan</h3>
-    <p>Includes full consultation + direct follow-up guide + client call tips.</p>
-    <strong>₹1999 / $149</strong>
-  </div>
-</section>
+  <section>
+    <h2>About Us</h2>
+    <p>We are a globally trusted Virtual Assistant and Collections Partner. Our goal is to handle follow-ups, payments, and strategy so you can focus on scaling your business. From startups to agencies, we empower your cash flow and clarity with expert support.</p>
+  </section>
 
-<section class="section whatsapp">
-  <h2>Message Us</h2>
-  <a class="button" href="https://wa.me/918939701718?text=Hi%20SaiVerse%20Team%2C%20I%27m%20interested%20in%20your%20services!" target="_blank">
-    WhatsApp Chat
-  </a>
-</section>
+  <section class="plans">
+    <h2>Our Plans</h2>
+    <div class="plan">
+      <h3>💡 Basic Plan – $99</h3>
+      <ul>
+        <li>30-min consultation</li>
+        <li>Payment follow-up strategy</li>
+        <li>Initial guide to collections process</li>
+      </ul>
+    </div>
+    <div class="plan">
+      <h3>🚀 Pro Plan – $149</h3>
+      <ul>
+        <li>1-hour consultation</li>
+        <li>Full guide to handle follow-ups</li>
+        <li>Client call tips & objection handling</li>
+        <li>Personalized email/WhatsApp sample copy</li>
+      </ul>
+    </div>
+  </section>
 
-<section class="section calendly">
-  <h2>Book a Consultation</h2>
-  <a class="button" href="https://calendly.com/saiverse/clarity-session" target="_blank">
-    Book Now
-  </a>
-</section>
+  <section class="reviews">
+    <h2>Client Testimonials</h2>
+    <div class="review-card">
+      <p>"SaiVerse helped us recover over $45,000 in pending dues within 2 months. Professional and highly efficient!"</p>
+      <span>– Amanda R., New York, USA ⭐⭐⭐⭐⭐</span>
+    </div>
+    <div class="review-card">
+      <p>"The follow-up system and weekly strategy calls have boosted our cashflow by 30%. Highly recommend SaiVerse."</p>
+      <span>– Daniel L., Toronto, Canada ⭐⭐⭐⭐⭐</span>
+    </div>
+    <div class="review-card">
+      <p>"I had no idea collections could be handled this gracefully. I’m now free to grow my agency."</p>
+      <span>– Mia H., London, UK ⭐⭐⭐⭐⭐</span>
+    </div>
+  </section>
 
-<footer>
-  © 2025 SaiVerse Solutions. All rights reserved.
-</footer>
+  <section>
+    <h2>Book a Session</h2>
+    <form action="mailto:info@saiverse.org" method="POST" enctype="text/plain">
+      <input type="text" name="Name" placeholder="Your Full Name" required>
+      <input type="email" name="Email" placeholder="Your Email Address" required>
+      <select name="Plan" required>
+        <option value="">Select Plan</option>
+        <option value="Basic Plan – $99">Basic Plan – $99</option>
+        <option value="Pro Plan – $149">Pro Plan – $149</option>
+      </select>
+      <input type="text" name="Preferred Time" placeholder="Preferred Date & Time">
+      <textarea name="Message" rows="4" placeholder="Any message or questions?"></textarea>
+      <button type="submit">Book Now</button>
+    </form>
+  </section>
+
+  <section class="bank-details">
+    <h2>Bank Details for Direct Payment</h2>
+    <p><strong>Bank Name:</strong> Indian Overseas Bank</p>
+    <p><strong>Account Number:</strong> 163501000000881</p>
+    <p><strong>IFSC Code:</strong> IOBA0001635</p>
+    <p><strong>Account Holder:</strong> Saranya S</p>
+    <p><strong>Contact:</strong> +91 8939701718</p>
+  </section>
+
+  <section>
+    <h2>Connect With Me</h2>
+    <p>📩 <strong>Email:</strong> <a href="mailto:info@saiverse.org">info@saiverse.org</a></p>
+    <p>🔗 <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/saranya-s-78014b371/" target="_blank">Saranya S</a></p>
+    <p>🌍 <strong>Upwork:</strong> <a href="https://www.upwork.com/freelancers/~014031dd72651c3436?mp_source=share" target="_blank">Freelancer Profile</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 SaiVerse Solutions. All rights reserved.</p>
+  </footer>
 
 </body>
 </html>
