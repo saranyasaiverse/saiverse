@@ -2,127 +2,171 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SaiVerse Solutions</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SaiVerse | Intuitive Virtual Assistance</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Inter', sans-serif;
-      background: linear-gradient(135deg, #0d112b, #1c1f3f);
-      color: white;
-    }
-
-    header, footer, .section {
-      max-width: 1200px;
-      margin: auto;
-      padding: 40px 20px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fdfaf4;
+      color: #3c2f2f;
     }
 
     header {
+      background-color: #5c4033;
+      color: #fff;
+      padding: 1.5rem;
       text-align: center;
     }
 
     header img {
-      height: 80px;
+      height: 70px;
+      border-radius: 50%;
     }
 
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      margin-top: 20px;
+    .container {
+      padding: 2rem;
+      max-width: 960px;
+      margin: auto;
     }
 
-    nav a {
-      color: gold;
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    h1 {
-      font-size: 2.5rem;
-    }
-
+    h1,
     h2 {
-      color: gold;
-      font-size: 1.8rem;
+      color: #4e342e;
     }
 
-    .highlight {
-      color: gold;
-      font-weight: 600;
+    section {
+      margin-bottom: 2rem;
     }
 
-    .services, .why-choose, .reviews {
+    .btn {
+      background-color: #8b5e3c;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 6px;
+      display: inline-block;
+      margin-top: 10px;
+    }
+
+    .btn:hover {
+      background-color: #6a4a2b;
+    }
+
+    .plans {
       display: flex;
+      gap: 2rem;
       flex-wrap: wrap;
-      gap: 20px;
     }
 
-    .box {
-      background: #1a1e3f;
-      border-radius: 12px;
-      padding: 20px;
+    .plan {
+      background-color: #fffaf3;
+      border: 1px solid #ddd;
+      padding: 1rem;
       flex: 1;
       min-width: 250px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-      transition: transform 0.3s ease;
-    }
-
-    .box:hover {
-      transform: translateY(-5px);
-    }
-
-    .contact-form input, .contact-form textarea {
-      width: 100%;
-      padding: 10px;
-      margin: 10px 0;
-      border: none;
-      border-radius: 8px;
-    }
-
-    .contact-form button {
-      background-color: gold;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 8px;
-      font-weight: bold;
-      cursor: pointer;
+      border-radius: 10px;
+      box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
     }
 
     footer {
+      background-color: #5c4033;
+      color: white;
       text-align: center;
-      font-size: 0.9rem;
-      border-top: 1px solid #333;
+      padding: 1rem;
     }
 
-    a {
-      color: gold;
+    .icons a {
+      margin: 0 10px;
+      color: #fff;
+      text-decoration: none;
     }
 
-    @keyframes fadeUp {
-      from {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    .reviews .box {
-      animation: fadeUp 1s ease-in-out;
+    img.qr {
+      height: 150px;
+      margin-top: 10px;
     }
   </style>
 </head>
 
 <body>
-  <!-- same body content as provided, unchanged -->
+  <header>
+    <img src="logo.png" alt="SaiVerse Logo" />
+    <h1>SaiVerse - Intuitive Virtual Assistance</h1>
+    <p>Founded by Saranya S</p>
+  </header>
+
+  <div class="container">
+    <section>
+      <h2>About Us</h2>
+      <p>
+        At SaiVerse, we provide spiritually-aligned, intuitive support for international clients through personalized virtual assistance sessions. Every client is served with complete integrity, clarity, and powerful guidance rooted in experience, emotional intelligence, and universal connection.
+      </p>
+    </section>
+
+    <section>
+      <h2>Why Choose Us?</h2>
+      <ul>
+        <li>Clear and accurate support based on life and business experience</li>
+        <li>Spiritual, emotionally mature, and intuitively guided approach</li>
+        <li>Confidential, direct, and effective responses</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Session Plans</h2>
+      <div class="plans">
+        <div class="plan">
+          <h3>30 Minutes</h3>
+          <p><strong>$99</strong></p>
+        </div>
+        <div class="plan">
+          <h3>1 Hour</h3>
+          <p><strong>$149</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>How It Works</h2>
+      <p>
+        1. Choose your session plan.<br />
+        2. Remit payment via QR code or UPI below.<br />
+        3. Send detailed information about your issue (typed format preferred).<br />
+        4. Once payment and details are received, booking will be confirmed.<br />
+        5. Sessions are recorded for internal use and to prepare minutes of meeting.
+      </p>
+      <p><strong>Note:</strong> All sessions must be prepaid.</p>
+    </section>
+
+    <section>
+      <h2>Live Reviews</h2>
+      <p>Reviews coming soon... Stay tuned!</p>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:info@saiverse.org">info@saiverse.org</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/saranya-sai" target="_blank">View Profile</a></p>
+      <p>Upwork: <a href="https://www.upwork.com/freelancers/~saiverse" target="_blank">View Profile</a></p>
+    </section>
+
+    <section>
+      <h2>Payment Details</h2>
+      <p><strong>Bank:</strong> IOB (Indian Overseas Bank)</p>
+      <p><strong>UPI:</strong> saiverse@upi</p>
+      <img src="qr-code.png" alt="QR Code for Payment" class="qr" />
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 SaiVerse | All Rights Reserved</p>
+    <div class="icons">
+      <a href="https://linkedin.com/in/saranya-sai" target="_blank">LinkedIn</a>
+      <a href="mailto:info@saiverse.org">Email</a>
+    </div>
+  </footer>
 </body>
 
 </html>
