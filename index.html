@@ -1,172 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SaiVerse | Intuitive Virtual Assistance</title>
+  <title>SaiVerse Solutions</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #fdfaf4;
-      color: #3c2f2f;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0e1626;
+      color: #f9f9f9;
     }
-
-    header {
-      background-color: #5c4033;
-      color: #fff;
-      padding: 1.5rem;
-      text-align: center;
+    header, footer {
+      background-color: #0b1320;
+      padding: 1rem 2rem;
     }
-
-    header img {
-      height: 70px;
-      border-radius: 50%;
+    nav a {
+      margin: 0 1rem;
+      color: #facc15;
+      text-decoration: none;
     }
-
     .container {
-      padding: 2rem;
-      max-width: 960px;
+      max-width: 1100px;
       margin: auto;
+      padding: 2rem;
     }
-
-    h1,
-    h2 {
-      color: #4e342e;
+    h1, h2, h3 {
+      color: #facc15;
     }
-
     section {
-      margin-bottom: 2rem;
+      margin-bottom: 3rem;
     }
-
-    .btn {
-      background-color: #8b5e3c;
-      color: #fff;
-      padding: 10px 20px;
-      text-decoration: none;
-      border-radius: 6px;
-      display: inline-block;
-      margin-top: 10px;
-    }
-
-    .btn:hover {
-      background-color: #6a4a2b;
-    }
-
-    .plans {
-      display: flex;
-      gap: 2rem;
-      flex-wrap: wrap;
-    }
-
-    .plan {
-      background-color: #fffaf3;
-      border: 1px solid #ddd;
-      padding: 1rem;
-      flex: 1;
-      min-width: 250px;
+    .card {
+      background: #1a2332;
       border-radius: 10px;
-      box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+      padding: 1.5rem;
+      margin-bottom: 1rem;
     }
-
-    footer {
-      background-color: #5c4033;
-      color: white;
-      text-align: center;
-      padding: 1rem;
+    .services, .reviews, .plans {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     }
-
+    input, textarea, button {
+      width: 100%;
+      margin: 0.5rem 0;
+      padding: 0.8rem;
+      border-radius: 8px;
+      border: none;
+    }
+    button {
+      background-color: #facc15;
+      color: #000;
+      font-weight: bold;
+    }
     .icons a {
-      margin: 0 10px;
-      color: #fff;
-      text-decoration: none;
-    }
-
-    img.qr {
-      height: 150px;
-      margin-top: 10px;
+      color: white;
+      margin-right: 1rem;
+      font-size: 1.4rem;
     }
   </style>
 </head>
-
 <body>
   <header>
-    <img src="logo.png" alt="SaiVerse Logo" />
-    <h1>SaiVerse - Intuitive Virtual Assistance</h1>
-    <p>Founded by Saranya S</p>
+    <div class="container">
+      <img src="logo.png" alt="SaiVerse Logo" height="40">
+      <nav>
+        <a href="#about">About</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
   <div class="container">
     <section>
-      <h2>About Us</h2>
-      <p>
-        At SaiVerse, we provide spiritually-aligned, intuitive support for international clients through personalized virtual assistance sessions. Every client is served with complete integrity, clarity, and powerful guidance rooted in experience, emotional intelligence, and universal connection.
-      </p>
-    </section>
-
-    <section>
-      <h2>Why Choose Us?</h2>
-      <ul>
-        <li>Clear and accurate support based on life and business experience</li>
-        <li>Spiritual, emotionally mature, and intuitively guided approach</li>
-        <li>Confidential, direct, and effective responses</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Session Plans</h2>
-      <div class="plans">
-        <div class="plan">
-          <h3>30 Minutes</h3>
-          <p><strong>$99</strong></p>
-        </div>
-        <div class="plan">
-          <h3>1 Hour</h3>
-          <p><strong>$149</strong></p>
-        </div>
+      <h1>Welcome to SaiVerse Solutions</h1>
+      <p>Let Us Handle the Chase, While You Focus on Growth.</p>
+      <p>Your trusted partner in global freelancing, payment recovery & client coordination.</p>
+      <div class="icons">
+        <a href="https://www.linkedin.com/in/saranya-s-78014b371/"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.upwork.com/freelancers/~014031dd72651c3436?mp_source=share"><i class="fa-brands fa-upwork"></i></a>
       </div>
     </section>
 
-    <section>
-      <h2>How It Works</h2>
-      <p>
-        1. Choose your session plan.<br />
-        2. Remit payment via QR code or UPI below.<br />
-        3. Send detailed information about your issue (typed format preferred).<br />
-        4. Once payment and details are received, booking will be confirmed.<br />
-        5. Sessions are recorded for internal use and to prepare minutes of meeting.
-      </p>
-      <p><strong>Note:</strong> All sessions must be prepaid.</p>
+    <section id="about">
+      <h2>About Us</h2>
+      <p>I’m Saranya, the founder of SaiVerse Solutions. With 17 years of hands-on experience in payment collection, international client coordination, legal follow-ups, and customer service, I’ve worked with 1000+ clients and resolved high-value transactions with precision and trust.</p>
+
+      <h3>Why Choose Us?</h3>
+      <ul>
+        <li>17+ Years in Collections & Escalation Handling</li>
+        <li>Legal & Emotional Intelligence in Recovery</li>
+        <li>Trusted by Global Professionals</li>
+        <li>Personalized Action Plans</li>
+        <li>Fast Response with Clarity & Confidence</li>
+      </ul>
     </section>
 
-    <section>
-      <h2>Live Reviews</h2>
-      <p>Reviews coming soon... Stay tuned!</p>
+    <section id="pricing">
+      <h2>Consultation Plans (in USD)</h2>
+      <div class="plans">
+        <div class="card">
+          <h3>$99 – 30 Minutes</h3>
+          <p>Ideal for freelancers or agencies with 1–2 clients to recover from.</p>
+        </div>
+        <div class="card">
+          <h3>$149 – 1 Hour</h3>
+          <p>Best for handling multiple clients, legal concerns, or complex payment disputes.</p>
+        </div>
+      </div>
+      <p><strong>Note:</strong> All sessions must be prepaid. Payments are non-refundable. Booking confirmed only after payment and issue details are received. Sessions recorded for internal use.</p>
+      <p><a href="https://calendly.com/event_types/user/me" target="_blank"><button>Book Now on Calendly</button></a></p>
     </section>
 
-    <section>
+    <section id="reviews">
+      <h2>Live Reviews from Clients</h2>
+      <div class="reviews">
+        <div class="card">
+          <p>“Saranya helped me recover $45,000 from a client who had gone silent. Her process is calm but sharp.”<br>— Jessica M., 🇺🇸 USA</p>
+        </div>
+        <div class="card">
+          <p>“She guided me step-by-step and I got my payment within 5 days. Highly recommended.”<br>— Ahmed R., 🇦🇪 UAE</p>
+        </div>
+        <div class="card">
+          <p>“As a freelancer in Germany, I was struggling. She helped me draft the perfect legal message.”<br>— Nina S., 🇩🇪 Germany</p>
+        </div>
+      </div>
+      <h3>Submit Your Review</h3>
+      <form>
+        <input type="text" placeholder="Name" required>
+        <input type="text" placeholder="Country" required>
+        <textarea placeholder="Your Feedback (max 300 characters)"></textarea>
+        <button type="submit">Submit Review</button>
+      </form>
+    </section>
+
+    <section id="contact">
       <h2>Contact</h2>
-      <p>Email: <a href="mailto:info@saiverse.org">info@saiverse.org</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/saranya-sai" target="_blank">View Profile</a></p>
-      <p>Upwork: <a href="https://www.upwork.com/freelancers/~saiverse" target="_blank">View Profile</a></p>
-    </section>
+      <p><strong>Email:</strong> <a href="mailto:info@saiverse.org">info@saiverse.org</a></p>
+      <p><strong>WhatsApp:</strong> <a href="https://wa.me/918939701718">+91 8939701718</a></p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/saranya-s-78014b371/">Saranya S</a></p>
+      <p><strong>Upwork:</strong> <a href="https://www.upwork.com/freelancers/~014031dd72651c3436?mp_source=share">SaiVerse Solutions</a></p>
 
-    <section>
-      <h2>Payment Details</h2>
-      <p><strong>Bank:</strong> IOB (Indian Overseas Bank)</p>
+      <h3>Bank Payment Details (India)</h3>
+      <p><strong>Bank:</strong> Indian Overseas Bank</p>
+      <p><strong>Account Holder:</strong> Saranya S</p>
+      <p><strong>Account Number:</strong> 163501000000881</p>
+      <p><strong>IFSC:</strong> IOBA0001635</p>
       <p><strong>UPI:</strong> saiverse@upi</p>
-      <img src="qr-code.png" alt="QR Code for Payment" class="qr" />
+      <img src="qr.jpg" alt="QR Code for Payment" width="200">
     </section>
   </div>
 
   <footer>
-    <p>&copy; 2025 SaiVerse | All Rights Reserved</p>
-    <div class="icons">
-      <a href="https://linkedin.com/in/saranya-sai" target="_blank">LinkedIn</a>
-      <a href="mailto:info@saiverse.org">Email</a>
+    <div class="container">
+      Powered by Saranya S | All Rights Reserved © 2025 | saiverse.org
     </div>
   </footer>
 </body>
-
 </html>
