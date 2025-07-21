@@ -1,4 +1,4 @@
-/* SaiVerse Solutions JavaScript (Final Version) */
+/* SaiVerse Solutions JavaScript */
 
 // Smooth scroll for anchor links
 const navLinks = document.querySelectorAll('nav a');
@@ -86,12 +86,12 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-// Booking intake form handling
+// Booking form basic confirmation
 const bookingForm = document.getElementById('booking-form');
 if (bookingForm) {
   bookingForm.addEventListener('submit', function(e) {
     e.preventDefault();
-    alert('Thank you for your details! Your booking is now complete.');
+    alert('Your details have been submitted successfully! We will review and respond before your session.');
     this.reset();
   });
 }
