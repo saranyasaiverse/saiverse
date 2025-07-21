@@ -85,3 +85,13 @@ window.addEventListener('DOMContentLoaded', () => {
     hero.appendChild(wrapper);
   }
 });
+
+// Booking intake form handling
+const bookingForm = document.getElementById('booking-form');
+if (bookingForm) {
+  bookingForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('Thank you for your details! Your booking is now complete.');
+    this.reset();
+  });
+}
