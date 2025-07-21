@@ -1,4 +1,4 @@
-// SaiVerse Solutions JavaScript
+/* SaiVerse Solutions JavaScript (Final Version) */
 
 // Smooth scroll for anchor links
 const navLinks = document.querySelectorAll('nav a');
@@ -34,7 +34,7 @@ if (reviewForm) {
   });
 }
 
-// Optional scroll fade-in animation
+// Scroll fade-in animation using IntersectionObserver
 const faders = document.querySelectorAll('section');
 const options = {
   threshold: 0.2
@@ -53,3 +53,36 @@ faders.forEach(section => {
   appearOnScroll.observe(section);
 });
 
+// WhatsApp floating button
+const waBtn = document.createElement('a');
+waBtn.href = 'https://wa.me/918939701718';
+waBtn.target = '_blank';
+waBtn.innerHTML = '💬';
+waBtn.style.position = 'fixed';
+waBtn.style.bottom = '20px';
+waBtn.style.right = '20px';
+waBtn.style.fontSize = '2rem';
+waBtn.style.background = '#25d366';
+waBtn.style.color = '#fff';
+waBtn.style.padding = '10px 14px';
+waBtn.style.borderRadius = '50%';
+waBtn.style.boxShadow = '0 2px 8px rgba(0,0,0,0.3)';
+waBtn.style.textDecoration = 'none';
+waBtn.style.zIndex = '999';
+document.body.appendChild(waBtn);
+
+// Align Booking and Social Icons better
+document.addEventListener('DOMContentLoaded', () => {
+  const hero = document.querySelector('.hero');
+  const ctaContainer = document.createElement('div');
+  ctaContainer.className = 'cta-icons';
+
+  const bookingBtn = document.querySelector('.btn');
+  const socialIcons = document.querySelector('.social-icons');
+
+  if (bookingBtn && socialIcons) {
+    ctaContainer.appendChild(bookingBtn);
+    ctaContainer.appendChild(socialIcons);
+    hero.appendChild(ctaContainer);
+  }
+});
