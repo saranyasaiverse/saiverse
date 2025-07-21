@@ -1,4 +1,4 @@
-// SaiVerse Solutions JavaScript (Final Version)
+/* SaiVerse Solutions JavaScript (Final Version) */
 
 // Smooth scroll for anchor links
 const navLinks = document.querySelectorAll('nav a');
@@ -72,19 +72,16 @@ waBtn.style.zIndex = '999';
 document.body.appendChild(waBtn);
 
 // Align Booking and Social Icons better
-document.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('DOMContentLoaded', () => {
   const hero = document.querySelector('.hero');
-  const bookingBtn = document.querySelector('.btn');
+  const bookingBtn = document.querySelector('.hero .btn');
   const socialIcons = document.querySelector('.social-icons');
 
   if (hero && bookingBtn && socialIcons) {
     const wrapper = document.createElement('div');
-    wrapper.style.display = 'flex';
-    wrapper.style.flexDirection = 'column';
-    wrapper.style.alignItems = 'center';
+    wrapper.classList.add('cta-wrapper');
     wrapper.appendChild(bookingBtn);
     wrapper.appendChild(socialIcons);
-
     hero.appendChild(wrapper);
   }
 });
