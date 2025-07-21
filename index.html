@@ -2,192 +2,115 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SaiVerse Solutions</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      background-color: #f9f9f9;
-      color: #222;
-    }
-    header {
-      background: #2f3542;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    nav {
-      background: #57606f;
-      display: flex;
-      justify-content: center;
-      padding: 10px 0;
-    }
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: 500;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    section {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-    h2 {
-      color: #2f3542;
-    }
-    .highlight {
-      color: #3742fa;
-      font-weight: bold;
-    }
-    .pricing-table {
-      background: #dfe4ea;
-      padding: 20px;
-      border-radius: 10px;
-    }
-    .pricing-item {
-      background: white;
-      padding: 15px;
-      margin: 15px 0;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    .review {
-      background: #f1f2f6;
-      padding: 15px;
-      margin: 10px 0;
-      border-left: 4px solid #2ed573;
-    }
-    .contact, .bank {
-      background: #f8f9fa;
-      padding: 20px;
-      border-radius: 10px;
-      margin-top: 20px;
-    }
-    footer {
-      background: #2f3542;
-      color: white;
-      text-align: center;
-      padding: 15px 10px;
-    }
-    input, textarea {
-      width: 100%;
-      padding: 10px;
-      margin: 8px 0;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-    }
-    button {
-      background-color: #2ed573;
-      border: none;
-      color: white;
-      padding: 10px 20px;
-      font-size: 16px;
-      border-radius: 6px;
-      cursor: pointer;
-    }
-    button:hover {
-      background-color: #1e90ff;
-    }
-    img.qr {
-      max-width: 200px;
-      margin-top: 10px;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
+  <header>
+    <nav>
+      <div class="logo">SaiVerse Solutions</div>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <section class="hero">
+      <h1>Let Us Handle the Chase, While You Focus on Growth</h1>
+      <p>Your trusted partner in global freelancing, payment recovery & client coordination.</p>
+      <div class="cta">
+        <a href="#booking" class="btn">Book a Consultation</a>
+      </div>
+      <div class="social-links">
+        <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+        <a href="https://www.upwork.com" target="_blank">Upwork</a>
+      </div>
+    </section>
+  </header>
 
-<header>
-  <h1>SaiVerse Solutions</h1>
-  <p>Let Us Handle the Chase, While You Focus on Growth.</p>
-  <p>Your trusted partner in global freelancing, payment recovery & client coordination.</p>
-</header>
+  <main>
+    <section id="about">
+      <h2>About Us</h2>
+      <p>I’m Saranya S, the founder of SaiVerse Solutions. With 17 years of hands-on experience in payment collection, international client coordination, legal follow-ups, and customer service, I’ve worked with 1000+ clients and resolved high-value transactions with precision and trust.</p>
+    </section>
 
-<nav>
-  <a href="#about">About</a>
-  <a href="#pricing">Pricing</a>
-  <a href="#reviews">Reviews</a>
-  <a href="#contact">Contact</a>
-</nav>
+    <section id="why-choose">
+      <h2>Why Choose Us?</h2>
+      <ul>
+        <li>17+ Years in Collections & Escalation Handling</li>
+        <li>Legal & Emotional Intelligence in Recovery</li>
+        <li>Trusted by Global Professionals</li>
+        <li>Personalized Action Plans</li>
+        <li>Fast Response with Clarity & Confidence</li>
+      </ul>
+    </section>
 
-<section id="about">
-  <h2>About Us</h2>
-  <p>I’m <strong>Saranya</strong>, the founder of SaiVerse Solutions. With 17 years of hands-on experience in payment collection, international client coordination, legal follow-ups, and customer service, I’ve worked with 1000+ clients and resolved high-value transactions with precision and trust.</p>
+    <section id="services">
+      <h2>Our Services</h2>
+      <div class="cards">
+        <div class="card">Client Payment Recovery</div>
+        <div class="card">Legal Follow-Up Advice</div>
+        <div class="card">Client Communication Training</div>
+      </div>
+    </section>
 
-  <h3>Why Choose Us?</h3>
-  <ul>
-    <li>✔️ 17+ Years in Collections & Escalation Handling</li>
-    <li>✔️ Legal & Emotional Intelligence in Recovery</li>
-    <li>✔️ Trusted by Global Professionals</li>
-    <li>✔️ Personalized Action Plans</li>
-    <li>✔️ Fast Response with Clarity & Confidence</li>
-  </ul>
-</section>
+    <section id="pricing">
+      <h2>Consultation Plans</h2>
+      <table>
+        <tr><th>Duration</th><th>Price (USD)</th><th>Details</th></tr>
+        <tr><td>30 Minutes</td><td>$99</td><td>Freelancer-level cases</td></tr>
+        <tr><td>1 Hour</td><td>$149</td><td>Multiple clients or legal concerns</td></tr>
+      </table>
+      <a href="#booking" class="btn">Book Now</a>
+    </section>
 
-<section id="pricing">
-  <h2>Consultation Plans (in USD)</h2>
-  <div class="pricing-table">
-    <div class="pricing-item">
-      <h3>$99 – 30 Minutes</h3>
-      <p>Ideal for freelancers or agencies with 1–2 clients to recover from.</p>
-    </div>
-    <div class="pricing-item">
-      <h3>$149 – 1 Hour</h3>
-      <p>Best for handling multiple clients, legal concerns, or complex payment disputes.</p>
-    </div>
-    <p><strong>Note:</strong> All sessions must be prepaid. Payments are non-refundable. Booking confirmed only after payment and issue details are received. Sessions recorded for internal use.</p>
-    <a href="https://calendly.com/YOUR-CALENDLY-LINK" target="_blank"><button>Book Now on Calendly</button></a>
-  </div>
-</section>
+    <section id="booking">
+      <h2>Book a Session</h2>
+      <p>Click below to choose your slot and confirm your booking.</p>
+      <iframe src="https://calendly.com/your-link" width="100%" height="600" frameborder="0"></iframe>
+    </section>
 
-<section id="reviews">
-  <h2>Live Reviews from Clients</h2>
-  <div class="review">
-    <p>“Saranya helped me recover $45,000 from a client who had gone silent. Her process is calm but sharp.”<br><strong>— Jessica M., 🇺🇸 USA</strong></p>
-  </div>
-  <div class="review">
-    <p>“She guided me step-by-step and I got my payment within 5 days. Highly recommended.”<br><strong>— Ahmed R., 🇦🇪 UAE</strong></p>
-  </div>
-  <div class="review">
-    <p>“As a freelancer in Germany, I was struggling. She helped me draft the perfect legal message.”<br><strong>— Nina S., 🇩🇪 Germany</strong></p>
-  </div>
+    <section id="reviews">
+      <h2>Live Reviews</h2>
+      <div class="review-card">
+        <p>"Saranya helped me recover $45,000 from a client who had gone silent." – Jessica 🇺🇸</p>
+      </div>
+      <div class="review-card">
+        <p>"Her words and method are clear, fast, and respectful." – Ahmed 🇦🇪</p>
+      </div>
+      <div class="review-card">
+        <p>"Very professional and emotionally understanding in all steps." – Nina 🇩🇪</p>
+      </div>
+      <form id="review-form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="text" name="country" placeholder="Your Country" required />
+        <textarea name="feedback" maxlength="300" placeholder="Your Feedback (max 300 characters)" required></textarea>
+        <button type="submit">Submit Review</button>
+      </form>
+    </section>
 
-  <h3>Submit Your Review</h3>
-  <form>
-    <input type="text" placeholder="Name" required />
-    <input type="text" placeholder="Country" required />
-    <textarea placeholder="Your Feedback (max 300 characters)" maxlength="300" required></textarea>
-    <button type="submit">Submit Review</button>
-  </form>
-</section>
+    <section id="payment">
+      <h2>Indian Bank Payment Info</h2>
+      <p><strong>Bank:</strong> Indian Overseas Bank</p>
+      <p><strong>Name:</strong> Saranya S</p>
+      <p><strong>Account No:</strong> 163501000000881</p>
+      <p><strong>IFSC:</strong> IOBA0001635</p>
+      <img src="qr.jpg" alt="QR Code for Payment" />
+    </section>
 
-<section id="contact">
-  <h2>Contact</h2>
-  <div class="contact">
-    <p><strong>Email:</strong> info@saiverse.org</p>
-    <p><strong>WhatsApp:</strong> +91 8939701718</p>
-    <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/saranya-s" target="_blank">Saranya S</a></p>
-    <p><strong>Upwork:</strong> SaiVerse Solutions</p>
-  </div>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:info@saiverse.org">info@saiverse.org</a></p>
+      <p>WhatsApp: <a href="https://wa.me/918939701718">+91 8939701718</a></p>
+      <p>LinkedIn | Upwork</p>
+    </section>
+  </main>
 
-  <div class="bank">
-    <h3>Bank Payment Details (India)</h3>
-    <p><strong>Bank:</strong> Indian Overseas Bank</p>
-    <p><strong>Account Holder:</strong> Saranya S</p>
-    <p><strong>Account Number:</strong> 163501000000881</p>
-    <p><strong>IFSC:</strong> IOBA0001635</p>
-    <p><strong>UPI:</strong> saiverse@upi</p>
-    <img src="qr.jpg" alt="QR Code for Payment" class="qr" />
-  </div>
-</section>
-
-<footer>
-  Powered by Saranya S | All Rights Reserved © 2025 | saiverse.org
-</footer>
-
+  <footer>
+    <p>Powered by Saranya S</p>
+  </footer>
 </body>
 </html>
