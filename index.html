@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SaiVerse Solutions</title>
-  <meta name="description" content="Global Payment Recovery & Client Coordination by Saranya S">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="logo.png" type="image/png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SaiVerse Solutions – International Payment Recovery Consultant</title>
+  <meta name="description" content="SaiVerse Solutions offers expert global consultation for payment recovery and client coordination. Trusted by 1000+ international clients.">
+  <meta name="keywords" content="payment recovery, international clients, freelancing, collections, client follow-up, Saranya S">
+  <meta name="author" content="Saranya S">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="logo.png" type="image/x-icon" />
   <script defer src="script.js"></script>
 </head>
 <body>
   <header>
     <nav>
-      <img src="logo.png" alt="SaiVerse Logo" class="logo-img">
+      <div class="logo"><img src="logo.png" alt="SaiVerse Logo" height="40" /></div>
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#pricing">Pricing</a></li>
@@ -26,8 +28,8 @@
       <div class="cta-wrapper">
         <a href="#booking" class="btn">Book a Consultation</a>
         <div class="social-icons">
-          <a href="https://www.linkedin.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="30"></a>
-          <a href="https://www.upwork.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968873.png" width="30"></a>
+          <a href="https://www.linkedin.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" /></a>
+          <a href="https://www.upwork.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968873.png" alt="Upwork" /></a>
         </div>
       </div>
     </section>
@@ -36,18 +38,18 @@
   <main>
     <section id="about">
       <h2>About Us</h2>
-      <img src="founder.jpg" alt="Founder Saranya S" class="founder-pic">
-      <p>I’m Saranya S, the founder of SaiVerse Solutions. With 17 years of experience in payment collection, international client coordination, and legal follow-ups, I’ve helped 1000+ clients resolve high-value transactions with trust and clarity.</p>
+      <img src="founder.jpg" alt="Saranya S" style="width:150px; border-radius:10px; margin-bottom:1rem;" />
+      <p>I’m Saranya S, the founder of SaiVerse Solutions. With 17 years of hands-on experience in payment collection, international client coordination, legal follow-ups, and customer service, I’ve worked with 1000+ clients and resolved high-value transactions with precision and trust.</p>
     </section>
 
     <section id="why-choose">
       <h2>Why Choose Us?</h2>
       <ul>
         <li>17+ Years in Collections & Escalation Handling</li>
-        <li>Emotional Intelligence in Recovery</li>
+        <li>Legal & Emotional Intelligence in Recovery</li>
         <li>Trusted by Global Professionals</li>
         <li>Personalized Action Plans</li>
-        <li>Fast, Clear & Confident Communication</li>
+        <li>Fast Response with Clarity & Confidence</li>
       </ul>
     </section>
 
@@ -55,8 +57,8 @@
       <h2>Our Services</h2>
       <div class="cards">
         <div class="card">Client Payment Recovery</div>
-        <div class="card">Legal Follow-Up & Advice</div>
-        <div class="card">Client Communication Coaching</div>
+        <div class="card">Legal Follow-Up Advice</div>
+        <div class="card">Client Communication Training</div>
       </div>
     </section>
 
@@ -72,18 +74,19 @@
 
     <section id="booking">
       <h2>Book a Session</h2>
-      <p>Choose your time slot and fill out your intake form below.</p>
+      <p>Click below to choose your slot and confirm your booking.</p>
       <iframe src="https://calendly.com/your-calendly-link" width="100%" height="600" frameborder="0"></iframe>
     </section>
 
     <section id="intake-form">
       <h3>📝 Pre-Consultation Details (Required)</h3>
+      <p>Please fill out the form before your session. This helps us assist you better.</p>
       <form id="booking-form">
-        <label>Full Name:<input type="text" name="name" required></label>
-        <label>Email Address:<input type="email" name="email" required></label>
-        <label>Country:<input type="text" name="country" required></label>
-        <label>What is your issue?<textarea name="issue" rows="3" required></textarea></label>
-        <label>How long has it been pending?
+        <label>Full Name:<br><input type="text" name="name" required></label><br><br>
+        <label>Email Address:<br><input type="email" name="email" required></label><br><br>
+        <label>Country:<br><input type="text" name="country" required></label><br><br>
+        <label>What is your issue?<br><textarea name="issue" rows="4" required></textarea></label><br><br>
+        <label>How long has it been pending?<br>
           <select name="duration" required>
             <option value="">--Select--</option>
             <option>1–7 Days</option>
@@ -91,18 +94,18 @@
             <option>1–3 Months</option>
             <option>More than 3 Months</option>
           </select>
-        </label>
-        <label>Client Type:
+        </label><br><br>
+        <label>Client Type:<br>
           <select name="clientType" required>
             <option value="">--Select--</option>
             <option>Freelancer</option>
             <option>Agency</option>
             <option>Company</option>
           </select>
-        </label>
-        <label>Any actions taken?<textarea name="action"></textarea></label>
-        <label>Upload Screenshot:<input type="file" name="screenshot"></label>
-        <label><input type="checkbox" name="paymentConfirmed" required> I confirm payment is done.</label>
+        </label><br><br>
+        <label>Have you taken any action?<br><textarea name="action" rows="3"></textarea></label><br><br>
+        <label>Upload Screenshot (optional):<br><input type="file" name="screenshot"></label><br><br>
+        <label><input type="checkbox" name="paymentConfirmed" required> I confirm that I have completed the payment.</label><br><br>
         <button type="submit">✅ Submit Form</button>
       </form>
     </section>
@@ -119,26 +122,27 @@
         <p>"Very professional and emotionally understanding in all steps." – Nina 🇩🇪</p>
       </div>
       <form id="review-form">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="text" name="country" placeholder="Your Country" required>
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="text" name="country" placeholder="Your Country" required />
         <textarea name="feedback" maxlength="300" placeholder="Your Feedback (max 300 characters)" required></textarea>
         <button type="submit">Submit Review</button>
       </form>
     </section>
 
     <section id="payment">
-      <h2>Payment Details</h2>
+      <h2>Bank Payment Info</h2>
       <p><strong>Bank:</strong> Indian Overseas Bank</p>
       <p><strong>Name:</strong> Saranya S</p>
       <p><strong>Account No:</strong> 163501000000881</p>
       <p><strong>IFSC:</strong> IOBA0001635</p>
-      <img src="qr.jpg" alt="QR Code" style="max-width: 200px;">
+      <img src="qr.jpg" alt="QR Code for Payment" style="max-width:200px;" />
     </section>
 
     <section id="contact">
       <h2>Contact</h2>
       <p>Email: <a href="mailto:info@saiverse.org">info@saiverse.org</a></p>
       <p>WhatsApp: <a href="https://wa.me/918939701718">+91 8939701718</a></p>
+      <p><a href="https://www.linkedin.com" target="_blank">LinkedIn</a> | <a href="https://www.upwork.com" target="_blank">Upwork</a></p>
     </section>
   </main>
 
