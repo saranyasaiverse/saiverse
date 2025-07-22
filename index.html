@@ -14,7 +14,7 @@
 <body>
   <header>
     <nav>
-      <div class="logo"><img src="logo.png" alt="SaiVerse Logo" /></div>
+      <div class="logo"><img src="logo.png" alt="SaiVerse Logo"></div>
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#pricing">Pricing</a></li>
@@ -28,11 +28,11 @@
       <div class="cta-wrapper">
         <a href="#booking" class="btn">Book a Consultation</a>
         <div class="social-icons">
-          <a href="https://www.linkedin.com/in/saranyasverse" target="_blank" title="LinkedIn">
+          <a href="https://www.linkedin.com/in/saranya-sai" target="_blank" title="LinkedIn">
             <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" />
           </a>
-          <a href="https://www.upwork.com/freelancers/~01saiverse" target="_blank" title="Upwork">
-            <img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="Upwork" />
+          <a href="https://www.upwork.com/freelancers/~01exampleid" target="_blank" title="Upwork">
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968873.png" alt="Upwork" />
           </a>
         </div>
       </div>
@@ -42,18 +42,18 @@
   <main>
     <section id="about">
       <h2>About Us</h2>
-      <p>I’m Saranya S, the founder of SaiVerse Solutions. With 17 years of hands-on experience in international payment recovery, client coordination, communication systems, and customer service, I’ve worked with 1000+ clients and resolved high-value transactions with precision and trust.</p>
-      <img src="founder.jpg" alt="Founder Saranya S" style="max-width: 200px; border-radius: 8px; margin-top: 1rem;" />
+      <p>I’m Saranya S, the founder of SaiVerse Solutions. With 17 years of hands-on experience in payment collection, international client coordination, follow-up strategy, and client communication, I’ve worked with 1000+ clients and resolved high-value transactions with clarity and trust.</p>
+      <img src="founder.jpg" alt="Founder Saranya S" style="max-width: 200px; border-radius: 10px; margin-top: 1rem;">
     </section>
 
     <section id="why-choose">
       <h2>Why Choose Us?</h2>
       <ul>
-        <li>17+ Years in Global Payment Handling</li>
-        <li>Smart Emotional Intelligence for Recovery</li>
-        <li>Trusted by Freelancers & Agencies Worldwide</li>
-        <li>Tailored Strategy for Every Case</li>
-        <li>Prompt Action with Clarity</li>
+        <li>17+ Years in Collections & Escalation Handling</li>
+        <li>Empathetic & Assertive Communication</li>
+        <li>Trusted by Global Freelancers & Agencies</li>
+        <li>Tailored Action Plans</li>
+        <li>Fast Response with Clarity & Confidence</li>
       </ul>
     </section>
 
@@ -61,7 +61,7 @@
       <h2>Our Services</h2>
       <div class="cards">
         <div class="card">Client Payment Recovery</div>
-        <div class="card">Follow-Up Strategy</div>
+        <div class="card">Follow-Up Strategy Guidance</div>
         <div class="card">Client Communication Training</div>
       </div>
     </section>
@@ -71,20 +71,26 @@
       <table>
         <tr><th>Duration</th><th>Price (USD)</th><th>Details</th></tr>
         <tr><td>30 Minutes</td><td>$99</td><td>Freelancer-level cases</td></tr>
-        <tr><td>1 Hour</td><td>$149</td><td>Multiple clients or urgent concerns</td></tr>
+        <tr><td>1 Hour</td><td>$149</td><td>Multiple clients or complex disputes</td></tr>
       </table>
+      <a href="#booking" class="btn">Book Now</a>
+    </section>
+
+    <section id="booking">
+      <h2>Book a Session</h2>
+      <p>Click below to choose your slot and confirm your booking.</p>
+      <iframe src="https://calendly.com/saiverse-info" width="100%" height="600" frameborder="0"></iframe>
     </section>
 
     <section id="intake-form">
       <h3>📝 Pre-Consultation Details (Required)</h3>
       <p>Please fill out the form before your session. This helps us assist you better.</p>
-
       <form id="booking-form">
-        <label>Full Name:<br><input type="text" name="name" required></label><br>
-        <label>Email Address:<br><input type="email" name="email" required></label><br>
-        <label>Country:<br><input type="text" name="country" required></label><br>
-        <label>What is your issue?<br><textarea name="issue" rows="4" required></textarea></label><br>
-        <label>How long has it been pending?<br>
+        <label>Full Name:<input type="text" name="name" required></label>
+        <label>Email Address:<input type="email" name="email" required></label>
+        <label>Country:<input type="text" name="country" required></label>
+        <label>What is your issue?<textarea name="issue" rows="4" required></textarea></label>
+        <label>How long has it been pending?
           <select name="duration" required>
             <option value="">--Select--</option>
             <option>1–7 Days</option>
@@ -92,38 +98,32 @@
             <option>1–3 Months</option>
             <option>More than 3 Months</option>
           </select>
-        </label><br>
-        <label>Client Type:<br>
+        </label>
+        <label>Client Type:
           <select name="clientType" required>
             <option value="">--Select--</option>
             <option>Freelancer</option>
             <option>Agency</option>
             <option>Company</option>
           </select>
-        </label><br>
-        <label>Have you taken any action?<br><textarea name="action" rows="3"></textarea></label><br>
-        <label>Upload Screenshot (optional):<br><input type="file" name="screenshot"></label><br>
-        <label><input type="checkbox" name="paymentConfirmed" required> I confirm that I have completed the payment.</label><br>
-        <button type="submit">✅ Submit Form</button>
+        </label>
+        <label>Have you taken any action?<textarea name="action" rows="3"></textarea></label>
+        <label>Upload Screenshot (optional):<input type="file" name="screenshot"></label>
+        <label><input type="checkbox" name="paymentConfirmed" required> I confirm that I have completed the payment.</label>
+        <button type="submit">Submit Form</button>
       </form>
-    </section>
-
-    <section id="booking">
-      <h2>Book a Session</h2>
-      <p>Click below to choose your slot and confirm your booking.</p>
-      <iframe src="https://calendly.com/your-calendly-link" width="100%" height="600" frameborder="0"></iframe>
     </section>
 
     <section id="reviews">
       <h2>Live Reviews</h2>
       <div class="review-card">
-        <p>"Saranya helped me recover $45,000 from a client who had gone silent." – Jessica 🇺🇸</p>
+        <p>"Saranya helped me recover $3,200 within 2 days. Highly professional!" – Laura (Canada)</p>
       </div>
       <div class="review-card">
-        <p>"Her words and method are clear, fast, and respectful." – Ahmed 🇦🇪</p>
+        <p>"Her advice saved my business from losing a major client." – Samuel (UK)</p>
       </div>
       <div class="review-card">
-        <p>"Very professional and emotionally understanding in all steps." – Nina 🇩🇪</p>
+        <p>"Amazing follow-up tactics! Payment received after 4 months silence." – Ananya (Dubai)</p>
       </div>
       <form id="review-form">
         <input type="text" name="name" placeholder="Your Name" required />
@@ -134,7 +134,7 @@
     </section>
 
     <section id="payment">
-      <h2>Payment Details (India)</h2>
+      <h2>Indian Bank Payment Info</h2>
       <p><strong>Bank:</strong> Indian Overseas Bank</p>
       <p><strong>Name:</strong> Saranya S</p>
       <p><strong>Account No:</strong> 163501000000881</p>
@@ -146,12 +146,17 @@
       <h2>Contact</h2>
       <p>Email: <a href="mailto:info@saiverse.org">info@saiverse.org</a></p>
       <p>WhatsApp: <a href="https://wa.me/918939701718">+91 8939701718</a></p>
-      <p><a href="https://www.linkedin.com/in/saranyasverse" target="_blank">LinkedIn</a> | <a href="https://www.upwork.com/freelancers/~01saiverse" target="_blank">Upwork</a></p>
+      <p><a href="https://www.linkedin.com/in/saranya-sai" target="_blank">LinkedIn</a> | <a href="https://www.upwork.com/freelancers/~01exampleid" target="_blank">Upwork</a></p>
+    </section>
+
+    <section class="legal-section">
+      <h3>Privacy & Disclaimer</h3>
+      <p>All consultations are conducted professionally with strict confidentiality. We do not guarantee collection success but provide strategies and communication support based on our experience. Your information will never be shared or sold. By booking, you agree to our terms and confirm that you have made the payment before the session.</p>
     </section>
   </main>
 
   <footer>
-    <p>Powered by Saranya S</p>
+    <p>Powered by Saranya S – © 2025 SaiVerse Solutions</p>
   </footer>
 </body>
 </html>
