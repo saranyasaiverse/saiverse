@@ -42,49 +42,54 @@
   <main>
     <section id="about">
       <h2>About Us</h2>
-      <p>I’m Saranya S, the founder of SaiVerse Solutions. With 17 years of hands-on experience in payment collection, international client coordination, emotional intelligence-based follow-ups, and customer service, I’ve worked with 1000+ clients and resolved high-value transactions with precision and trust.</p>
-      <img src="founder.jpg" alt="Founder Saranya S" class="founder-pic">
+      <p>I’m Saranya S, the founder of SaiVerse Solutions. With 17 years of experience in client follow-up, payment coordination, and international escalations, I’ve supported 1000+ clients with confidence and care.</p>
     </section>
 
     <section id="why-choose">
       <h2>Why Choose Us?</h2>
       <ul>
-        <li>17+ Years in Collections & Escalation Handling</li>
-        <li>Emotionally Intelligent Recovery Support</li>
-        <li>Trusted by Global Professionals</li>
-        <li>Personalized Communication Plans</li>
-        <li>Fast Response with Clarity & Confidence</li>
+        <li>17+ Years of Escalation & Collections Expertise</li>
+        <li>Trusted by International Freelancers & Agencies</li>
+        <li>Clear, Emotionally Intelligent Communication</li>
+        <li>Action-Oriented, Personalized Plans</li>
+        <li>Confidential & Professional Approach</li>
       </ul>
     </section>
 
     <section id="services">
       <h2>Our Services</h2>
-      <ul>
-        <li>Client Payment Recovery</li>
-        <li>Follow-Up Action Plan Guidance</li>
-        <li>Client Communication Strategy Training</li>
-      </ul>
+      <div class="cards">
+        <div class="card">Client Payment Recovery</div>
+        <div class="card">Follow-Up Communication Plans</div>
+        <div class="card">Freelance & Agency Support</div>
+      </div>
     </section>
 
     <section id="pricing">
       <h2>Consultation Plans</h2>
       <table>
         <tr><th>Duration</th><th>Price (USD)</th><th>Details</th></tr>
-        <tr><td>30 Minutes</td><td>$99</td><td>Freelancer-level cases</td></tr>
-        <tr><td>1 Hour</td><td>$149</td><td>Multiple clients or complex recovery strategy</td></tr>
+        <tr><td>30 Minutes</td><td>$99</td><td>Freelancer-Level Recovery Strategy</td></tr>
+        <tr><td>1 Hour</td><td>$149</td><td>Multi-Client/Complex Escalation Help</td></tr>
       </table>
+    </section>
+
+    <section id="booking">
+      <h2>Book a Session</h2>
       <p>📌 After booking your slot, please fill the Pre-Consultation Form below for a smooth session.</p>
-      <a href="#booking" class="btn">Book Now</a>
+      <iframe src="https://calendly.com/saiverse-info" width="100%" height="600" frameborder="0"></iframe>
     </section>
 
     <section id="intake-form">
       <h3>📝 Pre-Consultation Details (Required)</h3>
+      <p>Please fill out the form before your session. This helps us assist you better.</p>
+
       <form id="booking-form">
-        <label>Full Name:<input type="text" name="name" required></label>
-        <label>Email Address:<input type="email" name="email" required></label>
-        <label>Country:<input type="text" name="country" required></label>
-        <label>What is your issue?<textarea name="issue" required></textarea></label>
-        <label>How long has it been pending?
+        <label>Full Name:<br><input type="text" name="name" required></label><br><br>
+        <label>Email Address:<br><input type="email" name="email" required></label><br><br>
+        <label>Country:<br><input type="text" name="country" required></label><br><br>
+        <label>What is your issue?<br><textarea name="issue" rows="4" required></textarea></label><br><br>
+        <label>How long has it been pending?<br>
           <select name="duration" required>
             <option value="">--Select--</option>
             <option>1–7 Days</option>
@@ -92,36 +97,43 @@
             <option>1–3 Months</option>
             <option>More than 3 Months</option>
           </select>
-        </label>
-        <label>Client Type:
+        </label><br><br>
+        <label>Client Type:<br>
           <select name="clientType" required>
             <option value="">--Select--</option>
             <option>Freelancer</option>
             <option>Agency</option>
             <option>Company</option>
           </select>
-        </label>
-        <label>Have you taken any action?<textarea name="action"></textarea></label>
-        <label>Upload Screenshot:<input type="file" name="screenshot"></label>
-        <label><input type="checkbox" name="paymentConfirmed" required> I confirm that I have completed the payment.</label>
+        </label><br><br>
+        <label>Have you taken any action?<br><textarea name="action" rows="3"></textarea></label><br><br>
+        <label>Upload Screenshot (optional):<br><input type="file" name="screenshot"></label><br><br>
+        <label><input type="checkbox" name="paymentConfirmed" required> I confirm that I have completed the payment.</label><br><br>
         <button type="submit">✅ Submit Form</button>
       </form>
     </section>
 
-    <section id="booking">
-      <h2>Book a Session</h2>
-      <iframe src="https://calendly.com/saiverse-info" width="100%" height="600" frameborder="0"></iframe>
-    </section>
-
     <section id="reviews">
       <h2>Live Reviews</h2>
-      <p>"Saranya helped me recover $45,000 from a client who had gone silent." – Jessica 🇺🇸</p>
-      <p>"Her words and method are clear, fast, and respectful." – Ahmed 🇦🇪</p>
-      <p>"Very professional and emotionally understanding in all steps." – Nina 🇩🇪</p>
+      <div class="review-card">
+        <p>"Saranya helped me recover $45,000 from a client who had gone silent. Highly skilled and kind." – Jessica 🇺🇸</p>
+      </div>
+      <div class="review-card">
+        <p>"With her strategy, I secured $70,000 in just weeks. Truly sharp and effective!" – Ahmed 🇦🇪</p>
+      </div>
+      <div class="review-card">
+        <p>"She guided me with patience and confidence. Amazing support!" – Nina 🇩🇪</p>
+      </div>
+      <form id="review-form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="text" name="country" placeholder="Your Country" required />
+        <textarea name="feedback" maxlength="300" placeholder="Your Feedback (max 300 characters)" required></textarea>
+        <button type="submit">Submit Review</button>
+      </form>
     </section>
 
     <section id="payment">
-      <h2>IOB Bank Payment Info</h2>
+      <h2>Bank Payment Info (India)</h2>
       <p><strong>Bank:</strong> Indian Overseas Bank</p>
       <p><strong>Name:</strong> Saranya S</p>
       <p><strong>Account No:</strong> 163501000000881</p>
@@ -132,12 +144,13 @@
     <section id="contact">
       <h2>Contact</h2>
       <p>Email: <a href="mailto:info@saiverse.org">info@saiverse.org</a></p>
-      <p>WhatsApp: <a href="https://wa.me/918939701718" target="_blank">+91 8939701718</a></p>
+      <p>WhatsApp: <a href="https://wa.me/918939701718">+91 8939701718</a></p>
+      <p><a href="https://www.linkedin.com/in/saranya-sai" target="_blank">LinkedIn</a> | <a href="https://www.upwork.com/freelancers/~014031dd72651c3436?mp_source=share" target="_blank">Upwork</a></p>
     </section>
 
     <section id="disclaimer">
       <h2>Privacy & Disclaimer</h2>
-      <p class="dim-text">All consultations are conducted professionally with strict confidentiality. While we cannot guarantee recovery success, our team provides personalized communication strategies based on real experience. Your data is safe, private, and never shared. By booking, you accept our process and confirm full payment has been made.</p>
+      <p class="disclaimer-text">All consultations are conducted professionally with strict confidentiality. While we cannot guarantee recovery success, our team provides personalized communication strategies based on real experience. Your data is safe, private, and never shared. By booking, you accept our process and confirm full payment has been made.</p>
     </section>
   </main>
 
