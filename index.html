@@ -10,6 +10,16 @@
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <script defer src="script.js"></script>
+  <style>
+    .review-box { display: grid; gap: 1rem; max-width: 700px; margin: auto; }
+    .review-card { background: #182548; padding: 1rem; border-radius: 10px; color: #fff; display: flex; flex-direction: column; justify-content: space-between; }
+    .review-footer { text-align: right; color: #ccc; }
+    .live-review-form { max-width: 600px; margin: 2rem auto; background: #f9f9f9; padding: 1rem; border-radius: 8px; }
+    .live-review-form input, .live-review-form textarea { width: 100%; margin-bottom: 10px; padding: 8px; border-radius: 5px; border: 1px solid #ccc; }
+    .live-review-form button { padding: 8px 16px; border: none; background: #182548; color: #fff; border-radius: 5px; cursor: pointer; }
+    .bank-details { text-align: center; margin: 2rem 0; color: #222; }
+    .bank-details p { margin: 4px 0; }
+  </style>
 </head>
 <body>
   <header>
@@ -32,7 +42,7 @@
             <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" style="height: 28px;" />
           </a>
           <a href="https://www.upwork.com/freelancers/~014031dd72651c3436?mp_source=share" target="_blank" title="Upwork">
-            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png" alt="Upwork" style="height: 28px;" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Upwork-logo.svg" alt="Upwork" style="height: 28px;" />
           </a>
         </div>
       </div>
@@ -69,23 +79,42 @@
 
     <section id="reviews">
       <h2>Client Reviews</h2>
-      <div class="review-box" style="display: grid; gap: 1rem; max-width: 700px; margin: auto;">
-        <div style="background: #182548; padding: 1rem; border-radius: 10px; color: #fff;">
+      <div class="review-box">
+        <div class="review-card">
           <p>“Saranya helped me recover <strong>$45,000</strong> from a client who had gone silent.”</p>
           <p style="color: gold; font-size: 1.2rem;">★★★★★</p>
-          <footer style="text-align: right; color: #ccc;">– Jessica 🇺🇸</footer>
+          <footer class="review-footer">– Jessica 🇺🇸</footer>
         </div>
-        <div style="background: #182548; padding: 1rem; border-radius: 10px; color: #fff;">
+        <div class="review-card">
           <p>“Her method is respectful and very effective. We got <strong>$70,000</strong> cleared.”</p>
           <p style="color: gold; font-size: 1.2rem;">★★★★★</p>
-          <footer style="text-align: right; color: #ccc;">– Ahmed 🇦🇪</footer>
+          <footer class="review-footer">– Ahmed 🇦🇪</footer>
         </div>
-        <div style="background: #182548; padding: 1rem; border-radius: 10px; color: #fff;">
+        <div class="review-card">
           <p>“Emotionally understanding and fast with action – rare combo.”</p>
           <p style="color: gold; font-size: 1.2rem;">★★★★★</p>
-          <footer style="text-align: right; color: #ccc;">– Nina 🇩🇪</footer>
+          <footer class="review-footer">– Nina 🇩🇪</footer>
         </div>
       </div>
+
+      <div class="live-review-form">
+        <h3>Share Your Feedback</h3>
+        <form>
+          <input type="text" placeholder="Your Name" required />
+          <input type="text" placeholder="Country" required />
+          <textarea placeholder="Feedback (max 300 characters)" maxlength="300" required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="bank-details">
+      <h3>Bank Details</h3>
+      <p><strong>Bank:</strong> Indian Overseas Bank</p>
+      <p><strong>Name:</strong> Saranya S</p>
+      <p><strong>Account No:</strong> 163501000000881</p>
+      <p><strong>IFSC:</strong> IOBA0001635</p>
+      <img src="qr.jpg" alt="QR Code" style="height: 140px; margin-top: 10px;" />
     </section>
 
     <section id="privacy">
@@ -97,6 +126,9 @@
 
   <footer>
     <p>© 2025 SaiVerse Solutions | Powered by Saranya S</p>
+    <div style="text-align: center; font-size: 0.8rem; margin-top: 5px;">
+      WhatsApp: +91 8939701718 | Email: info@saiverse.org | <a href="https://www.linkedin.com/in/saranya-sai" target="_blank">LinkedIn</a> | <a href="https://www.upwork.com/freelancers/~014031dd72651c3436?mp_source=share" target="_blank">Upwork</a>
+    </div>
   </footer>
 </body>
 </html>
