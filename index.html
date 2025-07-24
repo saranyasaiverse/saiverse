@@ -11,91 +11,97 @@
   <link rel="icon" href="favicon.ico" />
   <style>
     body {
-      margin: 0;
       font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
       background-color: #001f3f;
-      color: #fff;
+      color: white;
     }
-    header, footer {
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
       background-color: #001a33;
-      color: #c2a800;
-      padding: 1rem;
-      text-align: center;
     }
     nav a {
-      margin: 0 1rem;
-      color: #c2a800;
+      margin: 0 15px;
+      color: #FFD700;
       text-decoration: none;
       font-weight: bold;
     }
     .hero {
-      padding: 3rem;
+      background-color: #001a33;
+      padding: 60px 20px;
       text-align: center;
-      background: linear-gradient(to bottom, #001f3f, #002b5c);
     }
     .hero h1 {
-      font-size: 2rem;
-      color: #fff;
+      font-size: 2.5rem;
     }
     .hero p {
-      color: #ccc;
-      font-size: 1.1rem;
+      font-size: 1.2rem;
+      margin-bottom: 20px;
     }
-    .cta-button {
-      background-color: #c2a800;
-      color: #001f3f;
-      border: none;
-      padding: 1rem 2rem;
-      font-size: 1rem;
-      margin-top: 1rem;
-      cursor: pointer;
-    }
-    .section {
-      padding: 2rem;
-      text-align: center;
-    }
-    .section img {
-      max-width: 200px;
-      border-radius: 1rem;
-    }
-    .icons img {
-      width: 32px;
-      margin: 0 0.5rem;
-    }
-    .box-review {
-      background: #0d1a26;
-      border: 1px solid #c2a800;
-      border-radius: 10px;
-      padding: 1rem;
-      margin: 1rem auto;
-      max-width: 600px;
-      color: #fff;
-    }
-    .form-section input, .form-section textarea, .form-section select {
-      width: 100%;
-      padding: 0.5rem;
-      margin-bottom: 1rem;
+    .hero a {
+      background-color: #FFD700;
+      color: black;
+      padding: 10px 20px;
+      text-decoration: none;
       border-radius: 5px;
     }
-    .form-section button {
-      background-color: #c2a800;
+    .about img {
+      width: 200px;
+      border-radius: 20px;
+    }
+    .about, .why, .pricing, .reviews, .review-form, .pre-consult, .bank, .footer {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .why ul, .pricing-box, .review-box {
+      background-color: #002244;
+      padding: 20px;
+      margin: 10px auto;
+      max-width: 600px;
+      border-radius: 10px;
+    }
+    .reviews .review-box {
+      color: #FFD700;
+    }
+    .footer-note {
+      font-size: 0.8rem;
+      color: #888;
+      text-align: center;
+      padding: 10px;
+    }
+    form input, form textarea {
+      margin: 10px;
+      padding: 10px;
+      width: 80%;
       border: none;
-      padding: 0.75rem;
-      color: #001f3f;
-      font-weight: bold;
-      cursor: pointer;
+      border-radius: 5px;
+    }
+    form input[type="file"] {
+      color: white;
     }
     .qr-img {
-      max-width: 150px;
+      width: 180px;
     }
-    footer small {
-      color: #aaa;
+    .social-icons img {
+      width: 30px;
+      margin: 0 10px;
+    }
+    .social-icons {
+      margin-top: 20px;
+    }
+    .footer {
+      background-color: #000;
+      padding: 20px;
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="logo.png" alt="SaiVerse Logo" height="50" />
+    <img src="logo.png" alt="SaiVerse Logo" width="140" />
     <nav>
       <a href="#about">About</a>
       <a href="#pricing">Pricing</a>
@@ -107,83 +113,87 @@
   <section class="hero">
     <h1>Let Us Handle the Chase, While You Focus on Growth</h1>
     <p>Your trusted partner in global freelancing, payment recovery & client coordination.</p>
-    <button class="cta-button">📅 Book Consultation</button>
-    <div class="icons">
-      <img src="linkedin.png" alt="LinkedIn" />
-      <img src="upwork.png" alt="Upwork" />
+    <a href="https://calendly.com/saiverse-info">📅 Book Consultation</a>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/saranya-s-78014b371/"><img src="linkedin.png" alt="LinkedIn" /></a>
+      <a href="https://www.upwork.com/freelancers/~014031dd72651c3436?mp_source=share"><img src="upwork.png" alt="Upwork" /></a>
     </div>
   </section>
 
-  <section id="about" class="section">
-    <h2>About Us</h2>
+  <section class="about" id="about">
     <img src="founder.jpg" alt="Founder Saranya S" />
+    <h2>About Us</h2>
     <p>I’m Saranya S, the founder of SaiVerse Solutions. With 17 years of hands-on experience in payment collection, international client coordination, follow-ups, and customer service, I’ve worked with 1000+ clients and resolved high-value transactions with precision and trust.</p>
   </section>
 
-  <section class="section">
+  <section class="why">
     <h2>Why Choose Us</h2>
-    <p>✔️ 17+ Years in Collections<br>
-    ✔️ Personalized Global Support<br>
-    ✔️ Trusted by Freelancers<br>
-    ✔️ Fast & Respectful Follow-up</p>
+    <ul>
+      <li>✔️ 17+ Years in Collections</li>
+      <li>✔️ Personalized Global Support</li>
+      <li>✔️ Trusted by Freelancers</li>
+      <li>✔️ Fast & Respectful Follow-up</li>
+    </ul>
   </section>
 
-  <section id="pricing" class="section">
+  <section class="pricing" id="pricing">
     <h2>Consultation Plans</h2>
-    <p>30 Minutes – $99<br>
-    1 Hour – $149<br><br>
-    Note: Session confirmed via email within 24–48 hrs after booking.</p>
+    <div class="pricing-box">
+      <p><strong>30 Minutes:</strong> $99</p>
+      <p><strong>1 Hour:</strong> $149</p>
+      <p><em>Note: Session confirmed via email within 24–48 hrs after booking.</em></p>
+    </div>
   </section>
 
-  <section id="reviews" class="section">
+  <section class="reviews" id="reviews">
     <h2>Client Reviews</h2>
-    <div class="box-review">★★★★★ – “Professional and quick.” – Jessica 🇺🇸</div>
-    <div class="box-review">★★★★★ – “Got my payment back!” – Ahmed 🇦🇪</div>
-    <div class="box-review">★★★★★ – “Very respectful and powerful service.” – Nina 🇩🇪</div>
+    <div class="review-box">★★★★★ – “Professional and quick.” – Jessica 🇺🇸</div>
+    <div class="review-box">★★★★★ – “Got my payment back!” – Ahmed 🇦🇪</div>
+    <div class="review-box">★★★★★ – “Very respectful and powerful service.” – Nina 🇩🇪</div>
   </section>
 
-  <section class="form-section section">
+  <section class="review-form">
     <h2>Submit Your Review</h2>
     <form>
       <input type="text" placeholder="Your Name" required />
       <input type="text" placeholder="Your Country" required />
-      <textarea placeholder="Your Feedback (Max 300 characters)" maxlength="300" required></textarea>
-      <button type="submit">Submit</button>
+      <textarea maxlength="300" placeholder="Your Feedback (Max 300 characters)"></textarea>
+      <br /><input type="submit" value="Submit" />
     </form>
   </section>
 
-  <section class="form-section section">
+  <section class="pre-consult">
     <h2>Pre-Consultation Form</h2>
     <p>Fill Pre-Consultation Form after booking for smooth session. Once submitted, confirmation will be sent via email.</p>
-    <form action="https://formsubmit.co/info@saiverse.org" method="POST" enctype="multipart/form-data">
-      <input type="text" name="Full Name" placeholder="Full Name" required />
-      <input type="email" name="Email" placeholder="Your Email" required />
-      <input type="text" name="Country" placeholder="Country" required />
-      <input type="text" name="Booking Date" placeholder="Booking Date (dd-mm-yyyy)" required />
-      <select name="Issue Type">
-        <option value="Payment Recovery">Payment Recovery</option>
-      </select>
-      <textarea name="Short Description" placeholder="Short Description (Max 300 characters)" maxlength="300"></textarea>
-      <label>Upload Supporting Documents <input type="file" name="Supporting Documents" /></label><br>
-      <label>Upload Payment Confirmation <input type="file" name="Payment Confirmation" /></label><br><br>
-      <button type="submit">Submit Form</button>
+    <form>
+      <input type="text" placeholder="Full Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <input type="text" placeholder="Country" required />
+      <input type="text" placeholder="Booking Date (dd-mm-yyyy)" required />
+      <input type="text" placeholder="Issue Type: Payment Recovery" />
+      <textarea placeholder="Short Description"></textarea>
+      <br />Upload Supporting Documents: <input type="file" />
+      <br />Upload Payment Confirmation: <input type="file" />
+      <br /><input type="submit" value="Submit Form" />
     </form>
   </section>
 
-  <section class="section">
+  <section class="bank" id="contact">
     <h2>Bank Details</h2>
-    <p>Bank: Indian Overseas Bank<br>
-    Name: Saranya S<br>
-    Account No: 163501000000881<br>
-    IFSC: IOBA0001635</p>
-    <img src="qr.jpg" alt="Payment QR Code" class="qr-img" />
+    <p>Bank: Indian Overseas Bank<br />Name: Saranya S<br />Account No: 163501000000881<br />IFSC: IOBA0001635</p>
+    <img src="qr.jpg" class="qr-img" alt="Payment QR Code" />
   </section>
 
-  <footer>
-    <p>All consultations are conducted professionally with strict confidentiality. Your data is safe, private, and never shared. By booking, you accept our process and confirm full payment has been made.</p>
+  <section class="footer-note">
+    <p style="color: dimgray; font-size: 0.75rem;">
+      All consultations are conducted professionally with strict confidentiality. Your data is safe, private, and never shared. By booking, you accept our process and confirm full payment has been made.
+    </p>
+  </section>
+
+  <footer class="footer">
     <p>© 2025 SaiVerse Solutions | Powered by Saranya S</p>
     <p>WhatsApp: +91 8939701718 | Email: info@saiverse.org</p>
-    <p><a href="#">LinkedIn</a> | <a href="#">Upwork</a></p>
+    <p><a href="https://www.linkedin.com/in/saranya-s-78014b371/" style="color:white">LinkedIn</a> | <a href="https://www.upwork.com/freelancers/~014031dd72651c3436?mp_source=share" style="color:white">Upwork</a></p>
   </footer>
 </body>
 </html>
