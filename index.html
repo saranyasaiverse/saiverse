@@ -8,100 +8,87 @@
   <meta name="keywords" content="payment recovery, international clients, freelancing, collections, client follow-up, Saranya S">
   <meta name="author" content="Saranya S">
   <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" href="favicon.ico" />
+  <link rel="icon" href="favicon.ico">
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #001f3f;
-      color: white;
+      background: linear-gradient(to bottom, #001F3F, #f0f0f0);
+      color: #fff;
     }
     header {
+      background-color: #002244;
+      padding: 10px 0;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 15px 40px;
-      background-color: #001a33;
+      padding-left: 20px;
+      padding-right: 20px;
+      border-bottom: 2px solid #FFD700;
     }
     nav a {
-      margin: 0 15px;
       color: #FFD700;
       text-decoration: none;
+      margin: 0 10px;
       font-weight: bold;
     }
     .hero {
-      background-color: #001a33;
+      background-color: #002244;
+      color: #FFD700;
       padding: 60px 20px;
       text-align: center;
     }
-    .hero h1 {
-      font-size: 2.5rem;
-    }
-    .hero p {
-      font-size: 1.2rem;
-      margin-bottom: 20px;
-    }
-    .hero a {
+    .cta {
       background-color: #FFD700;
-      color: black;
+      color: #002244;
       padding: 10px 20px;
       text-decoration: none;
-      border-radius: 5px;
-    }
-    .about img {
-      width: 200px;
-      border-radius: 20px;
-    }
-    .about, .why, .pricing, .reviews, .review-form, .pre-consult, .bank, .footer {
-      padding: 40px 20px;
-      text-align: center;
-    }
-    .why ul, .pricing-box, .review-box {
-      background-color: #002244;
-      padding: 20px;
-      margin: 10px auto;
-      max-width: 600px;
-      border-radius: 10px;
-    }
-    .reviews .review-box {
-      color: #FFD700;
-    }
-    .footer-note {
-      font-size: 0.8rem;
-      color: #888;
-      text-align: center;
-      padding: 10px;
-    }
-    form input, form textarea {
-      margin: 10px;
-      padding: 10px;
-      width: 80%;
-      border: none;
-      border-radius: 5px;
-    }
-    form input[type="file"] {
-      color: white;
-    }
-    .qr-img {
-      width: 180px;
-    }
-    .social-icons img {
-      width: 30px;
-      margin: 0 10px;
-    }
-    .social-icons {
+      font-weight: bold;
+      display: inline-block;
       margin-top: 20px;
     }
-    .footer {
-      background-color: #000;
+    .section {
+      padding: 40px 20px;
+      background-color: #f5f5f5;
+      color: #000;
+    }
+    .section.dark {
+      background-color: #e0e0e0;
+    }
+    .review-box {
+      background-color: #fff;
+      border: 1px solid #ccc;
       padding: 20px;
+      margin: 10px;
+      color: #000;
+    }
+    .stars {
+      color: #FFD700;
+      font-size: 20px;
+    }
+    .footer {
+      background-color: #002244;
+      color: #ccc;
+      font-size: 12px;
+      text-align: center;
+      padding: 10px;
+    }
+    .disclaimer {
+      font-size: 10px;
+      color: dimgray;
+      text-align: center;
+      padding: 10px;
+    }
+    .icon {
+      width: 24px;
+      height: 24px;
+      margin: 0 5px;
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="logo.png" alt="SaiVerse Logo" width="140" />
+    <img src="logo.png" alt="SaiVerse Logo" height="50">
     <nav>
       <a href="#about">About</a>
       <a href="#pricing">Pricing</a>
@@ -110,23 +97,26 @@
     </nav>
   </header>
 
-  <section class="hero">
+  <div class="hero">
     <h1>Let Us Handle the Chase, While You Focus on Growth</h1>
     <p>Your trusted partner in global freelancing, payment recovery & client coordination.</p>
-    <a href="https://calendly.com/saiverse-info">📅 Book Consultation</a>
-    <div class="social-icons">
-      <a href="https://www.linkedin.com/in/saranya-s-78014b371/"><img src="linkedin.png" alt="LinkedIn" /></a>
-      <a href="https://www.upwork.com/freelancers/~014031dd72651c3436?mp_source=share"><img src="upwork.png" alt="Upwork" /></a>
-    </div>
-  </section>
+    <a class="cta" href="#booking">📅 Book Consultation</a>
+    <br><br>
+    <a href="https://www.linkedin.com/in/saranya-s-78014b371/" target="_blank">
+      <img src="linkedin-icon.png" alt="LinkedIn" class="icon">
+    </a>
+    <a href="https://www.upwork.com/freelancers/~014031dd72651c3436" target="_blank">
+      <img src="upwork-icon.png" alt="Upwork" class="icon">
+    </a>
+  </div>
 
-  <section class="about" id="about">
-    <img src="founder.jpg" alt="Founder Saranya S" />
+  <div id="about" class="section">
     <h2>About Us</h2>
-    <p>I’m Saranya S, the founder of SaiVerse Solutions. With 17 years of hands-on experience in payment collection, international client coordination, follow-ups, and customer service, I’ve worked with 1000+ clients and resolved high-value transactions with precision and trust.</p>
-  </section>
+    <img src="founder.jpg" alt="Founder Saranya S" height="180">
+    <p>I’m <strong>Saranya S</strong>, the founder of SaiVerse Solutions. With 17 years of hands-on experience in payment collection, international client coordination, follow-ups, and customer service, I’ve worked with 1000+ clients and resolved high-value transactions with precision and trust.</p>
+  </div>
 
-  <section class="why">
+  <div class="section dark">
     <h2>Why Choose Us</h2>
     <ul>
       <li>✔️ 17+ Years in Collections</li>
@@ -134,66 +124,78 @@
       <li>✔️ Trusted by Freelancers</li>
       <li>✔️ Fast & Respectful Follow-up</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="pricing" id="pricing">
+  <div id="pricing" class="section">
     <h2>Consultation Plans</h2>
-    <div class="pricing-box">
+    <div class="review-box">
       <p><strong>30 Minutes:</strong> $99</p>
       <p><strong>1 Hour:</strong> $149</p>
       <p><em>Note: Session confirmed via email within 24–48 hrs after booking.</em></p>
     </div>
-  </section>
+  </div>
 
-  <section class="reviews" id="reviews">
+  <div id="reviews" class="section dark">
     <h2>Client Reviews</h2>
-    <div class="review-box">★★★★★ – “Professional and quick.” – Jessica 🇺🇸</div>
-    <div class="review-box">★★★★★ – “Got my payment back!” – Ahmed 🇦🇪</div>
-    <div class="review-box">★★★★★ – “Very respectful and powerful service.” – Nina 🇩🇪</div>
-  </section>
-
-  <section class="review-form">
-    <h2>Submit Your Review</h2>
+    <div class="review-box">
+      <div class="stars">★★★★★</div>
+      <p>“Professional and quick.” – Jessica 🇺🇸</p>
+    </div>
+    <div class="review-box">
+      <div class="stars">★★★★★</div>
+      <p>“Got my payment back!” – Ahmed 🇦🇪</p>
+    </div>
+    <div class="review-box">
+      <div class="stars">★★★★★</div>
+      <p>“Very respectful and powerful service.” – Nina 🇩🇪</p>
+    </div>
+    <h3>Submit Your Review</h3>
     <form>
-      <input type="text" placeholder="Your Name" required />
-      <input type="text" placeholder="Your Country" required />
-      <textarea maxlength="300" placeholder="Your Feedback (Max 300 characters)"></textarea>
-      <br /><input type="submit" value="Submit" />
+      <input type="text" placeholder="Your Name" required><br><br>
+      <input type="text" placeholder="Your Country" required><br><br>
+      <textarea placeholder="Your Feedback (Max 300 characters)" maxlength="300"></textarea><br><br>
+      <button type="submit">Submit</button>
     </form>
-  </section>
+  </div>
 
-  <section class="pre-consult">
+  <div id="booking" class="section">
     <h2>Pre-Consultation Form</h2>
     <p>Fill Pre-Consultation Form after booking for smooth session. Once submitted, confirmation will be sent via email.</p>
     <form>
-      <input type="text" placeholder="Full Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <input type="text" placeholder="Country" required />
-      <input type="text" placeholder="Booking Date (dd-mm-yyyy)" required />
-      <input type="text" placeholder="Issue Type: Payment Recovery" />
-      <textarea placeholder="Short Description"></textarea>
-      <br />Upload Supporting Documents: <input type="file" />
-      <br />Upload Payment Confirmation: <input type="file" />
-      <br /><input type="submit" value="Submit Form" />
+      <input type="text" placeholder="Full Name" required><br><br>
+      <input type="email" placeholder="Your Email" required><br><br>
+      <input type="text" placeholder="Country" required><br><br>
+      <input type="text" placeholder="Booking Date (dd-mm-yyyy)" required><br><br>
+      <select>
+        <option>Payment Recovery</option>
+      </select><br><br>
+      <textarea placeholder="Short Description" required></textarea><br><br>
+      <label>Upload Supporting Documents</label><br>
+      <input type="file"><br><br>
+      <label>Upload Payment Confirmation</label><br>
+      <input type="file"><br><br>
+      <button type="submit">Submit Form</button>
     </form>
-  </section>
+  </div>
 
-  <section class="bank" id="contact">
+  <div class="section dark" id="contact">
     <h2>Bank Details</h2>
-    <p>Bank: Indian Overseas Bank<br />Name: Saranya S<br />Account No: 163501000000881<br />IFSC: IOBA0001635</p>
-    <img src="qr.jpg" class="qr-img" alt="Payment QR Code" />
-  </section>
+    <p><strong>Bank:</strong> Indian Overseas Bank</p>
+    <p><strong>Name:</strong> Saranya S</p>
+    <p><strong>Account No:</strong> 163501000000881</p>
+    <p><strong>IFSC:</strong> IOBA0001635</p>
+    <img src="qr.jpg" alt="Payment QR Code" height="150">
+  </div>
 
-  <section class="footer-note">
-    <p style="color: dimgray; font-size: 0.75rem;">
-      All consultations are conducted professionally with strict confidentiality. Your data is safe, private, and never shared. By booking, you accept our process and confirm full payment has been made.
-    </p>
-  </section>
+  <div class="disclaimer">
+    All consultations are conducted professionally with strict confidentiality. Your data is safe, private, and never shared. By booking, you accept our process and confirm full payment has been made.
+  </div>
 
-  <footer class="footer">
-    <p>© 2025 SaiVerse Solutions | Powered by Saranya S</p>
-    <p>WhatsApp: +91 8939701718 | Email: info@saiverse.org</p>
-    <p><a href="https://www.linkedin.com/in/saranya-s-78014b371/" style="color:white">LinkedIn</a> | <a href="https://www.upwork.com/freelancers/~014031dd72651c3436?mp_source=share" style="color:white">Upwork</a></p>
-  </footer>
+  <div class="footer">
+    © 2025 SaiVerse Solutions | Powered by Saranya S<br>
+    WhatsApp: +91 8939701718 | Email: info@saiverse.org<br>
+    <a href="https://www.linkedin.com/in/saranya-s-78014b371/" target="_blank" style="color:#FFD700">LinkedIn</a> |
+    <a href="https://www.upwork.com/freelancers/~014031dd72651c3436" target="_blank" style="color:#FFD700">Upwork</a>
+  </div>
 </body>
 </html>
