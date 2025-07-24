@@ -8,36 +8,43 @@
   <meta name="keywords" content="payment recovery, international clients, freelancing, collections, client follow-up, Saranya S">
   <meta name="author" content="Saranya S">
   <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="logo.png" />
 </head>
-<body style="background-color: #002244; color: #ffffff; font-family: Arial, sans-serif;">
+<body>
+  <!-- Header Section -->
   <header>
-    <h1 style="color: #c2a800;">SaiVerse Solutions</h1>
+    <img src="logo.png" alt="SaiVerse Logo" class="logo" />
     <nav>
-      <a href="#about">About</a> |
-      <a href="#pricing">Pricing</a> |
-      <a href="#reviews">Reviews</a> |
-      <a href="#contact">Contact</a>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
+  <!-- Hero Section -->
   <section id="hero">
-    <h2>Let Us Handle the Chase, While You Focus on Growth</h2>
+    <h1>Let Us Handle the Chase, While You Focus on Growth</h1>
     <p>Your trusted partner in global freelancing, payment recovery & client coordination.</p>
     <a href="https://calendly.com/saiverse-info" target="_blank">📅 Book Consultation</a>
-    <div>
+    <div class="social-icons">
       <a href="https://www.linkedin.com/in/saranya-s-78014b371/">LinkedIn</a>
       <a href="https://www.upwork.com/freelancers/~014031dd72651c3436">Upwork</a>
     </div>
   </section>
 
+  <!-- About Section -->
   <section id="about">
-    <h3>About</h3>
-    <img src="founder.jpg" alt="Saranya S" style="width: 200px; border-radius: 10px;" />
+    <h2>About Us</h2>
     <p>I’m Saranya S, the founder of SaiVerse Solutions. With 17 years of hands-on experience in payment collection, international client coordination, follow-ups, and customer service, I’ve worked with 1000+ clients and resolved high-value transactions with precision and trust.</p>
+    <img src="founder.jpg" alt="Founder Saranya S" class="founder-img" />
   </section>
 
-  <section id="why-choose">
-    <h3>Why Choose Us</h3>
+  <!-- Why Choose Us -->
+  <section id="why">
+    <h2>Why Choose Us</h2>
     <ul>
       <li>✔️ 17+ Years in Collections</li>
       <li>✔️ Personalized Global Support</li>
@@ -46,69 +53,97 @@
     </ul>
   </section>
 
+  <!-- Pricing Section -->
   <section id="pricing">
-    <h3>Pricing</h3>
-    <p>30 Min – $99</p>
-    <p>1 Hour – $149</p>
-    <small>✅ Session confirmed via mail within 24–48 hrs after booking</small>
+    <h2>Consultation Plans</h2>
+    <div class="plans">
+      <div class="plan">
+        <h3>30 Minutes</h3>
+        <p>$99</p>
+      </div>
+      <div class="plan">
+        <h3>1 Hour</h3>
+        <p>$149</p>
+      </div>
+    </div>
+    <p><strong>Note:</strong> Session confirmed via email within 24–48 hrs after booking.</p>
   </section>
 
+  <!-- Reviews Section -->
   <section id="reviews">
-    <h3>Client Reviews</h3>
-    <div style="background-color: #1a1a1a; padding: 10px; border-radius: 10px;">
-      <p>★★★★★ – Jessica 🇺🇸<br>"Quick, precise and so calm to work with!"</p>
+    <h2>Client Reviews</h2>
+    <div class="review-box">
+      <p>★★★★★ – “Professional and quick.” – Jessica 🇺🇸</p>
+      <p>★★★★★ – “Got my payment back!” – Ahmed 🇦🇪</p>
+      <p>★★★★★ – “Very respectful and powerful service.” – Nina 🇩🇪</p>
     </div>
-    <div style="background-color: #1a1a1a; padding: 10px; border-radius: 10px;">
-      <p>★★★★★ – Ahmed 🇦🇪<br>"She helped me recover my invoice in 2 weeks. Amazing work."</p>
-    </div>
-    <div style="background-color: #1a1a1a; padding: 10px; border-radius: 10px;">
-      <p>★★★★★ – Nina 🇩🇪<br>"Very professional and clear. Will book again!"</p>
-    </div>
-    <h4>Submit Your Feedback</h4>
-    <form>
-      <input type="text" name="name" placeholder="Your Name" required><br>
-      <input type="text" name="country" placeholder="Country" required><br>
-      <textarea name="feedback" maxlength="300" placeholder="Your feedback" required></textarea><br>
+    <h3>Submit Your Review</h3>
+    <form action="https://formsubmit.co/info@saiverse.org" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="text" name="country" placeholder="Your Country" required />
+      <textarea name="feedback" maxlength="300" placeholder="Your Feedback (Max 300 characters)"></textarea>
       <button type="submit">Submit</button>
     </form>
   </section>
 
-  <section id="pre-consult">
-    <h3>Pre-Consultation Note</h3>
+  <!-- Pre-Consultation Form Section -->
+  <section id="preconsult">
+    <h2>Pre-Consultation Form</h2>
     <p>Fill Pre-Consultation Form after booking for smooth session. Once submitted, confirmation will be sent via email.</p>
-    <form action="https://formsubmit.co/info@saiverse.org" method="POST">
-      <input type="text" name="name" placeholder="Full Name" required><br>
-      <input type="email" name="email" placeholder="Your Email" required><br>
-      <input type="text" name="country" placeholder="Country" required><br>
-      <input type="text" name="booking_date" placeholder="Booking Date" required><br>
-      <select name="type">
+    <form action="https://formsubmit.co/info@saiverse.org" method="POST" enctype="multipart/form-data">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="country">Country</label>
+      <input type="text" id="country" name="country" required />
+
+      <label for="bookingDate">Booking Date</label>
+      <input type="date" id="bookingDate" name="bookingDate" required />
+
+      <label for="issue">Issue Type</label>
+      <select id="issue" name="issue">
         <option value="Payment Recovery">Payment Recovery</option>
-        <option value="Client Delay">Client Delay</option>
-        <option value="Others">Others</option>
-      </select><br>
-      <textarea name="description" placeholder="Short Description" required></textarea><br>
+      </select>
+
+      <label for="description">Short Description</label>
+      <textarea id="description" name="description" rows="4" maxlength="300"></textarea>
+
+      <label for="documents">Upload Supporting Documents</label>
+      <input type="file" id="documents" name="documents" />
+
+      <label for="paymentProof">Upload Payment Confirmation</label>
+      <input type="file" id="paymentProof" name="paymentProof" required />
+
       <button type="submit">Submit Form</button>
     </form>
   </section>
 
-  <section id="bank-details">
-    <h3>Bank Details</h3>
+  <!-- Bank Details -->
+  <section id="bank">
+    <h2>Bank Details</h2>
     <p><strong>Bank:</strong> Indian Overseas Bank</p>
     <p><strong>Name:</strong> Saranya S</p>
     <p><strong>Account No:</strong> 163501000000881</p>
     <p><strong>IFSC:</strong> IOBA0001635</p>
-    <img src="qr.jpg" alt="QR Code" style="width: 150px;" />
+    <img src="qr.jpg" alt="Payment QR Code" />
   </section>
 
+  <!-- Privacy & Disclaimer -->
   <section id="privacy">
-    <p style="text-align: center; font-size: 12px; color: #aaaaaa;">
+    <p style="font-size: 12px; text-align: center; color: grey;">
       All consultations are conducted professionally with strict confidentiality. Your data is safe, private, and never shared. By booking, you accept our process and confirm full payment has been made.
     </p>
   </section>
 
+  <!-- Footer -->
   <footer>
     <p>© 2025 SaiVerse Solutions | Powered by Saranya S</p>
     <p>WhatsApp: +91 8939701718 | Email: info@saiverse.org</p>
+    <a href="https://www.linkedin.com/in/saranya-s-78014b371/">LinkedIn</a> |
+    <a href="https://www.upwork.com/freelancers/~014031dd72651c3436">Upwork</a>
   </footer>
 </body>
 </html>
