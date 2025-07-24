@@ -10,47 +10,6 @@
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <script defer src="script.js"></script>
-  <style>
-    .review-box {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 1rem;
-      padding: 1rem;
-    }
-    .review-box blockquote {
-      background: linear-gradient(to right, #202020, #1c1c3a);
-      border-radius: 12px;
-      padding: 1rem;
-      color: white;
-      font-style: italic;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.4);
-    }
-    .review-box footer {
-      font-style: normal;
-      font-weight: bold;
-      margin-top: 0.5rem;
-      text-align: right;
-    }
-    .stars {
-      color: gold;
-      font-size: 1.2rem;
-      margin-top: 0.5rem;
-    }
-    .social-icons img {
-      height: 30px;
-      margin-left: 10px;
-      vertical-align: middle;
-    }
-    #privacy {
-      font-size: 0.7rem;
-      color: #777;
-      line-height: 1.4;
-      max-width: 700px;
-      margin: 2rem auto 0 auto;
-      padding: 1rem;
-      text-align: center;
-    }
-  </style>
 </head>
 <body>
   <header>
@@ -70,10 +29,10 @@
         <a href="#booking" class="btn">Book a Consultation</a>
         <div class="social-icons">
           <a href="https://www.linkedin.com/in/saranya-sai" target="_blank" title="LinkedIn">
-            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" />
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" style="height: 28px;" />
           </a>
           <a href="https://www.upwork.com/freelancers/~014031dd72651c3436?mp_source=share" target="_blank" title="Upwork">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Upwork-logo.svg" alt="Upwork" style="height: 30px;" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Upwork_logo_2021.svg" alt="Upwork" style="height: 28px;" />
           </a>
         </div>
       </div>
@@ -110,22 +69,27 @@
 
     <section id="reviews">
       <h2>Client Reviews</h2>
-      <div class="review-box">
-        <blockquote>
+      <div class="review-box" style="display: grid; gap: 1rem; max-width: 700px; margin: auto;">
+        <div style="background: #182548; padding: 1rem; border-radius: 10px; color: #fff;">
           <p>“Saranya helped me recover <strong>$45,000</strong> from a client who had gone silent.”</p>
-          <div class="stars">★★★★★</div>
-          <footer>– Jessica 🇺🇸</footer>
-        </blockquote>
-        <blockquote>
+          <p style="color: gold;">★★★★★</p>
+          <footer style="text-align: right; color: #ccc;">– Jessica 🇺🇸</footer>
+        </div>
+        <div style="background: #182548; padding: 1rem; border-radius: 10px; color: #fff;">
           <p>“Her method is respectful and very effective. We got <strong>$70,000</strong> cleared.”</p>
-          <div class="stars">★★★★★</div>
-          <footer>– Ahmed 🇦🇪</footer>
-        </blockquote>
-        <blockquote>
+          <p style="color: gold;">★★★★★</p>
+          <footer style="text-align: right; color: #ccc;">– Ahmed 🇦🇪</footer>
+        </div>
+        <div style="background: #182548; padding: 1rem; border-radius: 10px; color: #fff;">
           <p>“Emotionally understanding and fast with action – rare combo.”</p>
-          <div class="stars">★★★★★</div>
-          <footer>– Nina 🇩🇪</footer>
-        </blockquote>
+          <p style="color: gold;">★★★★★</p>
+          <footer style="text-align: right; color: #ccc;">– Nina 🇩🇪</footer>
+        </div>
+        <div style="background: #182548; padding: 1rem; border-radius: 10px; color: #fff;">
+          <p>“My session just ended – and wow! She knows her stuff and brings so much clarity.”</p>
+          <p style="color: gold;">★★★★★</p>
+          <footer style="text-align: right; color: #ccc;">– Felipe 🇧🇷</footer>
+        </div>
       </div>
     </section>
 
@@ -139,7 +103,33 @@
 
     <section id="intake-form">
       <h3>📝 Pre-Consultation Form</h3>
-      <!-- Form content remains unchanged -->
+      <form id="booking-form" action="https://formsubmit.co/info@saiverse.org" method="POST" enctype="multipart/form-data">
+        <label>Full Name:<input type="text" name="name" required></label>
+        <label>Email Address:<input type="email" name="email" required></label>
+        <label>Country:<input type="text" name="country" required></label>
+        <label>What is your issue?<textarea name="issue" rows="4" required></textarea></label>
+        <label>How long has it been pending?
+          <select name="duration" required>
+            <option value="">--Select--</option>
+            <option>1–7 Days</option>
+            <option>1–4 Weeks</option>
+            <option>1–3 Months</option>
+            <option>More than 3 Months</option>
+          </select>
+        </label>
+        <label>Client Type:
+          <select name="clientType" required>
+            <option value="">--Select--</option>
+            <option>Freelancer</option>
+            <option>Agency</option>
+            <option>Company</option>
+          </select>
+        </label>
+        <label>Have you taken any action?<textarea name="action" rows="3"></textarea></label>
+        <label>Upload Screenshot:<input type="file" name="screenshot"></label>
+        <label><input type="checkbox" name="paymentConfirmed" required> I confirm I have completed the payment.</label>
+        <button type="submit">✅ Submit Form</button>
+      </form>
     </section>
 
     <section id="payment">
@@ -158,9 +148,9 @@
     </section>
 
     <section id="privacy">
-      <h4>
+      <h4 style="font-size: 0.68rem; color: #777; line-height: 1.4; max-width: 700px; margin: 2rem auto 1rem auto; text-align: center;">
         <strong>Privacy & Disclaimer:</strong><br>
-        All consultations are conducted professionally with strict confidentiality. While we cannot guarantee recovery success, our team provides personalized communication strategies based on real experience.<br> Your data is safe, private, and never shared. By booking, you accept our process and confirm full payment has been made.
+        All consultations are conducted professionally with strict confidentiality. Your data is safe, private, and never shared. By booking, you accept our process and confirm full payment has been made.
       </h4>
     </section>
   </main>
