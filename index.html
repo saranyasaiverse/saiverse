@@ -13,7 +13,7 @@
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      background: linear-gradient(to bottom, #001F3F, #f0f0f0);
+      background-color: #002244;
       color: #fff;
     }
     header {
@@ -49,15 +49,11 @@
     }
     .section {
       padding: 40px 20px;
-      background-color: #f5f5f5;
-      color: #000;
-    }
-    .section.dark {
       background-color: #002244;
       color: #fff;
     }
     .review-box {
-      background-color: #002244;
+      background-color: #001F3F;
       border: 1px solid #FFD700;
       padding: 20px;
       margin: 10px;
@@ -84,7 +80,8 @@
       width: 24px;
       height: 24px;
       margin: 0 5px;
-      border-radius: 50%;
+      border: 1px solid white;
+      border-radius: 5px;
       background-color: #fff;
     }
     .form-section input,
@@ -99,129 +96,132 @@
       border: 2px solid #FFD700;
       padding: 20px;
       margin: 20px 0;
+      background-color: #001F3F;
     }
     .about-image {
       max-width: 200px;
       border-radius: 10px;
       margin-bottom: 20px;
     }
-    .note {
-      font-style: italic;
-      font-size: 13px;
-      color: #333;
+    .form-section button {
+      background-color: #FFD700;
+      color: #002244;
+      font-weight: bold;
+      padding: 10px 15px;
+      border: none;
+      cursor: pointer;
     }
   </style>
 </head>
 <body>
-  <header>
-    <img src="logo.png" alt="SaiVerse Logo" height="50">
-    <nav>
-      <a href="#about">About</a>
-      <a href="#pricing">Pricing</a>
-      <a href="#reviews">Reviews</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
 
-  <div class="hero">
-    <h1>Let Us Handle the Chase, While You Focus on Growth</h1>
-    <p>Your trusted partner in global freelancing, payment recovery & client coordination.</p>
-    <a class="cta" href="#booking">📅 Book Consultation</a>
-    <br><br>
-    <a href="https://www.linkedin.com/in/saranya-s-78014b371/" target="_blank">
-      <img src="https://img.icons8.com/color/48/linkedin.png" alt="LinkedIn" class="icon">
-    </a>
-    <a href="https://www.upwork.com/freelancers/~014031dd72651c3436" target="_blank">
-      <img src="https://img.icons8.com/ios-filled/48/000000/upwork.png" alt="Upwork" class="icon">
-    </a>
-  </div>
+<header>
+  <img src="logo.png" alt="SaiVerse Logo" style="height: 50px;">
+  <nav>
+    <a href="#about">About</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
-  <div class="section box-section" id="about">
-    <h2>About Us</h2>
-    <img src="founder.jpg" alt="Founder Saranya S" class="about-image">
-    <p>I’m Saranya S, the founder of SaiVerse Solutions. With 17 years of hands-on experience in payment collection, international client coordination, follow-ups, and customer service, I’ve worked with 1000+ clients and resolved high-value transactions with precision and trust.</p>
+<section class="hero">
+  <h1>Let Us Handle the Chase, While You Focus on Growth</h1>
+  <p>Your trusted partner in global freelancing, payment recovery & client coordination.</p>
+  <a class="cta" href="#booking">📅 Book Consultation</a>
+  <div>
+    <img src="linkedin.png" class="icon" alt="LinkedIn">
+    <img src="upwork-black.png" class="icon" alt="Upwork">
   </div>
+</section>
 
-  <div class="section box-section">
-    <h2>Why Choose Us</h2>
-    <ul>
-      <li>✔️ 17+ Years in Collections</li>
-      <li>✔️ Personalized Global Support</li>
-      <li>✔️ Trusted by Freelancers</li>
-      <li>✔️ Fast & Respectful Follow-up</li>
-    </ul>
-  </div>
+<section class="section" id="about">
+  <h2>About Us</h2>
+  <img src="founder.jpg" class="about-image" alt="Founder Saranya S">
+  <p>I’m Saranya S, the founder of SaiVerse Solutions. With 17 years of hands-on experience in payment collection, international client coordination, follow-ups, and customer service, I’ve worked with 1000+ clients and resolved high-value transactions with precision and trust.</p>
+</section>
 
-  <div class="section box-section" id="pricing">
-    <h2>Consultation Plans</h2>
-    <p>30 Minutes: $99</p>
-    <p>1 Hour: $149</p>
-    <p class="note">📌 Session confirmation email will be sent within 24–48 hours after booking.</p>
-    <p class="note">🔁 Appointments can be rescheduled once if notified 24 hours in advance. Missed sessions are non-refundable.</p>
-  </div>
+<section class="section">
+  <h2>Why Choose Us</h2>
+  <ul>
+    <li>✔️ 17+ Years in Collections</li>
+    <li>✔️ Personalized Global Support</li>
+    <li>✔️ Trusted by Freelancers</li>
+    <li>✔️ Fast & Respectful Follow-up</li>
+  </ul>
+</section>
 
-  <div class="section box-section" id="reviews">
-    <h2>Client Reviews</h2>
-    <div class="review-box">
-      <div class="stars">★★★★★</div>
-      <p>“Support was emotionally relieving and powerful.” – Jessica 🇺🇸</p>
-    </div>
-    <div class="review-box">
-      <div class="stars">★★★★★</div>
-      <p>“Polite, professional and helped me recover what I lost.” – Ahmed 🇦🇪</p>
-    </div>
-    <div class="review-box">
-      <div class="stars">★★★★★</div>
-      <p>“Highly trustworthy and respectful service.” – Nina 🇩🇪</p>
-    </div>
+<section class="section" id="pricing">
+  <h2>Consultation Plans</h2>
+  <div class="box-section">
+    <p><strong>30 Minutes:</strong> $99</p>
+    <p><strong>1 Hour:</strong> $149</p>
+    <p><em>📌 Note: Once booking is done, session confirmation will be sent via email within 24–48 hours.</em></p>
+    <p style="font-size: 14px; color: #ccc;"><strong>Important Policy:</strong><br>
+    • No refunds if a client misses the scheduled appointment.<br>
+    • Rescheduling allowed once if requested 24 hours in advance.</p>
   </div>
+</section>
 
-  <div class="section form-section">
-    <h2>Submit Your Review</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="text" placeholder="Your Country" required>
-      <textarea placeholder="Your Feedback (Max 300 characters)" maxlength="300"></textarea>
-      <button type="submit">Submit</button>
-    </form>
+<section class="section" id="reviews">
+  <h2>Client Reviews</h2>
+  <div class="review-box">
+    <p class="stars">★★★★★</p>
+    <p>“Professional and quick.” – Jessica 🇺🇸</p>
   </div>
+  <div class="review-box">
+    <p class="stars">★★★★★</p>
+    <p>“Got my payment back!” – Ahmed 🇦🇪</p>
+  </div>
+  <div class="review-box">
+    <p class="stars">★★★★★</p>
+    <p>“Very respectful and powerful service.” – Nina 🇩🇪</p>
+  </div>
+  <h3>Submit Your Review</h3>
+  <form class="form-section">
+    <input type="text" placeholder="Your Name">
+    <input type="text" placeholder="Your Country">
+    <textarea placeholder="Your Feedback (Max 300 characters)"></textarea>
+    <button type="submit">Submit</button>
+  </form>
+</section>
 
-  <div class="section form-section">
-    <h2>Pre-Consultation Form</h2>
-    <p>Fill this form after booking to ensure a smooth session. Confirmation will be sent via email after submission.</p>
-    <form>
-      <input type="text" placeholder="Full Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <input type="text" placeholder="Country" required>
-      <input type="text" placeholder="Booking Date (dd-mm-yyyy)" required>
-      <input type="text" placeholder="Issue Type - Payment Recovery" required>
-      <textarea placeholder="Short Description (Max 300 characters)" maxlength="300"></textarea>
-      <label>Upload Supporting Documents:</label>
-      <input type="file">
-      <label>Upload Payment Confirmation:</label>
-      <input type="file">
-      <button type="submit">Submit Form</button>
-    </form>
-  </div>
+<section class="section form-section" id="pre-consultation">
+  <h2>Pre‑Consultation Form</h2>
+  <p>Fill this form after booking to ensure a smooth session. Confirmation will be sent via email after submission.</p>
+  <form>
+    <input type="text" placeholder="Full Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <input type="text" placeholder="Country" required>
+    <input type="text" placeholder="Booking Date (dd-mm-yyyy)" required>
+    <select>
+      <option>Payment Recovery</option>
+    </select>
+    <textarea placeholder="Short Description (Max 300 characters)"></textarea>
+    <input type="file" accept=".pdf,.jpg,.png">
+    <input type="file" accept=".pdf,.jpg,.png">
+    <button type="submit">Submit Form</button>
+  </form>
+</section>
 
-  <div class="section box-section">
-    <h2>Bank Details</h2>
-    <p>Bank: Indian Overseas Bank</p>
-    <p>Name: Saranya S</p>
-    <p>Account No: 163501000000881</p>
-    <p>IFSC: IOBA0001635</p>
-    <p><img src="qr.jpg" alt="Payment QR Code" style="max-width:150px;"></p>
-  </div>
+<section class="section" id="bank">
+  <h2>Bank Details</h2>
+  <p><strong>Bank:</strong> Indian Overseas Bank</p>
+  <p><strong>Name:</strong> Saranya S</p>
+  <p><strong>Account No:</strong> 163501000000881</p>
+  <p><strong>IFSC:</strong> IOBA0001635</p>
+  <img src="qr.jpg" alt="Payment QR Code" style="width: 200px;">
+</section>
 
-  <div class="disclaimer">
-    All consultations are conducted professionally with strict confidentiality. Your data is safe, private, and never shared. By booking, you accept our process and confirm full payment has been made.
-  </div>
+<div class="disclaimer">
+  All consultations are conducted professionally with strict confidentiality. Your data is safe, private, and never shared. By booking, you accept our process and confirm full payment has been made.
+</div>
 
-  <div class="footer" id="contact">
-    © 2025 SaiVerse Solutions | Powered by Saranya S<br>
-    WhatsApp: +91 8939701718 | Email: info@saiverse.org<br>
-    <a href="https://www.linkedin.com/in/saranya-s-78014b371/" target="_blank" style="color: #FFD700;">LinkedIn</a> |
-    <a href="https://www.upwork.com/freelancers/~014031dd72651c3436" target="_blank" style="color: #FFD700;">Upwork</a>
-  </div>
+<footer class="footer">
+  © 2025 SaiVerse Solutions | Powered by Saranya S<br>
+  WhatsApp: +91 8939701718 | Email: info@saiverse.org<br>
+  LinkedIn | Upwork
+</footer>
+
 </body>
 </html>
