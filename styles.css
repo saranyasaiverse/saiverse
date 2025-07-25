@@ -1,180 +1,49 @@
-/* styles.css – SaiVerse Royal Theme */
-
-/* Reset and Basics */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>SaiVerse Solutions – International Payment Recovery Consultant</title>
+<meta name="description" content="SaiVerse Solutions offers expert global consultation for payment recovery and client coordination. Trusted by 1000+ international clients.">
+<meta name="keywords" content="payment recovery, international clients, freelancing, collections, client follow-up, Saranya S">
+<meta name="author" content="Saranya S">
+<link rel="stylesheet" href="styles.css" />
+<link rel="icon" href="favicon.ico">
+<style>
 body {
+  font-family: Arial, sans-serif;
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: #0c1a2a; /* Deep royal blue */
-  color: #f8f8f8;
-  line-height: 1.6;
+  background: linear-gradient(to bottom, #0c1a2a, #102030);
+  border: 4px solid transparent;
+  border-image: linear-gradient(135deg, #ffd700, #ffffff33) 1;
+  border-image-slice: 1;
+  color: #fff;
 }
 
-header, section, footer {
-  padding: 2rem;
+/* WhatsApp Floating Button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  animation: bounce 2s infinite, glow 1.5s ease-in-out infinite alternate;
+}
+.whatsapp-float img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: 0 0 15px #25D366;
+}
+@keyframes glow {
+  from { box-shadow: 0 0 5px #25D366; }
+  to { box-shadow: 0 0 20px #25D366; }
+}
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
 }
 
-h1, h2, h3 {
-  color: #ffd700; /* Gold */
-  margin-bottom: 1rem;
-}
-
-ul {
-  list-style-type: square;
-  padding-left: 1.5rem;
-}
-
-a {
-  color: #ffd700;
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-}
-
-/* Navigation */
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #07101e;
-  padding: 1rem 2rem;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.5);
-}
-nav .logo img {
-  height: 60px; /* Increased from 40px to 60px */
-}
-nav ul {
-  display: flex;
-  gap: 1.5rem;
-  margin: 0;
-  padding: 0;
-}
-nav ul li a {
-  color: #f8f8f8;
-  font-weight: 600;
-}
-
-/* Hero Section */
-.hero {
-  background: linear-gradient(120deg, #0c1a2a, #1a2740);
-  padding: 4rem 2rem 2rem;
-  text-align: center;
-}
-.hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-.hero p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-}
-
-.cta-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-}
-
-.btn {
-  background: #ffd700;
-  color: #0c1a2a;
-  padding: 0.75rem 1.5rem;
-  border: none;
-  border-radius: 30px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-.btn:hover {
-  background: #e6be00;
-}
-
-.social-icons img {
-  width: 32px;
-  height: 32px;
-  margin: 0 0.5rem;
-  filter: drop-shadow(0 0 3px #ffd700);
-}
-
-/* Sections */
-section {
-  border-bottom: 1px solid #ffd70033;
-}
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin-top: 1rem;
-}
-.card {
-  flex: 1;
-  min-width: 200px;
-  background: #13233a;
-  padding: 1rem;
-  border-left: 5px solid #ffd700;
-  border-radius: 8px;
-}
-
-/* Table */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 1rem;
-}
-th, td {
-  padding: 0.75rem;
-  border: 1px solid #ffd70044;
-  text-align: left;
-}
-th {
-  background: #ffd700;
-  color: #0c1a2a;
-}
-
-/* Forms */
-input, textarea, select, button {
-  width: 100%;
-  padding: 0.75rem;
-  margin-top: 0.5rem;
-  margin-bottom: 1rem;
-  border: 1px solid #ffd70066;
-  border-radius: 5px;
-  background: #102030;
-  color: #f8f8f8;
-}
-button[type="submit"] {
-  background-color: #ffd700;
-  color: #0c1a2a;
-  font-weight: bold;
-  cursor: pointer;
-}
-button[type="submit"]:hover {
-  background-color: #e6be00;
-}
-
-/* Reviews */
-.review-card {
-  background: #182c44;
-  padding: 1rem;
-  border-left: 4px solid #ffd700;
-  margin-bottom: 1rem;
-  border-radius: 5px;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 2rem;
-  background: #07101e;
-  color: #aaa;
-}
-
-/* Animations */
+/* Scroll Animation */
 .fade-in {
   opacity: 0;
   transform: translateY(30px);
@@ -185,13 +54,51 @@ footer {
   transform: translateY(0);
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-  .cards {
-    flex-direction: column;
-  }
+/* Glowing Review Boxes */
+.review-box {
+  background: #182c44;
+  border-left: 4px solid #ffd700;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 6px;
+  box-shadow: 0 0 10px #ffd70044;
+  transform: translateX(-20px);
+  opacity: 0;
+  transition: all 0.8s ease;
 }
+.review-box.visible {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: #ffd700;
+  text-shadow: 0 0 8px #ffd700aa;
+}
+</style>
+</head>
+<body>
+
+<!-- Existing content remains unchanged -->
+
+<a class="whatsapp-float" href="https://wa.me/918939701718" target="_blank">
+  <img src="https://img.icons8.com/color/96/000000/whatsapp--v1.png" alt="WhatsApp Chat" />
+</a>
+
+<script>
+const faders = document.querySelectorAll('.fade-in, .review-box');
+const options = { threshold: 0.3 };
+const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) return;
+    entry.target.classList.add('visible');
+    observer.unobserve(entry.target);
+  });
+}, options);
+
+faders.forEach(fader => appearOnScroll.observe(fader));
+</script>
+
+</body>
+</html>
