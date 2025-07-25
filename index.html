@@ -9,7 +9,7 @@
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      background-color: #001F3F; /* Solid dark royal blue */
+      background-color: #001F3F;
       color: #fff;
     }
     header {
@@ -151,113 +151,112 @@
   </style>
 </head>
 <body>
+  <header>
+    <img src="logo.png" alt="SaiVerse Logo" height="50" />
+    <nav>
+      <a href="#about">About</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-<header>
-  <img src="logo.png" alt="SaiVerse Logo" height="50" />
-  <nav>
-    <a href="#about">About</a>
-    <a href="#pricing">Pricing</a>
-    <a href="#reviews">Reviews</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
+  <section class="hero">
+    <h1>Let Us Handle the Chase, While You Focus on Growth</h1>
+    <p>Your trusted partner in global freelancing, payment recovery & client coordination.</p>
+    <a class="cta" href="#booking">📅 Book Consultation</a><br><br>
+    <a href="https://www.linkedin.com/in/saranya-s-78014b371/" target="_blank">
+      <img src="linkedin-icon.png" alt="LinkedIn" class="icon" />
+    </a>
+    <a href="https://www.upwork.com/freelancers/~014031dd72651c3436" target="_blank">
+      <img src="upwork-icon.png" alt="Upwork" class="icon" />
+    </a>
+  </section>
 
-<section class="hero">
-  <h1>Let Us Handle the Chase, While You Focus on Growth</h1>
-  <p>Your trusted partner in global freelancing, payment recovery & client coordination.</p>
-  <a class="cta" href="#booking">📅 Book Consultation</a><br><br>
-  <a href="https://www.linkedin.com/in/saranya-s-78014b371/" target="_blank">
-    <img src="linkedin-icon.png" alt="LinkedIn" class="icon" />
-  </a>
-  <a href="https://www.upwork.com/freelancers/~014031dd72651c3436" target="_blank">
-    <img src="upwork-icon.png" alt="Upwork" class="icon" />
-  </a>
-</section>
+  <section id="about" class="section">
+    <h2>About Us</h2>
+    <img src="founder.jpg" alt="Founder Saranya S" height="180" style="border-radius:10px;"><br>
+    <p>I’m <strong>Saranya S</strong>, the founder of SaiVerse Solutions. With 17 years of experience in payment recovery, client coordination, and freelancing support, I’ve delivered results for 1000+ clients across the globe.</p>
+  </section>
 
-<section id="about" class="section">
-  <h2>About Us</h2>
-  <img src="founder.jpg" alt="Founder Saranya S" height="180" style="border-radius:10px;"><br>
-  <p>I’m <strong>Saranya S</strong>, the founder of SaiVerse Solutions. With 17 years of experience in payment recovery, client coordination, and freelancing support, I’ve delivered results for 1000+ clients across the globe.</p>
-</section>
+  <section class="section light">
+    <h2>Why Choose Us</h2>
+    <ul style="list-style-type:none; padding:0; font-size:1rem;">
+      <li>✔️ 17+ Years in Collections</li>
+      <li>✔️ Personalized Global Support</li>
+      <li>✔️ Trusted by Freelancers</li>
+      <li>✔️ Fast & Respectful Follow‑up</li>
+    </ul>
+  </section>
 
-<section class="section light">
-  <h2>Why Choose Us</h2>
-  <ul style="list-style-type:none; padding:0; font-size:1rem;">
-    <li>✔️ 17+ Years in Collections</li>
-    <li>✔️ Personalized Global Support</li>
-    <li>✔️ Trusted by Freelancers</li>
-    <li>✔️ Fast & Respectful Follow‑up</li>
-  </ul>
-</section>
+  <section id="pricing" class="section">
+    <h2>Consultation Plans</h2>
+    <div class="box">
+      <p><strong>30 Minutes:</strong> $99</p>
+      <p><strong>1 Hour:</strong> $149</p>
+      <p><em>Session confirmed via email within 24–48 hours after booking.</em></p>
+    </div>
+    <div class="policy">
+      <strong>Important Consultation Policy:</strong><br>
+      No refunds will be provided if a client misses the scheduled appointment.<br>
+      Rescheduling is allowed once if requested at least <strong>24 hours before</strong> the appointment.
+    </div>
+  </section>
 
-<section id="pricing" class="section">
-  <h2>Consultation Plans</h2>
-  <div class="box">
-    <p><strong>30 Minutes:</strong> $99</p>
-    <p><strong>1 Hour:</strong> $149</p>
-    <p><em>Session confirmed via email within 24–48 hours after booking.</em></p>
+  <section id="reviews" class="section light">
+    <h2>Client Reviews</h2>
+    <div class="review-box">
+      <div class="stars">★★★★★</div>
+      <p>“Professional and quick.” – Jessica 🇺🇸</p>
+    </div>
+    <div class="review-box">
+      <div class="stars">★★★★★</div>
+      <p>“Got my payment back!” – Ahmed 🇦🇪</p>
+    </div>
+    <div class="review-box">
+      <div class="stars">★★★★★</div>
+      <p>“Very respectful and powerful service.” – Nina 🇩🇪</p>
+    </div>
+  </section>
+
+  <section id="booking" class="section">
+    <h2>Pre‑Consultation Form</h2>
+    <p>Fill this form after booking to ensure a smooth session. Confirmation will be sent via email after submission.</p>
+    <form action="https://formsubmit.co/info@saiverse.org" method="POST" enctype="multipart/form-data">
+      <input type="text" name="Full Name" placeholder="Full Name" required>
+      <input type="email" name="Email" placeholder="Your Email" required>
+      <input type="text" name="Country" placeholder="Country" required>
+      <input type="text" name="Booking Date" placeholder="Booking Date (dd‑mm‑yyyy)" required>
+      <select name="Issue Type">
+        <option value="Payment Recovery">Payment Recovery</option>
+      </select>
+      <textarea name="Short Description" placeholder="Short Description (Max 300 characters)" maxlength="300"></textarea>
+      <br>Upload Supporting Documents: <input type="file" name="Supporting Documents"><br>
+      Upload Payment Confirmation: <input type="file" name="Payment Confirmation"><br><br>
+      <button type="submit">Submit Form</button>
+    </form>
+  </section>
+
+  <section id="contact" class="section light">
+    <h2>Bank Details</h2>
+    <p><strong>Bank:</strong> Indian Overseas Bank<br>
+       <strong>Name:</strong> Saranya S<br>
+       <strong>Account No:</strong> 163501000000881<br>
+       <strong>IFSC:</strong> IOBA0001635</p>
+    <img src="qr.jpg" alt="Payment QR Code" class="qr-img">
+  </section>
+
+  <div class="disclaimer">
+    All consultations are conducted professionally with strict confidentiality. Your data is safe, private, and never shared. By booking, you accept our process and confirm full payment has been made.
   </div>
-  <div class="policy">
-    <strong>Important Consultation Policy:</strong><br>
-    No refunds will be provided if a client misses the scheduled appointment.<br>
-    Rescheduling is allowed once if requested at least <strong>24 hours before</strong> the appointment.
-  </div>
-</section>
 
-<section id="reviews" class="section light">
-  <h2>Client Reviews</h2>
-  <div class="review-box">
-    <div class="stars">★★★★★</div>
-    <p>“Professional and quick.” – Jessica 🇺🇸</p>
-  </div>
-  <div class="review-box">
-    <div class="stars">★★★★★</div>
-    <p>“Got my payment back!” – Ahmed 🇦🇪</p>
-  </div>
-  <div class="review-box">
-    <div class="stars">★★★★★</div>
-    <p>“Very respectful and powerful service.” – Nina 🇩🇪</p>
-  </div>
-</section>
-
-<section id="booking" class="section">
-  <h2>Pre‑Consultation Form</h2>
-  <p>Fill this form after booking to ensure a smooth session. Confirmation will be sent via email after submission.</p>
-  <form action="https://formsubmit.co/info@saiverse.org" method="POST" enctype="multipart/form-data">
-    <input type="text" name="Full Name" placeholder="Full Name" required>
-    <input type="email" name="Email" placeholder="Your Email" required>
-    <input type="text" name="Country" placeholder="Country" required>
-    <input type="text" name="Booking Date" placeholder="Booking Date (dd‑mm‑yyyy)" required>
-    <select name="Issue Type">
-      <option value="Payment Recovery">Payment Recovery</option>
-    </select>
-    <textarea name="Short Description" placeholder="Short Description (Max 300 characters)" maxlength="300"></textarea>
-    <br>Upload Supporting Documents: <input type="file" name="Supporting Documents"><br><br>
-    Upload Payment Confirmation: <input type="file" name="Payment Confirmation"><br><br>
-    <button type="submit">Submit Form</button>
-  </form>
-</section>
-
-<section id="contact" class="section light">
-  <h2>Bank Details</h2>
-  <p><strong>Bank:</strong> Indian Overseas Bank<br>
-     <strong>Name:</strong> Saranya S<br>
-     <strong>Account No:</strong> 163501000000881<br>
-     <strong>IFSC:</strong> IOBA0001635</p>
-  <img src="qr.jpg" alt="Payment QR Code" class="qr-img">
-</section>
-
-<div class="disclaimer">
-  All consultations are conducted professionally with strict confidentiality. Your data is safe, private, and never shared. By booking, you accept our process and confirm full payment has been made.
-</div>
-
-<footer>
-  <p>© 2025 SaiVerse Solutions | Powered by Saranya S</p>
-  <p>WhatsApp: +91 8939701718 | Email: info@saiverse.org</p>
-  <p>
-    <a href="https://www.linkedin.com/in/saranya-s-78014b371/" target="_blank">LinkedIn</a> |
-    <a href="https://www.upwork.com/freelancers/~014031dd72651c3436" target="_blank">Upwork</a>
-  </p>
-</footer>
+  <footer>
+    <p>© 2025 SaiVerse Solutions | Powered by Saranya S</p>
+    <p>WhatsApp: +91 8939701718 | Email: info@saiverse.org</p>
+    <p>
+      <a href="https://www.linkedin.com/in/saranya-s-78014b371/" target="_blank">LinkedIn</a> |
+      <a href="https://www.upwork.com/freelancers/~014031dd72651c3436" target="_blank">Upwork</a>
+    </p>
+  </footer>
 </body>
 </html>
