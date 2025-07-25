@@ -13,7 +13,7 @@
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      background-color: #001F3F;
+      background: linear-gradient(to bottom, #001F3F, #f0f0f0);
       color: #fff;
     }
     header {
@@ -49,19 +49,19 @@
     }
     .section {
       padding: 40px 20px;
-      background-color: #001F3F;
-      color: #fff;
+      background-color: #f5f5f5;
+      color: #000;
     }
     .section.dark {
-      background-color: #e0e0e0;
+      background-color: #002244;
+      color: #fff;
     }
     .review-box {
       background-color: #002244;
       border: 1px solid #FFD700;
       padding: 20px;
       margin: 10px;
-      color: #FFD700;
-      border-radius: 10px;
+      color: #fff;
     }
     .stars {
       color: #FFD700;
@@ -84,6 +84,8 @@
       width: 24px;
       height: 24px;
       margin: 0 5px;
+      border-radius: 50%;
+      background-color: #fff;
     }
     .form-section input,
     .form-section select,
@@ -102,6 +104,11 @@
       max-width: 200px;
       border-radius: 10px;
       margin-bottom: 20px;
+    }
+    .note {
+      font-style: italic;
+      font-size: 13px;
+      color: #333;
     }
   </style>
 </head>
@@ -125,7 +132,7 @@
       <img src="https://img.icons8.com/color/48/linkedin.png" alt="LinkedIn" class="icon">
     </a>
     <a href="https://www.upwork.com/freelancers/~014031dd72651c3436" target="_blank">
-      <img src="https://img.icons8.com/ios-filled/50/FFD700/upwork.png" alt="Upwork" class="icon">
+      <img src="https://img.icons8.com/ios-filled/48/000000/upwork.png" alt="Upwork" class="icon">
     </a>
   </div>
 
@@ -149,25 +156,23 @@
     <h2>Consultation Plans</h2>
     <p>30 Minutes: $99</p>
     <p>1 Hour: $149</p>
-    <p><strong>Session confirmed via email within 24–48 hours after booking.</strong></p>
-    <p><strong>Important Policy:</strong><br>
-    No refunds if a client misses the scheduled appointment.<br>
-    Rescheduling allowed once if requested 24 hours in advance.</p>
+    <p class="note">📌 Session confirmation email will be sent within 24–48 hours after booking.</p>
+    <p class="note">🔁 Appointments can be rescheduled once if notified 24 hours in advance. Missed sessions are non-refundable.</p>
   </div>
 
   <div class="section box-section" id="reviews">
     <h2>Client Reviews</h2>
     <div class="review-box">
       <div class="stars">★★★★★</div>
-      <p>“Their support was not just quick, but emotionally relieving. Thank you!” – Emily 🇨🇦</p>
+      <p>“Support was emotionally relieving and powerful.” – Jessica 🇺🇸</p>
     </div>
     <div class="review-box">
       <div class="stars">★★★★★</div>
-      <p>“Honestly, I didn’t expect to get my money back this fast. Highly recommended.” – Marco 🇮🇹</p>
+      <p>“Polite, professional and helped me recover what I lost.” – Ahmed 🇦🇪</p>
     </div>
     <div class="review-box">
       <div class="stars">★★★★★</div>
-      <p>“Polite, powerful, and to the point. SaiVerse truly delivers.” – Ayesha 🇦🇪</p>
+      <p>“Highly trustworthy and respectful service.” – Nina 🇩🇪</p>
     </div>
   </div>
 
